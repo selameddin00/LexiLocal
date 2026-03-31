@@ -1,0 +1,23 @@
+{
+  "name": "lexilocal",
+  "version": "1.0.0",
+  "description": "LexiLocal projesi için sprint planlama, MVP geliştirme ve ekip içi iş birliği deposu.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selameddin00/LexiLocal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selameddin00/LexiLocal/issues"
+  },
+  "homepage": "https://github.com/selameddin00/LexiLocal#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
