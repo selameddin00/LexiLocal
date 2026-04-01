@@ -1,5 +1,14 @@
 import random
 
+def reading_data_api_format(student_id_db, row):
+    """Node POST /reading-data ile uyumlu govde (alan eslemesi: wpcm/percent -> DB kolonlari)."""
+    return {
+        "student_id": student_id_db,
+        "reading_speed": row["reading_speed_wpcm"],
+        "accuracy": row["reading_accuracy_percent"],
+        "errors": [],
+    }
+
 def ogrenci_uret():
     return {
         "student_id": f"STU_{random.randint(100, 999)}",
@@ -126,10 +135,102 @@ def analiz_et(row):
         "genel_aciklama": " ".join(genel_aciklamalar)
     }
 
-ogrenci = ogrenci_uret()
-sonuc = analiz_et(ogrenci)
+def _payload_to_analiz_row(payload):
+    """Node bridge'den gelen JSON -> analiz_et satir formati.
+    Eksik ek metrikler icin notr degerler (Node'da undefined iken etiket uretilmiyordu)."""
+    sid = payload.get("student_id", "")
+    rs = payload.get("reading_speed")
+    acc = payload.get("accuracy")
+    if rs is None:
+        rs = payload.get("reading_speed_wpcm")
+    if acc is None:
+        acc = payload.get("reading_accuracy_percent")
 
-print("Üretilen Öğrenci Verisi:")
-print(ogrenci)
-print("\nAnaliz Sonucu:")
-print(sonuc)
+    def neu_int(key, default):
+        v = payload.get(key)
+        if v is None or v == "":
+            return default
+        return int(v)
+
+    def neu_float(key, default):
+        v = payload.get(key)
+        if v is None or v == "":
+            return default
+        return float(v)
+
+    return {
+        "student_id": sid,
+        "reading_speed_wpcm": int(rs) if rs is not None else 0,
+        "reading_accuracy_percent": int(acc) if acc is not None else 100,
+        "phonological_awareness_percent": neu_int("phonological_awareness_percent", 100),
+        "visual_discrimination_score": neu_float("visual_discrimination_score", 10.0),
+        "visual_tracking_seconds": neu_float("visual_tracking_seconds", 50.0),
+        "sequencing_score": neu_int("sequencing_score", 100),
+    }
+
+
+def _level_from_sonuclar(sonuclar):
+    if len(sonuclar) == 1 and sonuclar[0].get("etiket") == "Normal":
+        return "good"
+    if any(s.get("risk") == "yüksek" for s in sonuclar):
+        return "low"
+    if any(s.get("risk") == "orta" for s in sonuclar):
+        return "low"
+    return "good"
+
+
+def _recommendations_from_sonuclar(sonuclar, level):
+    if level == "good":
+        return ["Daha zor metinler okut"]
+    recs = ["Günlük okuma çalışması"]
+    et = [s.get("etiket", "") for s in sonuclar]
+    if any("Doğruluk" in x for x in et):
+        recs.append("Doğruluk için tekrar okuma")
+    if any("hata" in x.lower() or "Hata" in x for x in et):
+        recs.append("Hata analizi yapın")
+    return recs
+
+
+def bridge_analyze_json(payload):
+    """Node icin tek JSON cikti: labels, explanations, summary, level, recommendations."""
+    row = _payload_to_analiz_row(payload)
+    raw = analiz_et(row)
+    sonuclar = raw["sonuclar"]
+    labels = [s["etiket"] for s in sonuclar]
+    explanations = [s["aciklama"] for s in sonuclar]
+    summary = raw.get("genel_aciklama") or ""
+    level = _level_from_sonuclar(sonuclar)
+    recommendations = _recommendations_from_sonuclar(sonuclar, level)
+    return {
+        "labels": labels,
+        "explanations": explanations,
+        "summary": summary,
+        "level": level,
+        "recommendations": recommendations,
+    }
+
+
+if __name__ == "__main__":
+    import json
+    import sys
+
+    if len(sys.argv) > 1 and sys.argv[1] == "--bridge":
+        try:
+            payload = json.load(sys.stdin)
+            out = bridge_analyze_json(payload)
+            print(json.dumps(out, ensure_ascii=False))
+        except Exception as e:
+            print(json.dumps({"error": str(e)}), file=sys.stderr)
+            sys.exit(1)
+    else:
+        ogrenci = ogrenci_uret()
+        sonuc = analiz_et(ogrenci)
+
+        print("Üretilen Öğrenci Verisi:")
+        print(ogrenci)
+        print("\nAnaliz Sonucu:")
+        print(sonuc)
+
+        ornek_db_id = 1
+        print("\nNode API icin okuma verisi govdesi (ornek student_id=%s):" % ornek_db_id)
+        print(reading_data_api_format(ornek_db_id, ogrenci))
