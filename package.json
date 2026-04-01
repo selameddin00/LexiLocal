@@ -2,8 +2,9 @@
   "name": "lexilocal",
   "version": "1.0.0",
   "description": "LexiLocal projesi için sprint planlama, MVP geliştirme ve ekip içi iş birliği deposu.",
-  "main": "index.js",
+  "main": "backend/server.js",
   "scripts": {
+    "start": "node backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

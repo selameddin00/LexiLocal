@@ -65,9 +65,10 @@ function validateReadingMetrics(data) {
 
 function runPythonBridge(payload) {
   return new Promise((resolve, reject) => {
-    const script = path.join(__dirname, "analysis.py");
+    const analysisDir = path.join(__dirname, "..", "analysis");
+    const script = path.join(analysisDir, "analysis.py");
     const py = spawn("python", ["-X", "utf8", script, "--bridge"], {
-      cwd: __dirname,
+      cwd: analysisDir,
       windowsHide: true,
       env: {
         ...process.env,
