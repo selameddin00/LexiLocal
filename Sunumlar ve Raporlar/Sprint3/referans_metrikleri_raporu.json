@@ -1,0 +1,802 @@
+[
+  {
+    "id": "CH001",
+    "label": "OKUMA_HIZI",
+    "type": "definition",
+    "method_name": null,
+    "content": "Okuma akıcılığı; hız, doğruluk ve uygun ifadeyi bir arada barındıran okuma becerisidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH002",
+    "label": "OKUMA_HIZI",
+    "type": "effect",
+    "method_name": null,
+    "content": "Okuma hızı güçlüğü, metni akıcı ve doğru okuma becerisini zayıflatır ve okuduğunu anlama sürecini olumsuz etkiler.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH003",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Paired Reading (Eşli Okuma)",
+    "content": "Bir ebeveyn ya da akranın rehberliğinde, öğrencinin bağımsız okuma düzeyinin biraz üzerindeki metinlerin yüksek sesle birlikte okunduğu yapılandırılmış bir okuma yöntemidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH004",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Paired Reading (Eşli Okuma)",
+    "content": "Rehber ve öğrenci eş zamanlı yüksek sesle okur; öğrenci hazır hissedince bağımsız okumaya geçer. Öğrenci okumada hata yaptığında rehber sesli bir şekilde müdahale eder ve öğrenci tekrarlar.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH005",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Paired Reading (Eşli Okuma)",
+    "content": "Haftada en az 3 kez, en az 6 hafta sürdürülür.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH006",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Paired Reading (Eşli Okuma)",
+    "content": "Okuma doğruluğunu ve kavramayı geliştirir; hata oranını azaltır, öz-düzeltme davranışını artırır. Hem öğrenciye hem de rehbere kazanım sağlar.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH007",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Paired Reading (Eşli Okuma)",
+    "content": "Topping (2014)",
+    "source": "Topping (2014)"
+  },
+  {
+    "id": "CH008",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Repeated Reading (Tekrarlı Okuma)",
+    "content": "Öğrencinin kısa bir metni belirli bir akıcılık ölçütüne ulaşana dek defalarca okuduğu, hata düzeltmesi ve performans geri bildirimi içeren bir müdahale yöntemidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH009",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Repeated Reading (Tekrarlı Okuma)",
+    "content": "Öğrenci her okuma sonrası doğru sözcük sayısı (WCPM) geri bildirimi alır ve skoru grafiğe işler; uygulayıcı yanlış okunan sözcükleri düzeltir. Metin, ölçüt karşılanana dek değiştirilmez.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH010",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Repeated Reading (Tekrarlı Okuma)",
+    "content": "Okuma hızını ve doğruluğunu artırır. Ortaöğretim düzeyinde akıcılık kazanımları belgelenmiştir; ancak kavrama üzerindeki etkisi sınırlı ve tutarsızdır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH011",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Repeated Reading (Tekrarlı Okuma)",
+    "content": "Steinle, Stevens & Vaughn (2022)",
+    "source": "Steinle, Stevens & Vaughn (2022)"
+  },
+  {
+    "id": "CH012",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Rhythmic Reading Training — RRT (Ritmik Okuma Eğitimi)",
+    "content": "Alt-leksikal okuma alıştırmalarını ritmik arka plan işlemeyle bütünleştiren, bilgisayar destekli bir okuma müdahalesidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH013",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Rhythmic Reading Training — RRT (Ritmik Okuma Eğitimi)",
+    "content": "Öğrenci ekranda sunulan hece, sözcük ve sözde sözcükleri izokoron davul ritmi eşliğinde okur; ritim hızı öğrencinin başlangıç okuma hızına göre belirlenir ve yetkinlik arttıkça adaptif biçimde artırılır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH014",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Rhythmic Reading Training — RRT (Ritmik Okuma Eğitimi)",
+    "content": "Okuma hızını ve fonolojik farkındalığı geliştirir. Özellikle sözde sözcük okuma hızında belirgin kazanım sağlar; kısa sürede anlamlı gelişim sağladığı gösterilmiştir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH015",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Rhythmic Reading Training — RRT (Ritmik Okuma Eğitimi)",
+    "content": "Cancer, Bonacina, Antonietti, Salandi, Molteni & Lorusso (2020)",
+    "source": "Cancer, Bonacina, Antonietti, Salandi, Molteni & Lorusso (2020)"
+  },
+  {
+    "id": "CH016",
+    "label": "OKUMA_HIZI",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Okuma hızı güçlüğü için üç yöntem de literatürde desteklenmektedir; ancak bu yöntemler farklı bilişsel ve davranışsal mekanizmalar üzerinden okuma akıcılığını destekler ve birlikte kullanıldıklarında daha etkili sonuçlar sağlayabilir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH017",
+    "label": "OKUMA_HIZI",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Paired Reading doğruluk ve kavramayı, Repeated Reading hızı, RRT ise fonolojik süreçler aracılığıyla okuma hızını öncelikli olarak hedeflemektedir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH018",
+    "label": "GORSEL_TAKIP",
+    "type": "definition",
+    "method_name": null,
+    "content": "Disleksili çocuklarda okuma sırasında göz kontrolü zayıftır; bu çocuklar metni tipik okuyuculara kıyasla çok daha yavaş ve verimsiz biçimde tarar. Bu durum, okuma hızını ve doğruluğunu doğrudan olumsuz etkiler.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH019",
+    "label": "GORSEL_TAKIP",
+    "type": "effect",
+    "method_name": null,
+    "content": "Göz kontrolündeki yetersizlikler okuma hızını ve akıcılığını kısıtlar; çocuklar aynı bölümü defalarca okumak zorunda kalabilir. Bu sorun yalnızca okumayı değil, dikkat ve görsel işlem becerilerini de olumsuz etkiler.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH020",
+    "label": "GORSEL_TAKIP",
+    "type": "effect",
+    "method_name": null,
+    "content": "Farklı dillerdeki disleksili çocuklarda benzer örüntüler gözlemlenmiş olup bu sorunun yaygın ve dil bağımsız bir nitelik taşıdığı görülmektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH021",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Görsel Dikkat Eğitimi (Visual Attentional Training)",
+    "content": "Göz hareketi egzersizleri ile görsel arama görevlerini birleştiren kısa süreli bir eğitim programıdır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH022",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Görsel Dikkat Eğitimi (Visual Attentional Training)",
+    "content": "Çocuklara yatay göz hareketi egzersizleri yaptırılır; ardından tablet üzerinde farklı görsel arama görevleri uygulanır. Eğitim bireysel olarak uygulanır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH023",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Görsel Dikkat Eğitimi (Visual Attentional Training)",
+    "content": "Eğitim alan çocuklarda okuma hızının arttığı ve göz durma sürelerinin kısaldığı gösterilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH024",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Görsel Dikkat Eğitimi (Visual Attentional Training)",
+    "content": "Caldani, S., Gerard, C.-L., Peyre, H., & Bucci, M. P. (2020). Brain Sciences, 10, 558.",
+    "source": "Caldani et al. (2020)"
+  },
+  {
+    "id": "CH025",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Ofis Tabanlı Oküomotor Eğitim (Office Based Oculomotor Training – OBOT)",
+    "content": "Sembol ve harf matrisleri kullanılarak göz hareketlerini sistematik biçimde geliştirmeyi hedefleyen yapılandırılmış bir eğitim programıdır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH026",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Ofis Tabanlı Oküomotor Eğitim (Office Based Oculomotor Training – OBOT)",
+    "content": "Çocuklar hem evde hem de ofiste, farklı zorluk düzeylerindeki sembol matrislerini belirli bir düzende adlandırma egzersizleri yapar. Zorluk düzeyi çocuğun gelişimine göre kademeli olarak artırılır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH027",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Ofis Tabanlı Oküomotor Eğitim (Office Based Oculomotor Training – OBOT)",
+    "content": "Eğitim alan çocuklarda okuma hızı, okuma doğruluğu ve görsel algı becerilerinde anlamlı gelişim sağlandığı gösterilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH028",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Ofis Tabanlı Oküomotor Eğitim (Office Based Oculomotor Training – OBOT)",
+    "content": "Facchin, A., Maffioletti, S., Maffioletti, M., Esposito, G., Bonetti, M., Girelli, L., & Daini, R. (2025). Vision, 9, 83.",
+    "source": "Facchin et al. (2025)"
+  },
+  {
+    "id": "CH029",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Görsel Algısal Eğitim – Doku Ayrımı (Visual Perceptual Training – Texture Discrimination)",
+    "content": "Görsel zamansal işleme hızını ve uzamsal dikkati geliştirmeye yönelik bilgisayar tabanlı bir algı eğitimidir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH030",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Görsel Algısal Eğitim – Doku Ayrımı (Visual Perceptual Training – Texture Discrimination)",
+    "content": "Çocuk, ekranda kısa süreli olarak sunulan görsel örüntüler arasından hedef uyaranı tanımlamaya çalışır. Görevin zorluğu, çocuğun performansına göre otomatik olarak ayarlanır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH031",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Görsel Algısal Eğitim – Doku Ayrımı (Visual Perceptual Training – Texture Discrimination)",
+    "content": "Disleksili çocuklarda okuma akıcılığının arttığı ve bu kazanımın eğitim sonrasında da korunduğu gösterilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH032",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Görsel Algısal Eğitim – Doku Ayrımı (Visual Perceptual Training – Texture Discrimination)",
+    "content": "Peters, J. L., De Losa, L., Bavin, E. L., & Crewther, S. G. (2019). Neuroscience and Biobehavioral Reviews, 100, 58–76.",
+    "source": "Peters et al. (2019)"
+  },
+  {
+    "id": "CH033",
+    "label": "GORSEL_TAKIP",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Görsel takip ve göz hareketi kontrolünü hedef alan eğitim yöntemleri, disleksili çocuklarda okuma hızı ve akıcılığı üzerinde olumlu etkiler göstermektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH034",
+    "label": "GORSEL_TAKIP",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Bu yöntemler, doğrudan ses-harf öğretimine dayanmaksızın okuma performansını destekleyebildiğinden mevcut müdahale yaklaşımlarına önemli bir tamamlayıcı seçenek sunmaktadır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH035",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "definition",
+    "method_name": null,
+    "content": "Okuma doğruluğu, yazılı sözcükleri hatasız biçimde okuyabilme becerisidir. Disleksi ve okuma güçlüğü yaşayan öğrencilerde en kalıcı ve müdahaleye dirençli alanlardan biri olarak öne çıkar.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH036",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "effect",
+    "method_name": null,
+    "content": "Okuma doğruluğundaki yetersizlikler, akıcılığı ve okuduğunu anlamayı doğrudan olumsuz etkiler. Müdahaleler alt beceriler üzerinde daha güçlü etki gösterirken gerçek sözcük okuma genellemesi hâlâ yetersiz kalmaktadır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH037",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Değişken Ses Örüntüleriyle Kod Öğretimi",
+    "content": "Yalnızca kurallı ses eşleştirmeleri değil, aynı harf grubunun farklı seslendirildiği sözcükleri de kapsayan sistematik fonik öğretimidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH038",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Değişken Ses Örüntüleriyle Kod Öğretimi",
+    "content": "Dersler değişken hece-ses örüntülü sözcük listeleriyle yürütülür; öğreticiler esnek okuma stratejisini açıkça modeller ve anında düzeltici geri bildirim sağlar.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH039",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Değişken Ses Örüntüleriyle Kod Öğretimi",
+    "content": "Öğrencilerin yazı sistemindeki istatistiksel örüntülere duyarlılığını artırarak genellenmiş sözcük okuma becerilerini destekler.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH040",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Değişken Ses Örüntüleriyle Kod Öğretimi",
+    "content": "Clemens ve ark. (2025) — Mind, Brain, and Education",
+    "source": "Clemens ve ark. (2025)"
+  },
+  {
+    "id": "CH041",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Sözcük Anlamıyla Bütünleşik Okuma Öğretimi",
+    "content": "Sistematik fonik öğretimine sözcük anlamının açıkça öğretilmesini ekleyen entegre bir yaklaşımdır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH042",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Sözcük Anlamıyla Bütünleşik Okuma Öğretimi",
+    "content": "Grafem-fonem öğretiminin ardından tanım kartları, görseller ve cümle tamamlama etkinlikleriyle her sözcüğün anlamı aynı ders içinde doğrudan öğretilir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH043",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Sözcük Anlamıyla Bütünleşik Okuma Öğretimi",
+    "content": "Anlamsal bilginin ortografik-fonolojik bağlantıları güçlendirerek okuma doğruluğunu ve akıcılığını artırdığı görülmüştür.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH044",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Sözcük Anlamıyla Bütünleşik Okuma Öğretimi",
+    "content": "Austin ve ark. (2022) — Scientific Studies of Reading",
+    "source": "Austin ve ark. (2022)"
+  },
+  {
+    "id": "CH045",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Heceleme Etkinliğiyle Desteklenen Kod Öğretimi",
+    "content": "Kod öğretimine her hedef sözcüğün öğretici modeli eşliğinde öğrenci tarafından yazılmasını ekleyen bütünleşik bir bileşendir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH046",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Heceleme Etkinliğiyle Desteklenen Kod Öğretimi",
+    "content": "Öğrenci sözcüğü okuduktan sonra görüş alanından kaldırılır ve çalışma kitabına yazar; öğretici doğru yazımı gösterir, öğrenci kendi yazısını düzelterek okumaya devam eder.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH047",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Heceleme Etkinliğiyle Desteklenen Kod Öğretimi",
+    "content": "Sözcüklere daha derinlemeli maruz kalmayı sağlayarak okuma kazanımlarını destekler.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH048",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Heceleme Etkinliğiyle Desteklenen Kod Öğretimi",
+    "content": "Clemens ve ark. (2025) — Mind, Brain, and Education",
+    "source": "Clemens ve ark. (2025)"
+  },
+  {
+    "id": "CH049",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Tek bileşenli fonik öğretimi sözcük okuma doğruluğu için gerekli ancak tek başına yeterli değildir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH050",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Anlam entegrasyonu ve kodlama pratiğini içeren çok bileşenli yaklaşımlar, özellikle disleksi tanılı öğrencilerde daha kalıcı kazanımlar sağlamaktadır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH051",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "definition",
+    "method_name": null,
+    "content": "Fonolojik farkındalık, konuşma dilindeki sesleri (fonemleri) algılama, ayırt etme ve işleme yeteneğidir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH052",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "effect",
+    "method_name": null,
+    "content": "Fonolojik farkındalık, erken okuma becerilerinin en güçlü yordayıcılarından biri olarak kabul edilmektedir; harf-ses eşleştirmesini ve kelime okuma doğruluğunu doğrudan etkiler.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH053",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "effect",
+    "method_name": null,
+    "content": "Fonolojik farkındalık, erken okuma becerilerinin önemli bir yordayıcısıdır ve harf-ses eşleştirme ile kelime okuma doğruluğunu doğrudan etkiler. Bu alandaki yetersizlikler, okuma edinim sürecini olumsuz etkiler.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH054",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Harf Bilgisi ile Entegre Fonolojik Farkındalık Eğitimi (Sound Foundations)",
+    "content": "Yalnızca sözlü fonem etkinliklerine dayanan programların aksine, harf-ses ilişkisini fonolojik eğitimle eş zamanlı öğreten yapılandırılmış bir yaklaşımdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH055",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Harf Bilgisi ile Entegre Fonolojik Farkındalık Eğitimi (Sound Foundations)",
+    "content": "Öğretmen her derste belirli bir sesi tanıtır, çocuklar o sesi içeren nesneleri poster üzerinde bulur; tüm süreç boyunca ilgili harf görsel olarak sunulur.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH056",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Harf Bilgisi ile Entegre Fonolojik Farkındalık Eğitimi (Sound Foundations)",
+    "content": "Yalnızca sözlü fonolojik eğitime kıyasla hem fonolojik farkındalık hem de okuma becerilerinde anlamlı düzeyde daha büyük etki büyüklükleri elde edilir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH057",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Harf Bilgisi ile Entegre Fonolojik Farkındalık Eğitimi (Sound Foundations)",
+    "content": "Bus & van IJzendoorn (1999) – Phonological Awareness and Early Reading: A Meta-Analysis of Experimental Training Studies",
+    "source": "Bus & van IJzendoorn (1999)"
+  },
+  {
+    "id": "CH058",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Çok Duyusal Fonolojik Müdahale (VAKT ve Türevleri)",
+    "content": "Birden fazla duyusal kanalı (görsel, işitsel ve fiziksel etkileşim) birleştiren çok duyusal öğretim yaklaşımıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH059",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Çok Duyusal Fonolojik Müdahale (VAKT ve Türevleri)",
+    "content": "Çocuklar harf seslerini hem duyar hem görür hem de fiziksel materyallerle etkileşime girerek öğrenir; sesler söylenirken eş zamanlı hareket de eklenir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH060",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Çok Duyusal Fonolojik Müdahale (VAKT ve Türevleri)",
+    "content": "Okuma anlama ve sözlü okuma düzeylerinde anlamlı gelişme sağlar; harf karıştırma sorunlarını azaltır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH061",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Çok Duyusal Fonolojik Müdahale (VAKT ve Türevleri)",
+    "content": "Lim, Yeo & Handayani (2023) – A Systematic Review on Interventions for Children with Dyslexia",
+    "source": "Lim, Yeo & Handayani (2023)"
+  },
+  {
+    "id": "CH062",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Heceleme Bileşeniyle Güçlendirilmiş Fonolojik Müdahale",
+    "content": "Kelime okuma eğitimine ek olarak heceleme öğretimini de içeren yapılandırılmış bir müdahaledir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH063",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Heceleme Bileşeniyle Güçlendirilmiş Fonolojik Müdahale",
+    "content": "Müdahale programı hem fonem-grafem eşleşmelerini hem de heceleme becerisini birlikte geliştirmeyi hedefler; okul personeli tarafından küçük gruplar hâlinde uygulanır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH064",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Heceleme Bileşeniyle Güçlendirilmiş Fonolojik Müdahale",
+    "content": "Yalnızca kelime okuma odaklı müdahalelere kıyasla anlamlı biçimde daha büyük etki büyüklükleri üretir (g = 0.37'ye karşın g = 0.23).",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH065",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Heceleme Bileşeniyle Güçlendirilmiş Fonolojik Müdahale",
+    "content": "Hall et al. (2022) – Forty Years of Reading Intervention Research for Elementary Students with or at Risk for Dyslexia",
+    "source": "Hall et al. (2022)"
+  },
+  {
+    "id": "CH066",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Fonolojik farkındalık müdahaleleri, yalnızca sözlü etkinliklere dayandığında sınırlı kalabilmekte; harf bilgisi ve heceleme bileşenleriyle desteklendiğinde okuma becerileri üzerinde daha güçlü etkiler oluşturduğu görülmektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH067",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Erken başlanan ve yeterli dozda uygulanan yapılandırılmış müdahaleler, okuma güçlüğü riskini azaltmada etkili bir yaklaşım olarak öne çıkmaktadır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH068",
+    "label": "GORSEL_ISLEME",
+    "type": "definition",
+    "method_name": null,
+    "content": "Disleksili bireylerde görsel yolakların işlevindeki bozukluk, hareket algısı, figür-zemin ayrımı ve görsel dikkat gibi temel süreçleri olumsuz etkilemektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH069",
+    "label": "GORSEL_ISLEME",
+    "type": "definition",
+    "method_name": null,
+    "content": "Bu bozukluk, okuma öğrenilmeden önce de gözlemlenebilmekte ve ilerleyen dönemdeki okuma güçlüklerinin erken bir göstergesi olarak değerlendirilebilmektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH070",
+    "label": "GORSEL_ISLEME",
+    "type": "effect",
+    "method_name": null,
+    "content": "Disleksili çocuklar, yaş ve okuma düzeyi eşleştirilmiş kontrollerle kıyaslandığında hareket algısı görevlerinde daha düşük performans sergilemektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH071",
+    "label": "GORSEL_ISLEME",
+    "type": "effect",
+    "method_name": null,
+    "content": "Okul öncesi dönemde ölçülen görsel işleme becerilerinin, fonolojik farkındalıktan bağımsız biçimde ilerleyen okuma becerilerini yordadığı bildirilmiştir. Bu bulgular, görsel işleme güçlüğünün disleksiye katkıda bulunan etkenlerden biri olabileceğine işaret etmektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH072",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Koherent Nokta Hareketi (Coherent Dot Motion – CDM) Değerlendirmesi",
+    "content": "Hareket eden noktalar arasında belirli bir yöne doğru hareket eden alt kümeyi ayırt etmeye dayanan görsel bir değerlendirme aracıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH073",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Koherent Nokta Hareketi (Coherent Dot Motion – CDM) Değerlendirmesi",
+    "content": "Çocuktan ekrandaki nokta grubunun hareket yönünü belirlemesi istenir; zorluk düzeyi koherans oranı değiştirilerek ayarlanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH074",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Koherent Nokta Hareketi (Coherent Dot Motion – CDM) Değerlendirmesi",
+    "content": "Görsel hareket işleme kapasitesini ölçer; disleksili bireylerin bu görevde kontrol gruplarından düşük performans gösterdiği ve okul öncesi dönemde bile uygulanabildiği gösterilmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH075",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Koherent Nokta Hareketi (Coherent Dot Motion – CDM) Değerlendirmesi",
+    "content": "Gori, Seitz, Ronconi, Franceschini & Facoetti (2016) – Cerebral Cortex",
+    "source": "Gori et al. (2016)"
+  },
+  {
+    "id": "CH076",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Figür/Zemin Hareket Yönü Ayırt Etme Eğitimi",
+    "content": "Durağan bir arka plan üzerinde hareket eden görsel desenlerin yönünü ayırt etmeye yönelik, görsel yolak işlevini geliştirmeyi hedefleyen bir müdahale programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH077",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Figür/Zemin Hareket Yönü Ayırt Etme Eğitimi",
+    "content": "Çocuk ekranda beliren hareketli desenlerin yönünü belirleme alıştırmaları yapar; program zorluk düzeyini çocuğun performansına göre otomatik olarak ayarlar ve haftada birkaç kez uygulanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH078",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Figür/Zemin Hareket Yönü Ayırt Etme Eğitimi",
+    "content": "Görsel hareket duyarlılığını artırır; okuma hızı, dikkat ve çalışma belleğinde anlamlı iyileşmeler sağladığı bildirilmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH079",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Figür/Zemin Hareket Yönü Ayırt Etme Eğitimi",
+    "content": "Lawton (2016) – Frontiers in Human Neuroscience",
+    "source": "Lawton (2016)"
+  },
+  {
+    "id": "CH080",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel Dikkat ve Göz Hareketi Eğitimi",
+    "content": "Okuma sırasında göz hareketlerinin ve görsel dikkat dağılımının geliştirilmesini hedefleyen bir müdahale yaklaşımıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH081",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel Dikkat ve Göz Hareketi Eğitimi",
+    "content": "Çocuklar göz hareketlerini kontrol etmeye yönelik takip egzersizleri ve görsel dikkat görevleri uygular; bu alıştırmalar genellikle bilgisayar destekli olarak sunulur ve performansa göre zorluk seviyesi ayarlanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH082",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel Dikkat ve Göz Hareketi Eğitimi",
+    "content": "Görsel dikkat ve göz hareketi koordinasyonunu geliştirerek metin üzerinde daha verimli tarama yapılmasını sağlar ve okuma performansını destekler.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH083",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel Dikkat ve Göz Hareketi Eğitimi",
+    "content": "Caldani et al. (2020) – Brain Sciences",
+    "source": "Caldani et al. (2020)"
+  },
+  {
+    "id": "CH084",
+    "label": "GORSEL_ISLEME",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Görsel işleme güçlüğü, disleksinin çok etkenli yapısında önemli bir yer tutmakta ve erken müdahale için elverişli bir hedef sunmaktadır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH085",
+    "label": "GORSEL_ISLEME",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Görsel yolakları hedef alan eğitim programları, fonolojik süreçleri doğrudan eğitmeksizin okuma becerilerinde iyileşme sağlayabilmektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH086",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "definition",
+    "method_name": null,
+    "content": "Çalışma belleği, bilgiyi kısa süreli olarak depolayan ve işleyen bilişsel bir sistemdir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH087",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "effect",
+    "method_name": null,
+    "content": "Çalışma belleğindeki yetersizlikler, bilgiyi geçici olarak tutma ve işleme süreçlerini zorlaştırarak okuma ve yazma performansını olumsuz etkileyebilir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH088",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Görsel ve İşitsel Çalışma Belleği Eğitimi",
+    "content": "Görsel ve işitsel uyaranlar kullanılarak bellek kapasitesinin sistematik olarak geliştirilmesini hedefleyen bir yaklaşımdır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH089",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Görsel ve İşitsel Çalışma Belleği Eğitimi",
+    "content": "Öğrencilere görsel ve işitsel uyaranlar kullanılarak çeşitli bellek egzersizleri uygulanır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH090",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Görsel ve İşitsel Çalışma Belleği Eğitimi",
+    "content": "Okuma ile ilişkili alt becerilerde anlamlı gelişim sağladığı gösterilmiştir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH091",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Görsel ve İşitsel Çalışma Belleği Eğitimi",
+    "content": "Sharifi & Rezaei (2018) — Iranian Journal of Learning and Memory",
+    "source": "Sharifi & Rezaei (2018)"
+  },
+  {
+    "id": "CH092",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Strateji Öğretimine Dayalı Çalışma Belleği Müdahale Paketi",
+    "content": "Tekrarlama, gruplama ve görselleştirme stratejilerinin doğrudan öğretildiği yapılandırılmış bir müdahale yaklaşımıdır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH093",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Strateji Öğretimine Dayalı Çalışma Belleği Müdahale Paketi",
+    "content": "Öğrencilere tekrar etme, gruplama ve görselleştirme stratejileri doğrudan öğretilir ve uygulama yaptırılır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH094",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Strateji Öğretimine Dayalı Çalışma Belleği Müdahale Paketi",
+    "content": "Çalışma belleği performansında belirgin gelişmeler sağladığı gösterilmiştir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH095",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Strateji Öğretimine Dayalı Çalışma Belleği Müdahale Paketi",
+    "content": "Okur & Aksoy (2025) — Journal of Intelligence",
+    "source": "Okur & Aksoy (2025)"
+  },
+  {
+    "id": "CH096",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Çalışma Belleği Eğitiminin Akademik Performansa Etkisi",
+    "content": "Çalışma belleği eğitim müdahalelerinin akademik beceriler üzerindeki etkilerini inceleyen sistematik bir değerlendirmedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH097",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Çalışma Belleği Eğitiminin Akademik Performansa Etkisi",
+    "content": "Farklı müdahale çalışmalarının sonuçları karşılaştırılarak genel etki değerlendirmesi yapılır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH098",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Çalışma Belleği Eğitiminin Akademik Performansa Etkisi",
+    "content": "Çalışma belleği eğitimlerinin akademik beceriler üzerinde genel olarak olumlu etkiler sağladığı görülmüştür.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH099",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Çalışma Belleği Eğitiminin Akademik Performansa Etkisi",
+    "content": "Mahdavi ve ark. (2025) — Frontiers in Education",
+    "source": "Mahdavi ve ark. (2025)"
+  },
+  {
+    "id": "CH100",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "general_evaluation",
+    "method_name": null,
+    "content": "Çalışma belleği eğitimi, okuma ve diğer akademik becerileri destekleyebilen bir yaklaşım olarak öne çıkmaktadır. Ancak etkilerin bireysel farklılıklara göre değişebileceği göz önünde bulundurulmalıdır.",
+    "source": "Sıralama Becerisi Raporu"
+  }
+]
