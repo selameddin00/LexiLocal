@@ -18,14 +18,14 @@ def analiz_et(row):
     # 1. Düşük Akıcılık / Robotik Okuma
     if row["reading_speed_wpcm"] < 40:
         sonuclar.append({
-            "etiket": "Düşük Akıcılık / Robotik Okuma",
+            "etiket": "OKUMA_HIZI",
             "risk": "yüksek",
             "aciklama": "Dakikada doğru okunan kelime sayısı kritik eşik altındadır."
         })
         genel_aciklamalar.append("Okuma akıcılığı kritik düzeyde düşüktür.")
     elif 40 <= row["reading_speed_wpcm"] <= 60:
         sonuclar.append({
-            "etiket": "Düşük Akıcılık / Robotik Okuma",
+            "etiket": "OKUMA_HIZI",
             "risk": "orta",
             "aciklama": "Okuma akıcılığı riskli aralıktadır."
         })
@@ -34,14 +34,14 @@ def analiz_et(row):
     # 2. Düşük Doğruluk / Tahminci Okuma
     if row["reading_accuracy_percent"] < 85:
         sonuclar.append({
-            "etiket": "Düşük Doğruluk / Tahminci Okuma",
+            "etiket": "OKUMA_DOGRULUGU",
             "risk": "yüksek",
             "aciklama": "Okuma doğruluğu kritik eşik altındadır."
         })
         genel_aciklamalar.append("Okuma doğruluğu kritik düzeyde düşüktür.")
     elif 85 <= row["reading_accuracy_percent"] <= 91:
         sonuclar.append({
-            "etiket": "Düşük Doğruluk / Tahminci Okuma",
+            "etiket": "OKUMA_DOGRULUGU",
             "risk": "orta",
             "aciklama": "Okuma doğruluğu riskli aralıktadır."
         })
@@ -50,14 +50,14 @@ def analiz_et(row):
     # 3. Zayıf Ses Farkındalığı
     if row["phonological_awareness_percent"] < 50:
         sonuclar.append({
-            "etiket": "Zayıf Ses Farkındalığı",
+            "etiket": "FONOLOJIK_FARKINDALIK",
             "risk": "yüksek",
             "aciklama": "Ses farkındalığı kritik eşik altındadır."
         })
         genel_aciklamalar.append("Ses farkındalığı ciddi düzeyde düşüktür.")
     elif 50 <= row["phonological_awareness_percent"] <= 70:
         sonuclar.append({
-            "etiket": "Zayıf Ses Farkındalığı",
+            "etiket": "FONOLOJIK_FARKINDALIK",
             "risk": "orta",
             "aciklama": "Ses farkındalığı riskli aralıktadır."
         })
@@ -66,14 +66,14 @@ def analiz_et(row):
     # 4. Görsel Ayırt Etme Güçlüğü
     if row["visual_discrimination_score"] < 6.01:
         sonuclar.append({
-            "etiket": "Görsel Ayırt Etme Güçlüğü",
+            "etiket": "GORSEL_ISLEME",
             "risk": "yüksek",
             "aciklama": "Görsel ayırt etme puanı kritik eşik altındadır."
         })
         genel_aciklamalar.append("Görsel ayırt etme becerisi kritik düzeyde düşüktür.")
     elif 6.01 <= row["visual_discrimination_score"] <= 7.0:
         sonuclar.append({
-            "etiket": "Görsel Ayırt Etme Güçlüğü",
+            "etiket": "GORSEL_ISLEME",
             "risk": "orta",
             "aciklama": "Görsel ayırt etme puanı riskli aralıktadır."
         })
@@ -82,14 +82,14 @@ def analiz_et(row):
     # 5. Görsel Takip Eksikliği
     if row["visual_tracking_seconds"] > 92.25:
         sonuclar.append({
-            "etiket": "Görsel Takip Eksikliği",
+            "etiket": "GORSEL_TAKIP",
             "risk": "yüksek",
             "aciklama": "Görsel takip süresi kritik eşik üzerindedir."
         })
         genel_aciklamalar.append("Görsel takip performansı kritik düzeyde zayıftır.")
     elif 85 <= row["visual_tracking_seconds"] <= 92.25:
         sonuclar.append({
-            "etiket": "Görsel Takip Eksikliği",
+            "etiket": "GORSEL_TAKIP",
             "risk": "orta",
             "aciklama": "Görsel takip performansı riskli aralıktadır."
         })
@@ -98,14 +98,14 @@ def analiz_et(row):
     # 6. Sıralama (Sequencing) Hatası
     if row["sequencing_score"] < 85:
         sonuclar.append({
-            "etiket": "Sıralama (Sequencing) Hatası",
+            "etiket": "CALISMA_BELLEGI_SIRALAMA",
             "risk": "yüksek",
             "aciklama": "Sıralama becerisi kritik eşik altındadır."
         })
         genel_aciklamalar.append("Sıralama becerisi kritik düzeyde düşüktür.")
     elif 85 <= row["sequencing_score"] <= 90:
         sonuclar.append({
-            "etiket": "Sıralama (Sequencing) Hatası",
+            "etiket": "CALISMA_BELLEGI_SIRALAMA",
             "risk": "orta",
             "aciklama": "Sıralama becerisi riskli aralıktadır."
         })
