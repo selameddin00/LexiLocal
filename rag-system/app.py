@@ -1,41 +1,47 @@
-from sentence_transformers import SentenceTransformer
+import json
 import chromadb
+from fastapi import FastAPI
+from sentence_transformers import SentenceTransformer
 
-# model
+app = FastAPI()
+
+# JSON oku
+with open("data.json", "r", encoding="utf-8") as file:
+    data = json.load(file)
+
+texts = [item["content"] for item in data]
+ids = [item["id"] for item in data]
+
+# model yükle
 model = SentenceTransformer("all-MiniLM-L6-v2")
-
-# mock data
-texts = [
-    "Öğrenci harf atlama hatası yapıyor",
-    "Okuma hızı düşük seviyede",
-    "Heceleme problemi gözlemlendi"
-]
 
 # embedding oluştur
 embeddings = model.encode(texts)
 
-# chroma başlat
+# chromadb
 client = chromadb.Client()
-collection = client.create_collection(name="students")
+collection = client.create_collection(name="dyslexia_data")
 
-# veriyi ekle
 collection.add(
     documents=texts,
     embeddings=embeddings.tolist(),
-    ids=["1", "2", "3"]
+    ids=ids
 )
 
-print("Veriler vector DB'ye eklendi ✅")
+@app.get("/")
+def home():
+    return {"message": "RAG API çalışıyor 🚀"}
 
-# SORGULAMA (RAG kısmı)
-query = "öğrencinin okuma problemi nedir?"
+@app.get("/search")
+def search(query: str):
+    query_embedding = model.encode([query])
 
-query_embedding = model.encode([query])
+    results = collection.query(
+        query_embeddings=query_embedding.tolist(),
+        n_results=3
+    )
 
-results = collection.query(
-    query_embeddings=query_embedding.tolist(),
-    n_results=2
-)
-
-print("\nEn alakalı sonuçlar:")
-print(results["documents"])
+    return {
+        "query": query,
+        "results": results["documents"][0]
+    }
