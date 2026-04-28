@@ -13,7 +13,7 @@ texts = [item["content"] for item in data]
 ids = [item["id"] for item in data]
 
 # model yükle
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
 # embedding oluştur
 embeddings = model.encode(texts)
