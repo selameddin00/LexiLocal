@@ -1,0 +1,31 @@
+:root {
+  --color-primary: #1E3A5F;
+  --color-accent: #2E86C1;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-text-main: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-bg-card: #F9FAFB;
+  --color-border: #E5E7EB;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  background: #F9FAFB;
+  color: #1F2937;
+}
