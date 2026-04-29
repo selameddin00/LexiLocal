@@ -1,3 +1,4 @@
+require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') });
 const express = require("express");
 const { spawn } = require("child_process");
 const path = require("path");
@@ -98,6 +99,53 @@ function runPythonBridge(payload) {
       }
     });
     py.stdin.write(Buffer.from(JSON.stringify(payload), "utf8"));
+    py.stdin.end();
+  });
+}
+
+function runPythonRAG(labels, studentData) {
+  return new Promise((resolve, reject) => {
+    const analysisDir = path.join(__dirname, "..", "analysis");
+    const script = path.join(analysisDir, "rag_report.py");
+    const py = spawn("python", ["-X", "utf8", script, "--generate"], {
+      cwd: analysisDir,
+      windowsHide: true,
+      env: {
+        ...process.env,
+        PYTHONIOENCODING: "utf-8",
+        PYTHONUTF8: "1",
+      },
+    });
+    let out = "";
+    let err = "";
+    py.stdout.on("data", (c) => {
+      out += c.toString("utf8");
+    });
+    py.stderr.on("data", (c) => {
+      err += c.toString("utf8");
+    });
+    py.on("error", (e) => reject(e));
+    py.on("close", (code) => {
+      if (code !== 0) {
+        reject(new Error(err.trim() || `Python RAG çıkış kodu ${code}`));
+        return;
+      }
+      try {
+        const parsed = JSON.parse(out.trim());
+        resolve(parsed);
+      } catch (e) {
+        reject(new Error(`Python RAG JSON ayrıştırma hatası: ${e.message}`));
+      }
+    });
+    py.stdin.write(
+      Buffer.from(
+        JSON.stringify({
+          labels: Array.isArray(labels) ? labels : [],
+          student_data: studentData || {},
+        }),
+        "utf8"
+      )
+    );
     py.stdin.end();
   });
 }
@@ -345,6 +393,33 @@ app.post("/analyze/:studentId", async (req, res) => {
 
     const analysis = await runPythonBridge(bridgePayload);
 
+    const studentDataForRag = {
+      reading_speed: speed,
+      accuracy: acc,
+      errors: Array.isArray(data.errors) ? data.errors : [],
+    };
+    if (M.phonological_awareness_percent !== undefined) {
+      studentDataForRag.phonological_awareness_percent = M.phonological_awareness_percent;
+    }
+    if (M.visual_discrimination_score !== undefined) {
+      studentDataForRag.visual_discrimination_score = M.visual_discrimination_score;
+    }
+    if (M.visual_tracking_seconds !== undefined) {
+      studentDataForRag.visual_tracking_seconds = M.visual_tracking_seconds;
+    }
+    if (M.sequencing_score !== undefined) {
+      studentDataForRag.sequencing_score = M.sequencing_score;
+    }
+
+    let ragReport = null;
+    try {
+      const ragResult = await runPythonRAG(analysis.labels || [], studentDataForRag);
+      ragReport = ragResult && typeof ragResult.rag_report === "string" ? ragResult.rag_report : null;
+    } catch (ragErr) {
+      console.error("RAG raporu üretilemedi:", ragErr.message);
+      ragReport = null;
+    }
+
     await pool.query(
       "INSERT INTO analysis_results (student_id, summary, level, recommendations) VALUES ($1, $2, $3, $4)",
       [studentId, analysis.summary, analysis.level, analysis.recommendations]
@@ -364,6 +439,7 @@ app.post("/analyze/:studentId", async (req, res) => {
         summary: analysis.summary,
         level: analysis.level,
         recommendations: analysis.recommendations || [],
+        rag_report: ragReport,
       },
     });
   } catch (err) {
