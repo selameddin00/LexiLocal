@@ -2,9 +2,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import MetricCard from '../components/MetricCard';
 import RiskBadge from '../components/RiskBadge';
-import { mockReports } from '../data/mockReports';
-
-const KNOWN_IDS = new Set(['r001', 'r002', 'r003']);
+const REPORT_STORAGE_KEY = 'activeReportData';
 
 const SECTION_BG = {
   low:    '#F0FDF4',
@@ -17,6 +15,75 @@ const SECTION_BORDER = {
   medium: '#FDE68A',
   high:   '#FECDD3',
 };
+
+const LEVEL_TO_RISK = {
+  high: 'high',
+  medium: 'medium',
+  low: 'low',
+  good: 'low',
+  normal: 'low',
+};
+
+function normalizeList(value, fallback = []) {
+  return Array.isArray(value) ? value : fallback;
+}
+
+function toRiskLabel(level) {
+  const mapped = LEVEL_TO_RISK[(level || '').toLowerCase()];
+  if (mapped === 'high') return 'Yüksek Risk';
+  if (mapped === 'medium') return 'Orta Risk';
+  return 'Düşük Risk';
+}
+
+function toOverallScore(level) {
+  const mapped = LEVEL_TO_RISK[(level || '').toLowerCase()];
+  if (mapped === 'high') return 35;
+  if (mapped === 'medium') return 65;
+  return 85;
+}
+
+function mapBackendReportToUi(payload) {
+  const analysis = payload?.analysis ?? {};
+  const labels = normalizeList(analysis.labels);
+  const explanations = normalizeList(analysis.explanations);
+  const recommendations = normalizeList(analysis.recommendations);
+  const level = (analysis.level || '').toLowerCase();
+  const riskLevel = LEVEL_TO_RISK[level] || 'low';
+
+  const metrics = labels.map((label, index) => ({
+    metricName: label || `Analiz Bulgu ${index + 1}`,
+    score: null,
+    riskLevel,
+    summary: explanations[index] || analysis.summary || 'Detay bulunamadı.',
+    recommendations,
+  }));
+
+  if (metrics.length === 0) {
+    metrics.push({
+      metricName: 'Genel Bulgular',
+      score: null,
+      riskLevel,
+      summary: analysis.summary || 'Genel analiz sonucu mevcut değil.',
+      recommendations,
+    });
+  }
+
+  return {
+    date: new Date().toLocaleDateString('tr-TR'),
+    generalAssessment: {
+      riskLevel,
+      riskLabel: toRiskLabel(level),
+      overallScore: toOverallScore(level),
+      summary: analysis.summary || 'Analiz özeti bulunamadı.',
+    },
+    metrics,
+    generalSuggestions: recommendations.length > 0 ? recommendations : ['Öneri bulunamadı.'],
+    references: [
+      'Bu rapor backend analiz çıktısından oluşturulmuştur.',
+      ...(analysis.rag_report ? [analysis.rag_report] : []),
+    ],
+  };
+}
 
 function Spinner({ label = 'Yükleniyor...' }) {
   return (
@@ -94,21 +161,29 @@ export default function ReportPage() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      let resolved = null;
-
-      if (KNOWN_IDS.has(id)) {
-        resolved = mockReports[id];
-      } else {
-        const fallbackId = sessionStorage.getItem('activeReportId');
-        if (fallbackId && mockReports[fallbackId]) {
-          resolved = mockReports[fallbackId];
+      try {
+        const stored = sessionStorage.getItem(REPORT_STORAGE_KEY);
+        if (!stored) {
+          setUiState('empty');
+          return;
         }
-      }
 
-      if (resolved) {
-        setReport(resolved);
+        const parsed = JSON.parse(stored);
+        const activeId = sessionStorage.getItem('activeReportId');
+        const isRequestedReport =
+          (parsed?.id && parsed.id === id) ||
+          (activeId && activeId === id) ||
+          (!id && parsed?.id);
+
+        if (!isRequestedReport || !parsed?.raw) {
+          setUiState('empty');
+          return;
+        }
+
+        const mapped = mapBackendReportToUi(parsed.raw);
+        setReport(mapped);
         setUiState('success');
-      } else {
+      } catch {
         setUiState('empty');
       }
     }, 1000);
@@ -141,8 +216,8 @@ export default function ReportPage() {
     );
   }
 
-  const { generalAssessment, metrics, generalSuggestions, references, date } = report;
-  const { riskLevel, riskLabel, overallScore, summary } = generalAssessment;
+  const { generalAssessment, metrics, generalSuggestions, references, date } = report ?? {};
+  const { riskLevel, riskLabel, overallScore, summary } = generalAssessment ?? {};
 
   return (
     <div
@@ -216,7 +291,7 @@ export default function ReportPage() {
             Metrik Bazlı Analizler
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-            {metrics.map((metric) => (
+            {metrics?.map((metric) => (
               <MetricCard key={metric.metricName} metric={metric} />
             ))}
           </div>
@@ -230,7 +305,7 @@ export default function ReportPage() {
             Öneriler
           </h2>
           <ul style={{ paddingLeft: '20px', margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            {generalSuggestions.map((s, i) => (
+            {generalSuggestions?.map((s, i) => (
               <li key={i} style={{ fontSize: '15px', color: '#374151', lineHeight: '1.7' }}>
                 {s}
               </li>
@@ -246,7 +321,7 @@ export default function ReportPage() {
             Kaynaklar
           </h2>
           <ol style={{ paddingLeft: '20px', margin: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            {references.map((ref, i) => (
+            {references?.map((ref, i) => (
               <li key={i} style={{ fontSize: '13px', color: '#6B7280', lineHeight: '1.6' }}>
                 {ref}
               </li>
