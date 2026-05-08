@@ -4,7 +4,11 @@ from typing import List, Dict, Any
 
 import chromadb
 from sentence_transformers import SentenceTransformer
-from google import genai
+from groq import Groq
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 PRIORITY_ORDER = ["method", "benefit", "application", "effect", "definition"]
@@ -173,19 +177,26 @@ Her tespit edilen alan için:
 
 
 def _generate_with_gemini(prompt: str) -> str:
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        raise ValueError("GEMINI_API_KEY bulunamadı")
+        raise ValueError("GROQ_API_KEY bulunamadı")
 
-    client = genai.Client(api_key=api_key)
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
+    client = Groq(api_key=api_key)
+
+    response = client.chat.completions.create(
+        model="llama-3.1-8b-instant",
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
     )
-    report_text = (response.text or "").strip()
+
+    report_text = (response.choices[0].message.content or "").strip()
 
     if not report_text:
-        raise ValueError("Gemini boş rapor döndürdü.")
+        raise ValueError("Groq boş rapor döndürdü.")
 
     return report_text
 
@@ -279,3 +290,5 @@ if __name__ == "__main__":
 
         result = generate_rag_report(sample_labels, sample_data)
         print(result)
+
+
