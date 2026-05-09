@@ -4,8 +4,24 @@ const { spawn } = require("child_process");
 const path = require("path");
 const { Pool } = require('pg');
 const app = express();
+const cors = require("cors");
+const rateLimit = require("express-rate-limit");
 
 app.use(express.json());
+
+app.use(cors({
+  origin: ["http://localhost:3000"],
+  methods: ["GET", "POST"],
+  credentials: true
+}));
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: "Çok fazla istek gönderdiniz. Daha sonra tekrar deneyin."
+});
+
+app.use(limiter);
 
 /** DB disi: son okuma istegiyle gelen ek metrikler (analiz icin; sema degisikligi yok) */
 const lastReadingExtraMetrics = Object.create(null);
@@ -449,12 +465,34 @@ app.post("/analyze/:studentId", async (req, res) => {
 
 // Öğrencinin Analiz Geçmişini Getir
 app.get("/analysis/:studentId", async (req, res) => {
+  const studentId = Number(req.params.studentId);
+
+  if (isNaN(studentId)) {
+    return res.status(400).json({
+      message: "Geçersiz studentId"
+    });
+  }
+
   try {
-    const result = await pool.query("SELECT * FROM analysis_results WHERE student_id = $1", [req.params.studentId]);
+    const result = await pool.query(
+      "SELECT * FROM analysis_results WHERE student_id = $1",
+      [studentId]
+    );
+
     res.json(result.rows);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({
+      message: "Sunucuda bir hata oluştu"
+    });
   }
+});
+
+app.use((err, req, res, next) => {
+  console.error(err);
+
+  res.status(500).json({
+    message: "Sunucuda bir hata oluştu"
+  });
 });
 
 app.listen(3000, () => {
