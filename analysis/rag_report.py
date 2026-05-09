@@ -148,32 +148,108 @@ def _format_chunks_by_label(labels: List[str], chunks_by_label: Dict[str, List[D
 
 
 def _build_prompt(labels: List[str], student_data: Dict[str, Any], chunks_text: str) -> str:
-    return f"""Sen bir eğitim uzmanısın.
+    metrikler = f"""- Okuma hızı: {student_data.get('reading_speed', '-')} kelime/dakika
+- Okuma doğruluğu: {student_data.get('accuracy', '-')}%
+- Ses farkındalığı: {student_data.get('phonological_awareness_percent', '-')}%
+- Görsel ayırt etme puanı: {student_data.get('visual_discrimination_score', '-')}
+- Görsel takip süresi: {student_data.get('visual_tracking_seconds', '-')} saniye
+- Sıralama becerisi puanı: {student_data.get('sequencing_score', '-')}"""
 
-Amaç:
-Disleksi riski taşıyan bir öğrenci için açıklayıcı bir rapor üretmek.
+    return f"""Sen bir eğitim destek uzmanısın. Aşağıdaki öğrenci verilerini ve referans bilgileri kullanarak Türkçe bir destek raporu yaz.
 
-Kurallar:
-- Teknik ama anlaşılır dil kullan
-- Tıbbi teşhis koyma
-- Öğretmen ve veliye yönelik yaz
-- Her başlıkta kısa açıklama + öneri ver
+KURALLAR:
+- Raporun tamamı Türkçe olacak.
+- Tıbbi teşhis koyma, yalnızca gözlem ve öneri sun.
+- Öğretmen ve veliye hitap et.
+- "görülmektedir", "anlaşılmaktadır", "ifade etmektedir", "gösterebilir", "sağlayabilir" gibi robotik ifadeler kullanma.
+- Aktif, net ve anlaşılır cümleler kur.
+- student_id, "Örnek Student", "Ham Veri", "Kimlik", "Öğrenci Verisi" gibi teknik ifadeleri rapora yansıtma.
+- Aşağıdaki çıktı şablonunu birebir kullan.
+- Önce ## Genel Öneriler, ardından tespit edilen her label için şablondaki blok sırasıyla gelsin; bu genel sırayı değiştirme.
+- Her tespit edilen label için aynı label yapısını tekrarla.
+- Tespit edilmeyen alanlar için bölüm üretme.
+- Referans bilgileri kullan, ancak birebir kopyalama.
+- Öneriler somut, uygulanabilir ve öğretmen/veli tarafından anlaşılır olmalı.
+- Raporun en başına "## Genel Öneriler" başlığı ekle.
+- "## Genel Öneriler" bölümüne tüm alanlara uygulanabilecek genel destek önerilerini yaz.
+- "Özel eğitime katılım", "uzman desteği", "aile-öğretmen iş birliği", "düzenli takip" gibi genel öneriler yalnızca "## Genel Öneriler" bölümünde yer almalı.
+- Genel önerileri her metrik altında tekrar etme.
+- Her metrik altındaki **Öneriler:** bölümüne yalnızca o metriğe özgü, referans bilgilerden çıkarılan spesifik yöntemleri yaz.
+- Her metrik altındaki öneriler ilgili alanın güçlüğüne doğrudan bağlı olmalı.
+- Farklı metrikler altında aynı yöntemi tekrar etme.
+- Öneriler bölümünde her öneriyi yöntem adıyla başlat ve yöntem adını **bold** yaz.
+- Yöntemin nasıl uygulanacağını referans bilgilerden çıkar.
+- Teknik terimleri öğretmen ve velinin anlayacağı şekilde sadeleştir.
+- Referans metni birebir kopyalama, içeriği kavrayıp yeniden ifade et.
+- **Etkisi:** bölümünü somut ve hissettiren bir dille yaz.
+- "Zorluk yaşayabilir", "etkileyebilir", "güçlük oluşturabilir" gibi yüzeysel ve belirsiz ifadeler kullanma.
+- **Etkisi:** bölümünde şu anlatım mantığını kullan: "Bu yetersizlik nedeniyle öğrenci [somut güçlük 1], [somut güçlük 2] ve [somut güçlük 3] ile karşılaşır."
+- Okuyucunun öğrencinin yaşadığı güçlüğü somut olarak anlayacağı açık örnekler kullan.
+- Her label için yalnızca o label ile ilişkili somut etki ve yöntemleri yaz.
+- Yeni bölüm başlığı ekleme. Yalnızca "## Genel Öneriler" ve her label için "## [LABEL TÜRKÇE ADI]" başlıklarını kullan.
 
-Öğrenci Verisi:
-{json.dumps(student_data, ensure_ascii=False, indent=2)}
+ÖĞRENCİ METRİKLERİ:
+{metrikler}
 
-Tespit Edilen Alanlar:
+TESPİT EDİLEN ALANLAR:
 {", ".join(labels)}
 
-Referans Bilgiler (label gruplu):
+LABEL TÜRKÇE KARŞILIKLARI:
+- OKUMA_HIZI → Okuma Hızı
+- OKUMA_DOGRULUGU → Okuma Doğruluğu
+- FONOLOJIK_FARKINDALIK → Fonolojik Farkındalık
+- GORSEL_ISLEME → Görsel İşleme
+- GORSEL_TAKIP → Görsel Takip
+- CALISMA_BELLEGI_SIRALAMA → Çalışma Belleği ve Sıralama
+
+REFERANS BİLGİLER:
 {chunks_text}
 
-Çıktı formatı:
-Her tespit edilen alan için:
-1. Durum Açıklaması
-2. Olası Etkiler
-3. Literatüre Dayalı Öneriler
-"""
+FORMAT ZORUNLULUKLARI:
+- Rapor "## Genel Öneriler" ile başlamalı; bu başlıktan önce --- koyma.
+- Genel öneri maddelerinde her maddeyi "- **[Kısa başlık]:** açıklama" biçiminde yaz.
+- "## Genel Öneriler" bölümünden sonra her label bloğu --- ile başlayacak; --- satırından sonra ## ile Türkçe alan başlığı gelecek.
+- Her label için ## başlık kullan; başlıkta yalnızca yukarıdaki eşleştirmeye göre Türkçe alan adı yaz.
+- Her label altında yalnızca şu üç bölüm olacak ve bu sırayı değiştirme:
+  - **Durum:**
+  - **Etkisi:**
+  - **Öneriler:**
+- "Genel Değerlendirme", "Ham Veri", "Kimlik", "Öğrenci Bilgisi" veya bunlara benzeyen ekstra bölümler oluşturma.
+- Çıktıda köşeli parantezli yer tutucu ifadeleri bırakma; hepsini dolu Türkçe metinle değiştir.
+- Markdown formatını koru.
+
+ÇIKTI ŞABLONU:
+Aşağıdaki yapıyı birebir kullan. Köşeli parantezleri çıktı içinde bırakma, içlerini doldur.
+
+## Genel Öneriler
+
+- **[Genel Öneri 1]:** [Tüm alanlara uygulanabilecek genel destek önerisi.]
+- **[Genel Öneri 2]:** [...]
+
+---
+## [İLK LABEL TÜRKÇE ADI]
+
+**Durum:** [Bu alandaki ölçüm değerini ve ne anlama geldiğini 1-2 cümleyle açıkla.]
+
+**Etkisi:** [Bu yetersizlik nedeniyle öğrencinin yaşayacağı somut güçlükleri, yukarıdaki üçlü yapı ve açık örneklerle anlat; "etkileyebilir" gibi belirsiz ifadeler kullanma.]
+
+**Öneriler:**
+- **[Yöntem Adı]:** [Bu yöntemi referans bilgilerden anlayarak, teknik terimleri sadeleştirerek açıkla. Birebir kopyalama.]
+- **[Yöntem Adı]:** [...]
+
+---
+## [İKİNCİ LABEL TÜRKÇE ADI]
+
+**Durum:** [...]
+
+**Etkisi:** [...]
+
+**Öneriler:**
+- **[Yöntem Adı]:** [...]
+- **[Yöntem Adı]:** [...]
+
+---
+[Her label için aynı yapıyı tekrarla.]"""
 
 
 def _generate_with_gemini(prompt: str) -> str:
@@ -184,7 +260,9 @@ def _generate_with_gemini(prompt: str) -> str:
     client = Groq(api_key=api_key)
 
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model="llama-3.3-70b-versatile",
+        max_tokens=8000,
+        temperature=0,
         messages=[
             {
                 "role": "user",

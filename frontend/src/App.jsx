@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import ReactMarkdown from 'react-markdown';
 
 function randInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -11,10 +12,7 @@ function randFloat(min, max, decimals = 1) {
 /**
  * Python `ogrenci_uret` ile uyumlu araliklar; ara sıra dusuk/orta/yuksek profil.
  */
-function generateSyntheticPayload(studentId) {
-  const r = Math.random();
-  const band = r < 0.34 ? "low" : r < 0.67 ? "mid" : "high";
-
+function generateSyntheticPayload(studentId, band) {
   const ranges = {
     low: {
       reading_speed: [40, 59],
@@ -91,6 +89,7 @@ export default function App() {
   const [isDataReady, setIsDataReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const [statusMsg, setStatusMsg] = useState(null);
+  const [selectedBand, setSelectedBand] = useState("low");
 
   const studentIdNum = Number(studentIdInput);
   const studentIdValid = Number.isInteger(studentIdNum) && studentIdNum > 0;
@@ -102,7 +101,7 @@ export default function App() {
       setStatusMsg({ type: "error", text: "Geçerli bir öğrenci ID girin (pozitif tam sayı)." });
       return;
     }
-    const payload = generateSyntheticPayload(studentIdNum);
+    const payload = generateSyntheticPayload(studentIdNum, selectedBand);
     setCurrentData(payload);
     setIsDataReady(false);
     setBusy(true);
@@ -123,7 +122,7 @@ export default function App() {
     } finally {
       setBusy(false);
     }
-  }, [studentIdNum, studentIdValid]);
+  }, [studentIdNum, studentIdValid, selectedBand]);
 
   const runAnalyze = useCallback(async () => {
     if (!isDataReady || !studentIdValid) return;
@@ -172,6 +171,19 @@ export default function App() {
             disabled={busy}
           />
           <small>Veritabanında kayıtlı öğrenci kimliği (ör. 1).</small>
+        </div>
+        <div className="field">
+          <label htmlFor="risk-profile">Risk Profili</label>
+          <select
+            id="risk-profile"
+            value={selectedBand}
+            onChange={(e) => setSelectedBand(e.target.value)}
+            disabled={busy}
+          >
+            <option value="low">Yüksek Risk</option>
+            <option value="mid">Orta Risk</option>
+            <option value="high">Düşük Risk</option>
+          </select>
         </div>
         <div className="actions">
           <button type="button" onClick={runGenerate} disabled={busy}>
@@ -222,26 +234,12 @@ export default function App() {
             <p>
               <strong>Özet:</strong> {a.summary}
             </p>
-            {Array.isArray(a.recommendations) && a.recommendations.length > 0 && (
+            {a.rag_report && (
               <div>
-                <strong>Öneriler</strong>
-                <ul>
-                  {a.recommendations.map((r, i) => (
-                    <li key={i}>{r}</li>
-                  ))}
-                </ul>
+                <strong>RAG Raporu</strong>
+                <ReactMarkdown>{a.rag_report}</ReactMarkdown>
               </div>
             )}
-            <div className="pairs">
-              <strong>Etiketler ve açıklamalar</strong>
-              {Array.isArray(a.labels) &&
-                a.labels.map((label, i) => (
-                  <div key={i} className="pair">
-                    <strong>{label}</strong>
-                    <span>{Array.isArray(a.explanations) ? a.explanations[i] : ""}</span>
-                  </div>
-                ))}
-            </div>
           </>
         )}
       </div>
