@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import MetricInput from '../components/MetricInput';
-import { mockAnalyze } from '../utils/mockAnalyze';
 
 const FIELDS = [
   { name: 'okumaHizi',             label: 'Okuma Hızı',             inputType: 'number', min: 0, max: 300 },
@@ -14,6 +13,34 @@ const FIELDS = [
 
 const INITIAL_VALUES = Object.fromEntries(FIELDS.map((f) => [f.name, 0]));
 const INITIAL_ERRORS = Object.fromEntries(FIELDS.map((f) => [f.name, null]));
+const REPORT_STORAGE_KEY = 'activeReportData';
+
+function mapFormDataToBackendMetrics(formData) {
+  return {
+    reading_speed: Number(formData.okumaHizi),
+    accuracy: Number(formData.dogrulukOrani),
+    errors: [],
+    phonological_awareness_percent: Number(formData.fonolojikFarkındalık),
+    visual_discrimination_score: Number(formData.gorselIsleme),
+    visual_tracking_seconds: Number(formData.gorselTakip),
+    sequencing_score: Number(formData.siralamaBecerisi),
+  };
+}
+
+async function requestJson(url, options) {
+  const response = await fetch(url, {
+    headers: { 'Content-Type': 'application/json' },
+    ...options,
+  });
+
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    const message = data?.message || data?.error || 'İşlem sırasında bir hata oluştu.';
+    throw new Error(message);
+  }
+
+  return data;
+}
 
 function validate(formData) {
   const errors = { ...INITIAL_ERRORS };
@@ -54,9 +81,47 @@ export default function TestPage() {
 
     setUiState('loading');
     try {
-      await mockAnalyze(formData);
-      sessionStorage.setItem('activeReportId', 'r001');
-      navigate('/report/r_' + Date.now(), { replace: true });
+      const metricsPayload = mapFormDataToBackendMetrics(formData);
+
+      const createdStudent = await requestJson('/api/students', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: 'Frontend Test Student',
+          age: 10,
+          grade: '4',
+          diagnosis: 'Belirtilmedi',
+        }),
+      });
+      const studentId = createdStudent?.data?.id;
+      if (!studentId) {
+        throw new Error('Öğrenci kaydı oluşturulamadı.');
+      }
+
+      await requestJson('/api/reading-data', {
+        method: 'POST',
+        body: JSON.stringify({
+          student_id: studentId,
+          ...metricsPayload,
+        }),
+      });
+
+      const analyzeResult = await requestJson(`/api/analyze/${studentId}`, {
+        method: 'POST',
+        body: JSON.stringify(metricsPayload),
+      });
+
+      const reportId = `r_${Date.now()}`;
+      const reportData = {
+        id: reportId,
+        createdAt: new Date().toISOString(),
+        source: 'backend',
+        studentId,
+        raw: analyzeResult,
+      };
+
+      sessionStorage.setItem('activeReportId', reportId);
+      sessionStorage.setItem(REPORT_STORAGE_KEY, JSON.stringify(reportData));
+      navigate(`/report/${reportId}`, { replace: true });
     } catch {
       setUiState('error');
     }
