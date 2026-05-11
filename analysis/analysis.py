@@ -15,9 +15,9 @@ def ogrenci_uret():
         "reading_speed_wpcm": random.randint(40, 150),
         "reading_accuracy_percent": random.randint(85, 100),
         "phonological_awareness_percent": random.randint(50, 100),
-        "visual_discrimination_score": round(random.uniform(5.0, 13.0), 1),
-        "visual_tracking_seconds": round(random.uniform(57.5, 92.25), 1),
-        "sequencing_score": random.randint(85, 115)
+        "letter_symbol_recognition_accuracy": round(random.uniform(5.0, 13.0), 1),
+        "rereading_rate": round(random.uniform(57.5, 92.25), 1),
+        "working_memory_accuracy": random.randint(85, 115)
     }
 
 def analiz_et(row):
@@ -72,53 +72,53 @@ def analiz_et(row):
         })
         genel_aciklamalar.append("Ses farkındalığı riskli düzeydedir.")
 
-    # 4. Görsel Ayırt Etme Güçlüğü
-    if row["visual_discrimination_score"] < 6.01:
+    # 4. Harf-Sembol Tanıma Doğruluğu 
+    if row["letter_symbol_recognition_accuracy"] < 6.01:
         sonuclar.append({
-            "etiket": "GORSEL_ISLEME",
+            "etiket": "HARF_SEMBOL_TANIMA_DOGRULUGU",
             "risk": "yüksek",
-            "aciklama": "Görsel ayırt etme puanı kritik eşik altındadır."
+            "aciklama": "Harf-Sembol Tanıma puanı kritik eşik altındadır."
         })
         genel_aciklamalar.append("Görsel ayırt etme becerisi kritik düzeyde düşüktür.")
-    elif 6.01 <= row["visual_discrimination_score"] <= 7.0:
+    elif 6.01 <= row["letter_symbol_recognition_accuracy"] <= 7.0:
         sonuclar.append({
-            "etiket": "GORSEL_ISLEME",
+            "etiket": "HARF_SEMBOL_TANIMA_DOGRULUGU",
             "risk": "orta",
-            "aciklama": "Görsel ayırt etme puanı riskli aralıktadır."
+            "aciklama": "Harf-Sembol Tanıma puanı riskli aralıktadır."
         })
-        genel_aciklamalar.append("Görsel ayırt etme becerisi riskli düzeydedir.")
+        genel_aciklamalar.append("Harf-Sembol Tanıma becerisi riskli düzeydedir.")
 
-    # 5. Görsel Takip Eksikliği
-    if row["visual_tracking_seconds"] > 92.25:
+    # 5. Okuma Sırasında Yeniden Okuma Oranı 
+    if row["rereading_rate"] > 92.25:
         sonuclar.append({
-            "etiket": "GORSEL_TAKIP",
+            "etiket": "OKUMA_SIRASINDA_YENIDEN_OKUMA_ORANI",
             "risk": "yüksek",
-            "aciklama": "Görsel takip süresi kritik eşik üzerindedir."
+            "aciklama": "Okuma Sırasında Yeniden Okuma Oranı kritik eşik üzerindedir."
         })
-        genel_aciklamalar.append("Görsel takip performansı kritik düzeyde zayıftır.")
-    elif 85 <= row["visual_tracking_seconds"] <= 92.25:
+        genel_aciklamalar.append("Okuma Sırasında Yeniden Okuma Oranı kritik düzeyde yüksektr.")
+    elif 85 <= row["rereading_rate"] <= 92.25:
         sonuclar.append({
-            "etiket": "GORSEL_TAKIP",
+            "etiket": "OKUMA_SIRASINDA_YENIDEN_OKUMA_ORANI",
             "risk": "orta",
-            "aciklama": "Görsel takip performansı riskli aralıktadır."
+            "aciklama": "Okuma Sırasında Yeniden Okuma Oranı riskli aralıktadır."
         })
-        genel_aciklamalar.append("Görsel takip performansı riskli düzeydedir.")
+        genel_aciklamalar.append("Okuma Sırasında Yeniden Okuma Oranı riskli düzeydedir.")
 
-    # 6. Sıralama (Sequencing) Hatası
-    if row["sequencing_score"] < 85:
+    # 6. Çalışma Belleği Doğruluğu
+    if row["working_memory_accuracy"] < 85:
         sonuclar.append({
-            "etiket": "CALISMA_BELLEGI_SIRALAMA",
+            "etiket": "CALISMA_BELLEGI_DOGRULUGU",
             "risk": "yüksek",
-            "aciklama": "Sıralama becerisi kritik eşik altındadır."
+            "aciklama": "Çalışma belleği doğruluğu kritik eşik altındadır."
         })
-        genel_aciklamalar.append("Sıralama becerisi kritik düzeyde düşüktür.")
-    elif 85 <= row["sequencing_score"] <= 90:
+        genel_aciklamalar.append("Çalışma belleği doğruluğu kritik düzeyde düşüktür.")
+    elif 85 <= row["working_memory_accuracy"] <= 90:
         sonuclar.append({
-            "etiket": "CALISMA_BELLEGI_SIRALAMA",
+            "etiket": "CALISMA_BELLEGI_DOGRULUGU",
             "risk": "orta",
-            "aciklama": "Sıralama becerisi riskli aralıktadır."
+            "aciklama": "Çalışma belleği doğruluğu riskli aralıktadır."
         })
-        genel_aciklamalar.append("Sıralama becerisi riskli düzeydedir.")
+        genel_aciklamalar.append("Çalışma belleği doğruluğu riskli düzeydedir.")
 
     if not sonuclar:
         sonuclar.append({
@@ -163,9 +163,9 @@ def _payload_to_analiz_row(payload):
         "reading_speed_wpcm": int(rs) if rs is not None else 0,
         "reading_accuracy_percent": int(acc) if acc is not None else 100,
         "phonological_awareness_percent": neu_int("phonological_awareness_percent", 100),
-        "visual_discrimination_score": neu_float("visual_discrimination_score", 10.0),
-        "visual_tracking_seconds": neu_float("visual_tracking_seconds", 50.0),
-        "sequencing_score": neu_int("sequencing_score", 100),
+        "letter_symbol_recognition_accuracy": neu_float("letter_symbol_recognition_accuracy", 10.0),
+        "rereading_rate": neu_float("rereading_rate", 50.0),
+        "working_memory_accuracy": neu_int("working_memory_accuracy", 100),
     }
 
 
