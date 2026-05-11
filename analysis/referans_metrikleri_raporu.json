@@ -376,14 +376,6 @@
     "source": "Okuma Doğruluğu Raporu"
   },
   {
-    "id": "CH048",
-    "label": "OKUMA_DOGRULUGU",
-    "type": "source",
-    "method_name": "Heceleme Etkinliğiyle Desteklenen Kod Öğretimi",
-    "content": "Clemens ve ark. (2025) — Mind, Brain, and Education",
-    "source": "Clemens ve ark. (2025)"
-  },
-  {
     "id": "CH049",
     "label": "OKUMA_DOGRULUGU",
     "type": "general_evaluation",
@@ -405,14 +397,6 @@
     "type": "definition",
     "method_name": null,
     "content": "Fonolojik farkındalık, konuşma dilindeki sesleri (fonemleri) algılama, ayırt etme ve işleme yeteneğidir.",
-    "source": "Fonolojik Farkındalık Raporu"
-  },
-  {
-    "id": "CH052",
-    "label": "FONOLOJIK_FARKINDALIK",
-    "type": "effect",
-    "method_name": null,
-    "content": "Fonolojik farkındalık, erken okuma becerilerinin en güçlü yordayıcılarından biri olarak kabul edilmektedir; harf-ses eşleştirmesini ve kelime okuma doğruluğunu doğrudan etkiler.",
     "source": "Fonolojik Farkındalık Raporu"
   },
   {
@@ -798,5 +782,2389 @@
     "method_name": null,
     "content": "Çalışma belleği eğitimi, okuma ve diğer akademik becerileri destekleyebilen bir yaklaşım olarak öne çıkmaktadır. Ancak etkilerin bireysel farklılıklara göre değişebileceği göz önünde bulundurulmalıdır.",
     "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH101",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Koşullu Hız Antrenmanı – RAVE-O Programı",
+    "content": "Kelime tanıma hızını, morfolojik bilgiyi ve okuduğunu anlamayı bütünleştiren kapsamlı akıcılık müdahalesi programıdır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH102",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Koşullu Hız Antrenmanı – RAVE-O Programı",
+    "content": "RAVE-O (Retrieval, Automaticity, Vocabulary, Engagement- Orthography) çerçevesinde çocuklara hızlı kelime erişimi sağlayan mini kelime çekirdekleri (core words) öğretilir. Her seansta çok anlamlı kelimeler, arka plan bilgisi ve sözlü oyunlar kullanılarak kelime tanıma otomasyonu hız egzersizleriyle pekiştirilir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH103",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Koşullu Hız Antrenmanı – RAVE-O Programı",
+    "content": "Okuma hızı ve anlama üzerinde güçlü etki büyüklükleri (d > 0.80) bildiren kontrollü çalışmalar mevcuttur. Hem hız hem anlama boyutunu eş zamanlı hedeflemesi RAVE-O'yu yalnızca akıcılık odaklı yöntemlerden ayırır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH104",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Koşullu Hız Antrenmanı – RAVE-O Programı",
+    "content": "Wolf, M., Miller, L., & Donnelly, K. (2000). Retrieval, Automaticity, Vocabulary Elaboration, Orthography (RAVE-O): A comprehensive, fluency-based reading intervention program. Journal of Learning Disabilities, 33(4), 375–386. doi:10.1177/002221940003300408",
+    "source": "Wolf, M., Miller, L., & Donnelly, K. (2000). Retrieval, Automaticity, Vocabulary Elaboration, Orthography (RAVE-O): A comprehensive, fluency-based reading intervention program. Journal of Learning Disabilities, 33(4), 375–386. doi:10.1177/002221940003300408"
+  },
+  {
+    "id": "CH105",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (RAN Training)",
+    "content": "Renk, nesne, harf ve rakamların hızla adlandırılması pratiğiyle fonolojik erişim ve kelime tanıma hızını artıran eğitim yöntemidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH106",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (RAN Training)",
+    "content": "Çocuklara standart RAN kartları (renk, nesne, harf, rakam dizileri) yüksek sesle ve mümkün olduğunca hızlı biçimde adlandırma görevi uygulanır. Süre ve hata sayısı her seansta kayıt altına alınır; hız artışı hedeflenerek görev sıklığı düzenlenir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH107",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (RAN Training)",
+    "content": "Yavaş RAN, disleksinin en güçlü bilişsel göstergelerinden biridir. RAN eğitiminin okuma hızını ve kelime tanıma otomatikliğini artırdığı ve bu kazanımların uzun vadede korunduğu gösterilmiştir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH108",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (RAN Training)",
+    "content": "Norton, E. S., & Wolf, M. (2012). Rapid automatized naming (RAN) and reading fluency. Annual Review of Psychology, 63, 427–452. doi:10.1146/annurev-psych-120710-100431",
+    "source": "Norton, E. S., & Wolf, M. (2012). Rapid automatized naming (RAN) and reading fluency. Annual Review of Psychology, 63, 427–452. doi:10.1146/annurev-psych-120710-100431"
+  },
+  {
+    "id": "CH109",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Okuyucu Tiyatrosu (Readers' Theatre)",
+    "content": "Çocukların bir oyun metnindeki rolleri defalarca prova ederek sahneye taşıdığı, otantik bağlamlı akıcılık müdahalesidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH110",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Okuyucu Tiyatrosu (Readers' Theatre)",
+    "content": "Her çocuğa kendi okuma düzeyine uygun bir senaryo rolü verilir. Rol metni sahneleme öncesinde birden fazla kez prova edilir; vurgu, tonlama ve hız üzerine geri bildirim sağlanır. Süreç, bağımsız yinelenen okumayı anlamlı ve motive edici bir çerçeveye taşır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH111",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Okuyucu Tiyatrosu (Readers' Theatre)",
+    "content": "Yinelenen okuma pratiğini içsel motivasyonla birleştirir; hem okuma hızı hem prozodik akıcılık üzerinde güçlü etkiler elde edildiği randomize kontrollü çalışmalarla gösterilmiştir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH112",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Okuyucu Tiyatrosu (Readers' Theatre)",
+    "content": "Therrien, W. J. (2004). Fluency and comprehension gains as a result of repeated reading: A meta-analysis. Remedial and Special Education, 25(4), 252–261. doi:10.1177/07419325040250040801",
+    "source": "Therrien, W. J. (2004). Fluency and comprehension gains as a result of repeated reading: A meta-analysis. Remedial and Special Education, 25(4), 252–261. doi:10.1177/07419325040250040801"
+  },
+  {
+    "id": "CH113",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Ölçümlü Sözel Okuma (Curriculum-Based Measurement – CBM-R)",
+    "content": "Öğrencinin dakikada doğru okuduğu kelime sayısını (DKOK) düzenli aralıklarla ölçen ve müdahaleyi yönlendiren veri temelli akıcılık izleme yaklaşımıdır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH114",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Ölçümlü Sözel Okuma (Curriculum-Based Measurement – CBM-R)",
+    "content": "Her hafta çocuğa sınıf düzeyinde yeni bir metin parçası (genellikle 1 dakika) okutulur; DKOK hesaplanarak grafik üzerinde izlenir. Belirli bir büyüme eğrisi yakalanmazsa müdahale yoğunluğu ya da türü güncellenir. DIBELS ve AIMSweb yaygın kullanılan CBM araçlarıdır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH115",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Ölçümlü Sözel Okuma (Curriculum-Based Measurement – CBM-R)",
+    "content": "Akıcılık müdahalelerinin etkinliğini izlemenin altın standardı olarak kabul edilmektedir. CBM-R'nin okuma başarısını güvenilir biçimde yordadığı ve veri temelli kararların öğrenci kazanımlarını artırdığı kapsamlı araştırmalarla kanıtlanmıştır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH116",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Ölçümlü Sözel Okuma (Curriculum-Based Measurement – CBM-R)",
+    "content": "Deno, S. L. (2003). Developments in curriculum-based measurement. The Journal of Special Education, 37(3), 184–192. doi:10.1177/00224669030370030801",
+    "source": "Deno, S. L. (2003). Developments in curriculum-based measurement. The Journal of Special Education, 37(3), 184–192. doi:10.1177/00224669030370030801"
+  },
+  {
+    "id": "CH117",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Harf-Ses Entegrasyon Eğitimi (Letter-Speech Sound Integration Training)",
+    "content": "Harfler ile konuşma sesleri arasındaki çok duyusal eşleşmenin otomatikleştirilmesini hedefleyen, dislekside akıcılık kazanımına yönelik randomize kontrollü müdahaledir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH118",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Harf-Ses Entegrasyon Eğitimi (Letter-Speech Sound Integration Training)",
+    "content": "Çocuklara ses-harf çiftleri yoğun ve tekrarlı biçimde, görsel (harf) ve işitsel (fonem) uyaranların eş zamanlı sunumuyla öğretilir. Her seans bireysel olarak uygulanır; toplamda 34 seans (45 dk/seans) boyunca harf-ses eşleştirme otomasyonu üzerine yoğunlaşılır. Süreç, hız baskısı altında gerçekleştirilen kelime okuma görevleriyle pekiştirilir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH119",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Harf-Ses Entegrasyon Eğitimi (Letter-Speech Sound Integration Training)",
+    "content": "Randomize kontrollü çalışmada, disleksili çocuklarda 8-9 yaş grubunda kelime okuma ve heceleme ölçümlerinde tipik okuyuculara kıyasla çok daha hızlı ilerleme kaydedilmiştir. Bulgular, harf-ses entegrasyon yetersizliğinin disleksik okuma güçlüğünün temel nedeni olduğu kuramsal çerçeveyi desteklemektedir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH120",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Harf-Ses Entegrasyon Eğitimi (Letter-Speech Sound Integration Training)",
+    "content": "Fraga González, G., Žarić, G., Tijms, J., Bonte, M., Blomert, L., & van der Molen, M. W. (2015). A randomized controlled trial on the beneficial effects of training letter-speech sound integration on reading fluency in children with dyslexia. PLOS ONE, 10(12), e0143914. doi:10.1371/journal.pone.0143914",
+    "source": "Fraga González, G., Žarić, G., Tijms, J., Bonte, M., Blomert, L., & van der Molen, M. W. (2015). A randomized controlled trial on the beneficial effects of training letter-speech sound integration on reading fluency in children with dyslexia. PLOS ONE, 10(12), e0143914. doi:10.1371/journal.pone.0143914"
+  },
+  {
+    "id": "CH121",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Çift Kodlama Temelli Kelime Tanıma Hızlandırma (Sight Word Automaticity Training)",
+    "content": "Yüksek frekanslı görsel kelimelerin otomatik ve hızlı tanınmasını hedefleyen yoğun tekrar ve çoklu kodlama temelli müdahaledir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH122",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Çift Kodlama Temelli Kelime Tanıma Hızlandırma (Sight Word Automaticity Training)",
+    "content": "Çocuklara Dolch/Fry listesindeki yüksek frekanslı kelimeler flashcard, dijital uygulama ve çok duyusal tekniklerle (görsel-işitsel-kinestetik) çalıştırılır. Her seansta hedeflenen kelimelerin tanıma süresi ölçülür; belirli hız eşiğine ulaşılana dek tekrar edilir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH123",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Çift Kodlama Temelli Kelime Tanıma Hızlandırma (Sight Word Automaticity Training)",
+    "content": "Kelime tanıma otomasyonu okuma akıcılığının temel alt bileşenidir. Yüksek frekanslı kelimelerin otomatikleştirilmesinin okuma hızını ve anlama düzeyini güçlü biçimde artırdığı gösterilmiştir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH124",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Çift Kodlama Temelli Kelime Tanıma Hızlandırma (Sight Word Automaticity Training)",
+    "content": "Ehri, L. C. (2005). Learning to read words: Theory, findings, and issues. Scientific Studies of Reading, 9(2), 167–188. doi:10.1207/s1532799xssr0902_4",
+    "source": "Ehri, L. C. (2005). Learning to read words: Theory, findings, and issues. Scientific Studies of Reading, 9(2), 167–188. doi:10.1207/s1532799xssr0902_4"
+  },
+  {
+    "id": "CH125",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Bilgisayar Destekli Adaptif Okuma Hızı Eğitimi (Computer-Assisted Fluency Training)",
+    "content": "Çocuğun anlık okuma performansına göre güçlük ve hız düzeyini otomatik olarak ayarlayan teknoloji tabanlı akıcılık müdahalesidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH126",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Bilgisayar Destekli Adaptif Okuma Hızı Eğitimi (Computer-Assisted Fluency Training)",
+    "content": "GraphoGame Fluency, Lexia Core5 ya da Read Naturally Live gibi platformlar aracılığıyla çocuk metinleri okur; sistem okuma hızını ve doğruluğunu anlık ölçer ve bir sonraki metin parçasının güçlük düzeyini buna göre belirler. Sesli okuma kaydedilerek otomatik geri bildirim sağlanır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH127",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Bilgisayar Destekli Adaptif Okuma Hızı Eğitimi (Computer-Assisted Fluency Training)",
+    "content": "Bireyselleştirilmiş antrenman imkânı sunması ve anlık geri bildirim üretmesi nedeniyle öğretmen destekli akıcılık eğitimlerine kıyasla benzer ya da üstün kazanımlar bildiren randomize kontrollü çalışmalar mevcuttur.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH128",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Bilgisayar Destekli Adaptif Okuma Hızı Eğitimi (Computer-Assisted Fluency Training)",
+    "content": "Lyytinen, H., Erskine, J., Kujala, J., Ojanen, E., & Richardson, U. (2009). In search of a science-based application: A learning tool for reading acquisition. Scandinavian Journal of Psychology, 50(6), 668–675. doi:10.1111/j.1467-9450.2009.00791.x",
+    "source": "Lyytinen, H., Erskine, J., Kujala, J., Ojanen, E., & Richardson, U. (2009). In search of a science-based application: A learning tool for reading acquisition. Scandinavian Journal of Psychology, 50(6), 668–675. doi:10.1111/j.1467-9450.2009.00791.x"
+  },
+  {
+    "id": "CH129",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Kelime Tanıma Akıcılığı İçin Görsel Kelime Ağı Eğitimi (Orthographic Mapping / Word Mapping)",
+    "content": "Kelimelerin görsel, fonolojik ve anlamsal bileşenlerini birbirine bağlayarak kalıcı ortografik temsil oluşturmayı hedefleyen yapılandırılmış müdahaledir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH130",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Kelime Tanıma Akıcılığı İçin Görsel Kelime Ağı Eğitimi (Orthographic Mapping / Word Mapping)",
+    "content": "Çocuğa bir kelime verilir; foneme karşılık gelen harflerin üstüne ok ya da çizgi çizerek ses-harf eşleşmesi görselleştirilir (word mapping). Her harf-ses bağlantısı sözlü ve yazılı olarak pekiştirilir. Düzenli tekrarlarla kelime, anlık tanıma düzeyine taşınır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH131",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Kelime Tanıma Akıcılığı İçin Görsel Kelime Ağı Eğitimi (Orthographic Mapping / Word Mapping)",
+    "content": "Ortografik haritalama, etkili kelime öğrenme mekanizması olarak öne çıkmaktadır. Bu yöntemin kelime tanıma hızını ve otomasyonunu artırdığı deneysel çalışmalarla gösterilmiştir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH132",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Kelime Tanıma Akıcılığı İçin Görsel Kelime Ağı Eğitimi (Orthographic Mapping / Word Mapping)",
+    "content": "Ehri, L. C. (2014). Orthographic mapping in the acquisition of sight word reading, spelling memory, and vocabulary learning. Scientific Studies of Reading, 18(1), 5–21. doi:10.1080/10888438.2013.819356",
+    "source": "Ehri, L. C. (2014). Orthographic mapping in the acquisition of sight word reading, spelling memory, and vocabulary learning. Scientific Studies of Reading, 18(1), 5–21. doi:10.1080/10888438.2013.819356"
+  },
+  {
+    "id": "CH133",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Aşamalı Metin Güçlüğüyle Akıcılık Eğitimi (Leveled Text Fluency Ladder)",
+    "content": "Çocuğun bağımsız okuma düzeyinden başlayarak kontrollü biçimde artan metin güçlükleriyle akıcılık kazanımını basamaklandıran sistematik müdahaledir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH134",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Aşamalı Metin Güçlüğüyle Akıcılık Eğitimi (Leveled Text Fluency Ladder)",
+    "content": "Çocuğun mevcut okuma düzeyi CBM veya standart bir değerlendirmeyle belirlenir. Önce bağımsız düzeydeki (%95+ doğruluk) metinlerle yinelenen okuma pratiği yapılır; hedef hız eşiğine ulaşıldığında bir üst düzey metine geçilir. Büyüme grafikleri çocukla paylaşılır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH135",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Aşamalı Metin Güçlüğüyle Akıcılık Eğitimi (Leveled Text Fluency Ladder)",
+    "content": "Uygun güçlük düzeyindeki metinlerle çalışmanın okuma kazanımlarını maksimize ettiği gösterilmiştir. Aşamalı güçlük arttırmanın akıcılık müdahalelerinde motivasyonu ve başarıyı birlikte artırdığı kapsamlı araştırmalarla desteklenmektedir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH136",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Aşamalı Metin Güçlüğüyle Akıcılık Eğitimi (Leveled Text Fluency Ladder)",
+    "content": "Fuchs, L. S., Fuchs, D., Hosp, M. K., & Jenkins, J. R. (2001). Oral reading fluency as an indicator of reading competence: A theoretical, empirical, and historical analysis. Scientific Studies of Reading, 5(3), 239–256. doi:10.1207/S1532799XSSR0503_3",
+    "source": "Fuchs, L. S., Fuchs, D., Hosp, M. K., & Jenkins, J. R. (2001). Oral reading fluency as an indicator of reading competence: A theoretical, empirical, and historical analysis. Scientific Studies of Reading, 5(3), 239–256. doi:10.1207/S1532799XSSR0503_3"
+  },
+  {
+    "id": "CH137",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Prozodiyi Hedefleyen Akıcılık Eğitimi (Prosodic Reading Instruction)",
+    "content": "Okuma hızının yanı sıra tonlama, vurgu ve cümle ifadesini (prozodi) sistematik biçimde geliştiren yapılandırılmış müdahaledir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH138",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Prozodiyi Hedefleyen Akıcılık Eğitimi (Prosodic Reading Instruction)",
+    "content": "Çocuklara noktalama işaretlerinin sesli okumaya nasıl yansıtılacağı, cümle vurgusu ve ifadeli okuma kalıpları öğretilir. Model okuma, prova ve geri bildirim döngüsüyle çocuğun hem hızı hem ifadesi geliştirilir. Prozodi ölçeği (NAEP Fluency Scale) değerlendirmede kullanılır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH139",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Prozodiyi Hedefleyen Akıcılık Eğitimi (Prosodic Reading Instruction)",
+    "content": "Prozodiyi hedefleyen eğitimin yalnızca hıza odaklanan yaklaşımlara kıyasla okuma anlama üzerinde ek kazanım sağladığı gösterilmiştir. Prozodinin akıcılığın kritik bir bileşeni olduğu ve metnin anlaşılmasını doğrudan desteklediği kanıtlanmıştır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH140",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Prozodiyi Hedefleyen Akıcılık Eğitimi (Prosodic Reading Instruction)",
+    "content": "Rasinski, T. V., Rikli, A., & Johnston, S. (2009). Reading fluency: More than automaticity? More than a concern for the primary grades? Literacy Research and Instruction, 48(4), 350–361. doi:10.1080/19388070802468715",
+    "source": "Rasinski, T. V., Rikli, A., & Johnston, S. (2009). Reading fluency: More than automaticity? More than a concern for the primary grades? Literacy Research and Instruction, 48(4), 350–361. doi:10.1080/19388070802468715"
+  },
+  {
+    "id": "CH141",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Çok Duyusal Okuma Hızı Eğitimi (Orton-Gillingham Temelli Akıcılık)",
+    "content": "Görsel, işitsel ve kinestetik uyaranları birleştiren çok duyusal tekniklerle hem kod çözme hem de okuma hızını hedefleyen yapılandırılmış yaklaşımdır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH142",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Çok Duyusal Okuma Hızı Eğitimi (Orton-Gillingham Temelli Akıcılık)",
+    "content": "Çocuklar harfleri hem görür hem sesler hem de hava ya da kum üzerinde yazar. Her oturumda öğrenilen harf-ses örüntülerine dayalı kelime kartları yüksek hızda sunulur. Zaman baskısı altında gerçekleştirilen hızlı adlandırma ve okuma egzersizleri eklenir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH143",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Çok Duyusal Okuma Hızı Eğitimi (Orton-Gillingham Temelli Akıcılık)",
+    "content": "Orton-Gillingham yaklaşımının disleksili çocuklarda hem doğruluk hem hız kazanımları ürettiği sistematik derlemeler ve meta-analizlerle desteklenmektedir. Çok duyusal kodlama, bellek izlerini güçlendirerek kelime tanıma hızını artırır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH144",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Çok Duyusal Okuma Hızı Eğitimi (Orton-Gillingham Temelli Akıcılık)",
+    "content": "Galuschka, K., Ise, E., Krick, K., & Schulte-Körne, G. (2014). Effectiveness of treatment approaches for children and adolescents with reading disabilities: A meta-analysis of randomized controlled trials. PLOS ONE, 9(2), e89900. doi:10.1371/journal.pone.0089900",
+    "source": "Galuschka, K., Ise, E., Krick, K., & Schulte-Körne, G. (2014). Effectiveness of treatment approaches for children and adolescents with reading disabilities: A meta-analysis of randomized controlled trials. PLOS ONE, 9(2), e89900. doi:10.1371/journal.pone.0089900"
+  },
+  {
+    "id": "CH145",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Akran Destekli Okuma (Peer-Assisted Learning Strategies – PALS)",
+    "content": "Farklı okuma düzeyindeki iki öğrencinin yapılandırılmış roller aracılığıyla birbirini eğittiği akran temelli akıcılık müdahalesidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH146",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Akran Destekli Okuma (Peer-Assisted Learning Strategies – PALS)",
+    "content": "Sınıf içinde daha güçlü ve daha zayıf okuyucu çiftlere ayrılır. Her çift PALS prosedürleri doğrultusunda sırayla okur, hataları düzeltir ve özet çıkarır. Oturumlar genellikle haftada 3 kez, 35 dakika sürer. Öğretmen tüm çiftleri eş zamanlı koordine eder.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH147",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Akran Destekli Okuma (Peer-Assisted Learning Strategies – PALS)",
+    "content": "Çok sayıda randomize kontrollü çalışma ve meta-analizde PALS'ın disleksili öğrenciler de dahil olmak üzere genel eğitim sınıflarında okuma hızı ve doğruluğunu anlamlı biçimde artırdığı gösterilmiştir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH148",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Akran Destekli Okuma (Peer-Assisted Learning Strategies – PALS)",
+    "content": "Fuchs, D., Fuchs, L. S., Mathes, P. G., & Simmons, D. C. (1997). Peer-Assisted Learning Strategies: Making classrooms more responsive to diversity. American Educational Research Journal, 34(1), 174–206. doi:10.3102/00028312034001174",
+    "source": "Fuchs, D., Fuchs, L. S., Mathes, P. G., & Simmons, D. C. (1997). Peer-Assisted Learning Strategies: Making classrooms more responsive to diversity. American Educational Research Journal, 34(1), 174–206. doi:10.3102/00028312034001174"
+  },
+  {
+    "id": "CH149",
+    "label": "OKUMA_HIZI",
+    "type": "method",
+    "method_name": "Yoğun Bireysel Okuma Müdahalesi (Intensive One-to-One Reading Instruction)",
+    "content": "Ciddi okuma güçlüğü yaşayan çocuklar için günlük, yüksek yoğunluklu ve bireysel uygulanan yapılandırılmış okuma müdahalesidir.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH150",
+    "label": "OKUMA_HIZI",
+    "type": "application",
+    "method_name": "Yoğun Bireysel Okuma Müdahalesi (Intensive One-to-One Reading Instruction)",
+    "content": "Çocuklar her gün iki 50 dakikalık bireysel seansta 8 hafta boyunca fonolojik farkındalık, fonik kod çözme ve bağlı metin okuma bileşenlerini kapsayan yapılandırılmış bir program alır. Toplam müdahale süresi 67,5 saattir. Oturumlar uzman eğitimciler tarafından yürütülür ve her seansta DKOK ile hata analizi yapılır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH151",
+    "label": "OKUMA_HIZI",
+    "type": "benefit",
+    "method_name": "Yoğun Bireysel Okuma Müdahalesi (Intensive One-to-One Reading Instruction)",
+    "content": "60 şiddetli disleksik çocukla yürütülen randomize kontrollü çalışmada her iki müdahale grubu da son derece büyük etki büyüklükleri elde etmiştir (ES = 3.9 ve 4.4). Bu kazanımların 2 yıllık izleme süresince korunduğu gösterilmiş; yoğun bireysel müdahalenin dislekside kalıcı okuma hızı ve doğruluk kazanımı için kritik önem taşıdığı kanıtlanmıştır.",
+    "source": "Okuma Hızı Raporu"
+  },
+  {
+    "id": "CH152",
+    "label": "OKUMA_HIZI",
+    "type": "source",
+    "method_name": "Yoğun Bireysel Okuma Müdahalesi (Intensive One-to-One Reading Instruction)",
+    "content": "Torgesen, J. K., Alexander, A. W., Wagner, R. K., Rashotte, C. A., Voeller, K. K. S., & Conway, T. (2001). Intensive remedial instruction for children with severe reading disabilities: Immediate and long-term outcomes from two instructional approaches. Journal of Learning Disabilities, 34(1), 33–58. doi:10.1177/002221940103400104",
+    "source": "Torgesen, J. K., Alexander, A. W., Wagner, R. K., Rashotte, C. A., Voeller, K. K. S., & Conway, T. (2001). Intensive remedial instruction for children with severe reading disabilities: Immediate and long-term outcomes from two instructional approaches. Journal of Learning Disabilities, 34(1), 33–58. doi:10.1177/002221940103400104"
+  },
+  {
+    "id": "CH153",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Okülomotor Rehabilitasyon Eğitimi (Oculomotor Rehabilitation)",
+    "content": "Okülomotor rehabilitasyon eğitimi, disleksili çocuklarda göz hareketi kontrolünü geliştirmeyi amaçlayan yapılandırılmış bir görsel takip müdahalesidir. Bu yaklaşım özellikle sakkadik göz hareketleri, takip hareketleri ve göz koordinasyonundaki yetersizlikleri azaltmayı hedeflemektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH154",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Okülomotor Rehabilitasyon Eğitimi (Oculomotor Rehabilitation)",
+    "content": "Eğitim sürecinde çocuklara belirli hedefler arasında hızlı göz geçişleri yaptırılır, hareket eden nesneleri gözle takip etmeleri istenir ve yakın-uzak odak değiştirme egzersizleri uygulanır. Çalışmalar düzenli seanslar hâlinde uzman eşliğinde yürütülmektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH155",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Okülomotor Rehabilitasyon Eğitimi (Oculomotor Rehabilitation)",
+    "content": "Araştırmada eğitim alan çocuklarda okuma doğruluğu, göz hareketi kontrolü ve görsel takip performansında anlamlı gelişmeler gözlemlenmiştir. Ayrıca göz sabitleme problemlerinin azaldığı belirtilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH156",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Okülomotor Rehabilitasyon Eğitimi (Oculomotor Rehabilitation)",
+    "content": "Jafarlou, F., Aghaie, H., & Jafarzadehpur, E. (2017). Oculomotor rehabilitation in children with dyslexia.",
+    "source": "Jafarlou, F., Aghaie, H., & Jafarzadehpur, E. (2017). Oculomotor rehabilitation in children with dyslexia."
+  },
+  {
+    "id": "CH157",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Bilgisayar Destekli Okülomotor Eğitim (Computer-Based Oculomotor Training)",
+    "content": "Bilgisayar destekli okülomotor eğitim, dijital görsel görevler aracılığıyla göz hareketlerini ve görsel takip becerilerini geliştirmeyi hedefleyen teknoloji tabanlı bir müdahale yöntemidir. Bu yaklaşım disleksili çocuklarda görsel dikkat süreçlerini desteklemek amacıyla kullanılmaktadır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH158",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Bilgisayar Destekli Okülomotor Eğitim (Computer-Based Oculomotor Training)",
+    "content": "Çocuklar bilgisayar ekranında hareket eden hedefleri takip eder, görsel tarama görevleri yapar ve belirli sembolleri hızlı biçimde tanımlamaya çalışır. Yazılım çocuğun performansına göre zorluk seviyesini değiştirebilmektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH159",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Bilgisayar Destekli Okülomotor Eğitim (Computer-Based Oculomotor Training)",
+    "content": "Eğitim sonrasında çocuklarda okuma akıcılığı, göz hareketi doğruluğu ve görsel dikkat becerilerinde gelişmeler rapor edilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH160",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Bilgisayar Destekli Okülomotor Eğitim (Computer-Based Oculomotor Training)",
+    "content": "Bucci, M. P. et al. (2018). Computer-based oculomotor training improves reading abilities in dyslexic children.",
+    "source": "Bucci, M. P. et al. (2018). Computer-based oculomotor training improves reading abilities in dyslexic children."
+  },
+  {
+    "id": "CH161",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Kombine Okuma ve Motor Eğitimi (Combined Reading and Motor Training)",
+    "content": "Bu yöntem, okuma çalışmaları ile motor koordinasyon egzersizlerini birleştiren çok bileşenli bir müdahale yaklaşımıdır. Görsel takip, dikkat ve hareket kontrolünün birlikte geliştirilmesi amaçlanmaktadır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH162",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Kombine Okuma ve Motor Eğitimi (Combined Reading and Motor Training)",
+    "content": "Çocuklar kısa okuma görevlerinin ardından denge, koordinasyon ve görsel hareket egzersizleri yapmaktadır. Eğitim bireysel seanslar hâlinde uygulanmakta ve farklı görevler dönüşümlü kullanılmaktadır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH163",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Kombine Okuma ve Motor Eğitimi (Combined Reading and Motor Training)",
+    "content": "Araştırma sonuçları, çocukların okuma hızında ve dikkat kontrolünde gelişmeler yaşadığını göstermektedir. Görsel takip becerilerinde de olumlu değişimler bildirilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH164",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Kombine Okuma ve Motor Eğitimi (Combined Reading and Motor Training)",
+    "content": "Caldani, S. et al. (2025). Children with Dyslexia Benefit from Short Combined Reading and Motor Training.",
+    "source": "Caldani, S. et al. (2025). Children with Dyslexia Benefit from Short Combined Reading and Motor Training."
+  },
+  {
+    "id": "CH165",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Okuma Hızlandırma Programı (Reading Acceleration Program - RAP)",
+    "content": "Okuma Hızlandırma Programı (RAP), disleksili çocuklarda görsel dikkat, işlemleme hızı ve okuma akıcılığını geliştirmek amacıyla oluşturulmuş bilgisayar destekli bir müdahale yöntemidir. Program, öğrencilerin metni daha hızlı işlerken anlamayı korumasını hedeflemektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH166",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Okuma Hızlandırma Programı (Reading Acceleration Program - RAP)",
+    "content": "Çocuklara bilgisayar ekranında hareket eden veya belirli hızlarda sunulan metinler okutulur. Okuma hızı çocuğun performansına göre aşamalı olarak artırılır. Eğitim boyunca dikkat ve göz hareketi kontrolü desteklenir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH167",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Okuma Hızlandırma Programı (Reading Acceleration Program - RAP)",
+    "content": "Araştırmalar, program sonrasında okuma hızında ve akıcılığında gelişmeler oluştuğunu, ayrıca beynin okuma ile ilişkili bölgelerinde işlevsel değişiklikler görüldüğünü göstermektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH168",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Okuma Hızlandırma Programı (Reading Acceleration Program - RAP)",
+    "content": "Horowitz-Kraus, T. et al. (2014). Reading acceleration training changes brain circuitry in children with reading difficulties.",
+    "source": "Horowitz-Kraus, T. et al. (2014). Reading acceleration training changes brain circuitry in children with reading difficulties."
+  },
+  {
+    "id": "CH169",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Görsel Dikkat Yayılımı Eğitimi (Visual Attention Span Training)",
+    "content": "Görsel dikkat yayılımı eğitimi, bireyin aynı anda birden fazla harf veya sembolü algılayabilme kapasitesini geliştirmeye yönelik görsel dikkat müdahalesidir. Disleksili bireylerde sınırlı dikkat yayılımının okuma performansını etkileyebileceği düşünülmektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH170",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Görsel Dikkat Yayılımı Eğitimi (Visual Attention Span Training)",
+    "content": "Öğrencilere kısa süreli gösterilen harf veya sembol dizileri sunulur ve mümkün olduğunca fazla öğeyi tanımlamaları istenir. Görevlerin süresi ve zorluk seviyesi zamanla artırılır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH171",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Görsel Dikkat Yayılımı Eğitimi (Visual Attention Span Training)",
+    "content": "Görsel bilgi işleme kapasitesini geliştirir, okuma hızını artırır ve görsel dikkat performansını destekler.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH172",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Görsel Dikkat Yayılımı Eğitimi (Visual Attention Span Training)",
+    "content": "Zhao, J. et al. (2019). Improving sentence reading performance in Chinese with training based on visual attention span.",
+    "source": "Zhao, J. et al. (2019). Improving sentence reading performance in Chinese with training based on visual attention span."
+  },
+  {
+    "id": "CH173",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Aksiyon Video Oyunu Eğitimi (Action Video Game Training)",
+    "content": "Aksiyon video oyunu eğitimi, hızlı görsel dikkat ve göz hareketi kontrolü gerektiren oyunlar aracılığıyla disleksili çocukların görsel işlemleme becerilerini geliştirmeyi hedefleyen müdahale yaklaşımıdır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH174",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Aksiyon Video Oyunu Eğitimi (Action Video Game Training)",
+    "content": "Çocuklar belirli sürelerle dikkat, hedef takibi ve hızlı görsel karar verme gerektiren aksiyon tabanlı video oyunları oynar. Eğitim kontrollü oturumlar hâlinde uygulanır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH175",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Aksiyon Video Oyunu Eğitimi (Action Video Game Training)",
+    "content": "Araştırmalar, bu eğitimin okuma hızını, dikkat kontrolünü ve görsel işlemleme performansını geliştirdiğini göstermektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH176",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Aksiyon Video Oyunu Eğitimi (Action Video Game Training)",
+    "content": "Franceschini, S. et al. (2013). Action video games make dyslexic children read better.",
+    "source": "Franceschini, S. et al. (2013). Action video games make dyslexic children read better."
+  },
+  {
+    "id": "CH177",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "MoveR Görsel Algı Rehabilitasyon Terapisi (MoveR Immersive Rehabilitation Therapy)",
+    "content": "MoveR terapisi, disleksili çocuklarda görsel algı, göz hareketi kontrolü ve dikkat süreçlerini geliştirmek amacıyla oluşturulmuş teknoloji destekli rehabilitasyon yaklaşımıdır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH178",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "MoveR Görsel Algı Rehabilitasyon Terapisi (MoveR Immersive Rehabilitation Therapy)",
+    "content": "Çocuklar etkileşimli dijital ortamda hareketli hedefleri takip eder, görsel görevleri yerine getirir ve dikkat odaklı rehabilitasyon egzersizleri yapar.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH179",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "MoveR Görsel Algı Rehabilitasyon Terapisi (MoveR Immersive Rehabilitation Therapy)",
+    "content": "Görsel algısal becerileri geliştirdiği, dikkat kontrolünü desteklediği ve okuma performansına olumlu katkı sağladığı bildirilmektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH180",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "MoveR Görsel Algı Rehabilitasyon Terapisi (MoveR Immersive Rehabilitation Therapy)",
+    "content": "Gibert, C. et al. (2022). MoveR improves visual perceptual skills in dyslexic children.",
+    "source": "Gibert, C. et al. (2022). MoveR improves visual perceptual skills in dyslexic children."
+  },
+  {
+    "id": "CH181",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Görsel Crowding Eğitimi (Visual Training for Abnormal Crowding)",
+    "content": "Bu yöntem, disleksili bireylerde harflerin birbirine çok yakın görünmesi nedeniyle oluşan “crowding” problemini azaltmayı amaçlayan görsel eğitim yaklaşımıdır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH182",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Görsel Crowding Eğitimi (Visual Training for Abnormal Crowding)",
+    "content": "Çocuklara farklı harf aralıkları ve görsel hedefler kullanılarak okuma görevleri uygulanır. Eğitim sırasında görsel ayırt etme çalışmaları yapılır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH183",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Görsel Crowding Eğitimi (Visual Training for Abnormal Crowding)",
+    "content": "Harf ayırt etme performansını artırır, görsel karmaşayı azaltır ve okuma doğruluğunu geliştirir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH184",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Görsel Crowding Eğitimi (Visual Training for Abnormal Crowding)",
+    "content": "Aleci, C., Belcastro, M. G., & Canavese, E. (2015). Visual Training Helps Improve Reading in Dyslexic Children with Abnormal Crowding.",
+    "source": "Aleci, C., Belcastro, M. G., & Canavese, E. (2015). Visual Training Helps Improve Reading in Dyslexic Children with Abnormal Crowding."
+  },
+  {
+    "id": "CH185",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Görsel Dikkat ve Göz İzleme Eğitimi (Visual Attentional Eye-Tracking Training)",
+    "content": "Bu yöntem, göz izleme teknolojisi kullanılarak görsel dikkat süreçlerini geliştirmeyi amaçlayan kısa süreli bir müdahale yaklaşımıdır. Özellikle disleksili çocuklarda göz sabitleme sürelerini azaltmayı ve okuma performansını artırmayı hedeflemektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH186",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Görsel Dikkat ve Göz İzleme Eğitimi (Visual Attentional Eye-Tracking Training)",
+    "content": "Çocuklara göz hareketi egzersizleri ve görsel arama görevleri uygulanır. Eğitim sırasında eye-tracker cihazı ile göz hareketleri kaydedilir ve çocuklar belirli hedefleri takip eder.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH187",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Görsel Dikkat ve Göz İzleme Eğitimi (Visual Attentional Eye-Tracking Training)",
+    "content": "Araştırmada eğitim sonrasında okuma hızının arttığı ve göz duraksama sürelerinin azaldığı gösterilmiştir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH188",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Görsel Dikkat ve Göz İzleme Eğitimi (Visual Attentional Eye-Tracking Training)",
+    "content": "Caldani, S. et al. (2020). Visual Attentional Training Improves Reading Capabilities in Children with Dyslexia.",
+    "source": "Caldani, S. et al. (2020). Visual Attentional Training Improves Reading Capabilities in Children with Dyslexia."
+  },
+  {
+    "id": "CH189",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Proprioseptif Müdahale Eğitimi (Proprioceptive Intervention)",
+    "content": "Bu yaklaşım, beden farkındalığı ve duyusal geri bildirim süreçlerini geliştirerek göz hareketlerini ve okuma performansını desteklemeyi amaçlayan çok bileşenli bir müdahaledir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH190",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Proprioseptif Müdahale Eğitimi (Proprioceptive Intervention)",
+    "content": "Çocuklara denge, vücut pozisyonu ve hareket farkındalığına yönelik proprioseptif egzersizler uygulanır. Müdahale sırasında göz hareketleri ve okuma performansı birlikte değerlendirilir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH191",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Proprioseptif Müdahale Eğitimi (Proprioceptive Intervention)",
+    "content": "Çalışma sonuçları, müdahale sonrasında okuma performansında ve göz hareketi kontrolünde anlamlı gelişmeler olduğunu göstermektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH192",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Proprioseptif Müdahale Eğitimi (Proprioceptive Intervention)",
+    "content": "Virlet, L. et al. (2024). Proprioceptive intervention improves reading performance and eye movement in children with developmental dyslexia.",
+    "source": "Virlet, L. et al. (2024). Proprioceptive intervention improves reading performance and eye movement in children with developmental dyslexia."
+  },
+  {
+    "id": "CH193",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Ritmik Okuma Eğitimi (Rhythmic Reading Training - RRT)",
+    "content": "Ritmik okuma eğitimi, ritim işleme çalışmaları ile alt düzey okuma egzersizlerini birleştiren bilgisayar destekli müdahale yöntemidir. Görsel dikkat ve zamanlama süreçlerini desteklemeyi hedeflemektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH194",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Ritmik Okuma Eğitimi (Rhythmic Reading Training - RRT)",
+    "content": "Çocuklara ritmik uyaranlarla eş zamanlı okuma görevleri verilir. Egzersizler sırasında heceleme, zamanlama ve dikkat süreçleri birlikte çalıştırılır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH195",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Ritmik Okuma Eğitimi (Rhythmic Reading Training - RRT)",
+    "content": "Araştırmalar, yöntemin okuma becerileri ve dikkat süreçleri üzerinde olumlu etkiler oluşturduğunu göstermektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH196",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Ritmik Okuma Eğitimi (Rhythmic Reading Training - RRT)",
+    "content": "Cancer, A. et al. (2020). The Effectiveness of Interventions for Developmental Dyslexia.",
+    "source": "Cancer, A. et al. (2020). The Effectiveness of Interventions for Developmental Dyslexia."
+  },
+  {
+    "id": "CH197",
+    "label": "GORSEL_TAKIP",
+    "type": "method",
+    "method_name": "Göz İzleme Tabanlı Eşli Okuma Müdahalesi (Eye-Tracking Based Paired Reading Intervention)",
+    "content": "Bu yöntem, eye-tracking teknolojisi ile desteklenen eşli okuma yaklaşımıdır. Amaç, okuma sırasında göz hareketlerini düzenlemek ve okuma akıcılığını artırmaktır.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH198",
+    "label": "GORSEL_TAKIP",
+    "type": "application",
+    "method_name": "Göz İzleme Tabanlı Eşli Okuma Müdahalesi (Eye-Tracking Based Paired Reading Intervention)",
+    "content": "Öğrenci bir destekleyici okuyucu ile birlikte metin okur. Eye-tracking sistemi ile göz hareketleri takip edilir ve okuma sırasında oluşan duraksamalar analiz edilir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH199",
+    "label": "GORSEL_TAKIP",
+    "type": "benefit",
+    "method_name": "Göz İzleme Tabanlı Eşli Okuma Müdahalesi (Eye-Tracking Based Paired Reading Intervention)",
+    "content": "Okuma doğruluğunu, akıcılığı ve görsel takip performansını geliştirmeyi hedeflemektedir.",
+    "source": "Görsel Takip Raporu"
+  },
+  {
+    "id": "CH200",
+    "label": "GORSEL_TAKIP",
+    "type": "source",
+    "method_name": "Göz İzleme Tabanlı Eşli Okuma Müdahalesi (Eye-Tracking Based Paired Reading Intervention)",
+    "content": "Paired Reading as an Eye-Tracking-based Task for Dyslexia Intervention (2025)",
+    "source": "Paired Reading as an Eye-Tracking-based Task for Dyslexia Intervention (2025)"
+  },
+  {
+    "id": "CH201",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel Algı Becerileri Eğitimi Visual Perceptual Skills Training",
+    "content": "Figür-zemin ayrımı, görsel kapanma, uzamsal ilişkiler ve görsel ayrım gibi temel görsel algı bileşenlerini sistematik olarak geliştiren kapsamlı bir eğitim programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH202",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel Algı Becerileri Eğitimi Visual Perceptual Skills Training",
+    "content": "Çocuklara MVPT veya DTVP değerlendirme araçlarıyla profil çıkarılır; eksik alt beceriler belirlenir. Figür-zemin egzersizleri, şekil tamamlama, uzamsal yönelim görevleri ve görsel ayrım kartları bireysel ya da küçük grup formatında uygulanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH203",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel Algı Becerileri Eğitimi Visual Perceptual Skills Training",
+    "content": "Harf ve şekil tanıma doğruluğunu artırır; okuma-yazma için temel görsel altyapıyı güçlendirir. Görsel algı eğitiminin akademik başarı üzerindeki etkisi birden fazla kontrollü çalışmayla desteklenmektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH204",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel Algı Becerileri Eğitimi Visual Perceptual Skills Training",
+    "content": "Frostig, M., Lefever, D. W., & Whittlesey, J. R. B. (1963). Disturbances in visual perception. Journal of Educational Research, 57(3), 160-162. / Schneck, C. M. (2010). Visual perception. In Occupational Therapy for Children (6th ed.). Mosby.",
+    "source": "Frostig, M., Lefever, D. W., & Whittlesey, J. R. B. (1963). Disturbances in visual perception. Journal of Educational Research, 57(3), 160-162. / Schneck, C. M. (2010). Visual perception. In Occupational Therapy for Children (6th ed.). Mosby."
+  },
+  {
+    "id": "CH205",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel Hafıza Eğitimi Visual Memory Training",
+    "content": "Görsel uyarıcıları (harf, kelime, şekil, desen) zihinde tutma ve geri çağırma kapasitesini artırmaya yönelik sistematik bir hafıza eğitimi programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH206",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel Hafıza Eğitimi Visual Memory Training",
+    "content": "Çocuklara kısa süreli gösterilen kart, sembol veya kelime dizilerini hatırlama ve yeniden oluşturma görevleri verilir. Kim's Game, eşleştirme oyunları ve görsel dizi hatırlama egzersizleri kullanılır; zorluk kademeli olarak artırılır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH207",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel Hafıza Eğitimi Visual Memory Training",
+    "content": "Yazım (heceleme) doğruluğunu ve sözcük tanıma otomasyonunu güçlendirir. Görsel hafızanın zayıf heceleme ve okuma güçlükleriyle güçlü ilişkisi olduğu ve eğitimle geliştirilebildiği gösterilmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH208",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel Hafıza Eğitimi Visual Memory Training",
+    "content": "Kibby, M. Y., Marks, W., Morgan, S., & Long, C. J. (2004). Specific impairment in developmental reading disabilities. Journal of Learning Disabilities, 37(4), 349-363.",
+    "source": "Kibby, M. Y., Marks, W., Morgan, S., & Long, C. J. (2004). Specific impairment in developmental reading disabilities. Journal of Learning Disabilities, 37(4), 349-363."
+  },
+  {
+    "id": "CH209",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Uzamsal Yönelim ve Yön Eğitimi Spatial Orientation and Directionality Training",
+    "content": "Harf ve rakamların uzaydaki konumunu, yönünü ve sırasını doğru algılama becerisini geliştiren yapılandırılmış bir uzamsal farkındalık eğitimidir (örn. b/d, p/q karıştırma güçlükleri).",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH210",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Uzamsal Yönelim ve Yön Eğitimi Spatial Orientation and Directionality Training",
+    "content": "Çocuklara beden şeması egzersizleri (sağ-sol ayrımı), harflerin fiziksel modellenmesi (kil, kum, jestler), ayna imgesi karşılaştırma görevleri ve yönelim temalı bulmacalar uygulanır. Çok duyusal teknikler birleştirilir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH211",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Uzamsal Yönelim ve Yön Eğitimi Spatial Orientation and Directionality Training",
+    "content": "Harf ters çevirme ve yön hatalarını azaltır; yazı ve okuma doğruluğunu artırır. Uzamsal işleme güçlüklerinin disleksinin önemli bir alt bileşeni olduğu ve müdahaleyle düzeltilebileceği literatürde belgelenmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH212",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Uzamsal Yönelim ve Yön Eğitimi Spatial Orientation and Directionality Training",
+    "content": "Rourke, B. P. (1995). Syndrome of Nonverbal Learning Disabilities. Guilford Press. / Lerner, J. W. (2003). Learning Disabilities: Theories, Diagnosis, and Teaching Strategies (9th ed.). Houghton Mifflin.",
+    "source": "Rourke, B. P. (1995). Syndrome of Nonverbal Learning Disabilities. Guilford Press. / Lerner, J. W. (2003). Learning Disabilities: Theories, Diagnosis, and Teaching Strategies (9th ed.). Houghton Mifflin."
+  },
+  {
+    "id": "CH213",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel Motor Entegrasyon Eğitimi Visual-Motor Integration (VMI) Training",
+    "content": "Görsel algı ile ince motor koordinasyonu birleştiren; şekil kopyalama, çizim ve yazı gibi görsel-motor görevlerdeki beceriyi geliştiren bütünleşik bir müdahale programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH214",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel Motor Entegrasyon Eğitimi Visual-Motor Integration (VMI) Training",
+    "content": "Beery VMI testi ile düzey belirlenir; ardından şekil takip etme, kopya çizim, labirent, nokta bağlama ve grafomotor egzersizler aşamalı zorluk sırasıyla uygulanır. Ergoterapist veya özel eğitim uzmanı eşliğinde yürütülür.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH215",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel Motor Entegrasyon Eğitimi Visual-Motor Integration (VMI) Training",
+    "content": "El yazısı kalitesini, kopya alma hızını ve görsel-motor koordinasyonu iyileştirir. Beery VMI puanları ile yazma ve okuma performansı arasındaki güçlü ilişki büyük örneklemli araştırmalarla doğrulanmıştır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH216",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel Motor Entegrasyon Eğitimi Visual-Motor Integration (VMI) Training",
+    "content": "Beery, K. E., Buktenica, N. A., & Beery, N. A. (2010). Beery-Buktenica Developmental Test of VMI (6th ed.). Pearson. / Pieters, S. et al. (2012). Identifying the cognitive determinants of reading and spelling in children. Research in Developmental Disabilities, 33(2), 727-736.",
+    "source": "Beery, K. E., Buktenica, N. A., & Beery, N. A. (2010). Beery-Buktenica Developmental Test of VMI (6th ed.). Pearson. / Pieters, S. et al. (2012). Identifying the cognitive determinants of reading and spelling in children. Research in Developmental Disabilities, 33(2), 727-736."
+  },
+  {
+    "id": "CH217",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel Kapanma ve Şekil Tamamlama Eğitimi Visual Closure Training",
+    "content": "Eksik ya da kısmen görünen görsel bilgiden bütünü zihinde tamamlama becerisini geliştiren odaklanmış bir görsel algı müdahalesidir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH218",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel Kapanma ve Şekil Tamamlama Eğitimi Visual Closure Training",
+    "content": "Çocuklara yarım bırakılmış harfler, kelimeler veya şekilleri tamamlama görevleri verilir. Eksik parçalı bulmacalar, noktalı şekil tamamlama ve örtülü kelime tanıma egzersizleri uygulanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH219",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel Kapanma ve Şekil Tamamlama Eğitimi Visual Closure Training",
+    "content": "Kelime tanıma hızını artırır; eksik ya da belirsiz görsel bilgiyle başa çıkma kapasitesini geliştirir. Görsel kapanma becerisinin okuma akıcılığıyla doğrudan ilişkili olduğu gösterilmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH220",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel Kapanma ve Şekil Tamamlama Eğitimi Visual Closure Training",
+    "content": "Hammill, D. D., Pearson, N. A., & Voress, J. K. (1993). Developmental Test of Visual Perception (DTVP-2). Pro-Ed. / Kulp, M. T., & Schmidt, P. P. (1996). Visual predictors of reading performance in kindergarten and first grade children. Optometry and Vision Science, 73(4), 255-262.",
+    "source": "Hammill, D. D., Pearson, N. A., & Voress, J. K. (1993). Developmental Test of Visual Perception (DTVP-2). Pro-Ed. / Kulp, M. T., & Schmidt, P. P. (1996). Visual predictors of reading performance in kindergarten and first grade children. Optometry and Vision Science, 73(4), 255-262."
+  },
+  {
+    "id": "CH221",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Çok Duyusal Harf Öğretimi Multisensory Letter Formation Training",
+    "content": "Görsel, dokunsal ve kinestetik kanalları eş zamanlı kullanarak harf şekillerinin görsel temsilini güçlendiren Orton-Gillingham temelli çok duyusal bir yaklaşımdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH222",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Çok Duyusal Harf Öğretimi Multisensory Letter Formation Training",
+    "content": "Çocuklar harfleri kum tepsisinde, havada parmakla veya kil/kumaş gibi dokulu yüzeylerde oluştururken sesini söyler. Görsel kart ile dokunsal deneyim eş zamanlı sunulur; harfin şekli çok kanallı olarak kodlanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH223",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Çok Duyusal Harf Öğretimi Multisensory Letter Formation Training",
+    "content": "Harf şekli görsel hafızasını güçlendirir; harf-ses ilişkisinin otomasyonunu hızlandırır. Çok duyusal yaklaşımların disleksili çocuklarda tek kanallı öğretime kıyasla anlamlı derecede daha etkili olduğu meta-analizlerle kanıtlanmıştır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH224",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Çok Duyusal Harf Öğretimi Multisensory Letter Formation Training",
+    "content": "Orton, S. T. (1937). Reading, Writing and Speech Problems in Children. Norton. / Joshi, R. M. et al. (2002). Teaching reading in an inner city school through a multisensory teaching approach. Annals of Dyslexia, 52, 229-242.",
+    "source": "Orton, S. T. (1937). Reading, Writing and Speech Problems in Children. Norton. / Joshi, R. M. et al. (2002). Teaching reading in an inner city school through a multisensory teaching approach. Annals of Dyslexia, 52, 229-242."
+  },
+  {
+    "id": "CH225",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Renkli Örtü ve Görsel Stres Müdahalesi Colored Overlay / Meares-Irlen Intervention",
+    "content": "Görsel korteks aşırı uyarılmasından (Meares-Irlen Sendromu) kaynaklanan görsel işleme bozulmalarını bireysel olarak seçilen renkli örtü veya spektral filtre lenslerle azaltan bir müdahaledir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH226",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Renkli Örtü ve Görsel Stres Müdahalesi Colored Overlay / Meares-Irlen Intervention",
+    "content": "Standardize renk değerlendirmesiyle (Intuitive Colorimeter veya Wilkins Rate of Reading Test) bireysel renk belirlenir; seçilen renkli örtü metin okumada düzenli olarak kullanılır. Okul ve ev ortamında sürekliliği sağlanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH227",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Renkli Örtü ve Görsel Stres Müdahalesi Colored Overlay / Meares-Irlen Intervention",
+    "content": "Harflerin kayması, titremesi veya bulanıklaşması gibi görsel işleme bozulmalarını azaltır; okuma hızı ve konforunu artırır. Çift kör randomize kontrollü çalışmalar belirli alt gruplarda anlamlı okuma hızı kazanımı bildirmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH228",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Renkli Örtü ve Görsel Stres Müdahalesi Colored Overlay / Meares-Irlen Intervention",
+    "content": "Wilkins, A. J. et al. (1996). Rate of Reading Test: its reliability, and its validity in the assessment of the effects of coloured overlays. Ophthalmic & Physiological Optics, 16(6), 491-497.",
+    "source": "Wilkins, A. J. et al. (1996). Rate of Reading Test: its reliability, and its validity in the assessment of the effects of coloured overlays. Ophthalmic & Physiological Optics, 16(6), 491-497."
+  },
+  {
+    "id": "CH229",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Disleksi Dostu Tipografi Müdahalesi Dyslexia-Friendly Typography and Text Formatting",
+    "content": "Font seçimi, karakter aralığı, satır aralığı ve sayfa düzeni gibi tipografik değişkenler optimize edilerek görsel işleme yükünü azaltan çevresel bir düzenleme müdahalesidir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH230",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Disleksi Dostu Tipografi Müdahalesi Dyslexia-Friendly Typography and Text Formatting",
+    "content": "Arial, Verdana veya OpenDyslexic fontları kullanılır; harfler arası boşluk artırılır (>=35%); satır aralığı en az 1.5 olarak ayarlanır; paragraflar kısaltılır; sol hizalı düzen benimsenir. Tüm basılı ve dijital materyallere sistematik olarak uygulanır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH231",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Disleksi Dostu Tipografi Müdahalesi Dyslexia-Friendly Typography and Text Formatting",
+    "content": "Harf ve kelime karıştırma hatalarını azaltır; görsel işleme yükünü hafifletir. Genişletilmiş karakter aralığının disleksili çocuklarda okuma doğruluğunu anlamlı biçimde iyileştirdiği randomize kontrollü çalışmayla gösterilmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH232",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Disleksi Dostu Tipografi Müdahalesi Dyslexia-Friendly Typography and Text Formatting",
+    "content": "Zorzi, M. et al. (2012). Extra-large letter spacing improves reading in dyslexia. Proceedings of the National Academy of Sciences, 109(28), 11455-11459.",
+    "source": "Zorzi, M. et al. (2012). Extra-large letter spacing improves reading in dyslexia. Proceedings of the National Academy of Sciences, 109(28), 11455-11459."
+  },
+  {
+    "id": "CH233",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Bilgisayar Destekli Görsel İşleme Eğitimi Computer-Based Visual Processing Intervention",
+    "content": "Uyarlanabilir yazılım platformları aracılığıyla görsel ayrım, şekil tanıma ve görsel işleme hızını geliştirmeyi hedefleyen teknoloji tabanlı müdahaledir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH234",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Bilgisayar Destekli Görsel İşleme Eğitimi Computer-Based Visual Processing Intervention",
+    "content": "Cogmed, Fast ForWord veya Lumosity benzeri programlar aracılığıyla çocuklar görsel ayrım, şekil eşleştirme ve hızlı görsel tanıma görevleri yapar. Yazılım çocuğun performansına göre zorluk seviyesini otomatik ayarlar.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH235",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Bilgisayar Destekli Görsel İşleme Eğitimi Computer-Based Visual Processing Intervention",
+    "content": "Görsel işleme hızını ve doğruluğunu artırır; bireyselleştirilmiş antrenman imkânı sunar. Bilgisayar destekli görsel eğitim programlarının disleksili çocuklarda okuma ve görsel algı performansını anlamlı ölçüde iyileştirdiği randomize çalışmalarla desteklenmektedir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH236",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Bilgisayar Destekli Görsel İşleme Eğitimi Computer-Based Visual Processing Intervention",
+    "content": "Solan, H. A. et al. (2003). Effect of attention therapy on reading comprehension. Journal of Learning Disabilities, 36(6), 556-563.",
+    "source": "Solan, H. A. et al. (2003). Effect of attention therapy on reading comprehension. Journal of Learning Disabilities, 36(6), 556-563."
+  },
+  {
+    "id": "CH237",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel-Fonolojik Bütünleşik Eğitim Integrated Visual and Phonological Processing Training",
+    "content": "Görsel harf işleme ile fonolojik kodlamayı eş zamanlı çalıştıran; okuma sürecindeki görsel-dilsel bütünleşmeyi doğrudan hedefleyen yapılandırılmış bir müdahale programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH238",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel-Fonolojik Bütünleşik Eğitim Integrated Visual and Phonological Processing Training",
+    "content": "Çocuklara harf şeklini görsel olarak tanıma, sesi söyleme ve dokunsal olarak oluşturma görevleri eş zamanlı uygulanır. Grafem-fonem eşleştirme, görsel dikkat ve işitsel ayrım görevleri birlikte yürütülür.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH239",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel-Fonolojik Bütünleşik Eğitim Integrated Visual and Phonological Processing Training",
+    "content": "Görsel harf tanıma ile ses bilgisini bütünleştirir; okuma doğruluğunu ve hızını artırır. Bütünleşik yaklaşımların tek bileşenli eğitimlere kıyasla daha büyük etki büyüklüğü ürettiği meta-analizlerle gösterilmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH240",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel-Fonolojik Bütünleşik Eğitim Integrated Visual and Phonological Processing Training",
+    "content": "Bus, A. G., & van IJzendoorn, M. H. (1999). Phonological awareness and early reading: A meta-analysis of experimental training studies. Journal of Educational Psychology, 91(3), 403-414.",
+    "source": "Bus, A. G., & van IJzendoorn, M. H. (1999). Phonological awareness and early reading: A meta-analysis of experimental training studies. Journal of Educational Psychology, 91(3), 403-414."
+  },
+  {
+    "id": "CH241",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel İşleme Hızı Eğitimi Visual Processing Speed Training",
+    "content": "Görsel uyarıcıları hızla işleme kapasitesini artırmayı hedefleyen, sunum süresi kademeli olarak kısaltılan uyarlanabilir bir algı eğitimi programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH242",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel İşleme Hızı Eğitimi Visual Processing Speed Training",
+    "content": "Harf, sembol veya kelimeler çok kısa sürelerde (50-200 ms) ekranda gösterilir; çocuk gördüğünü rapor eder. Başarı arttıkça sunum süresi kısaltılır. Tahistoskop veya bilgisayar yazılımı ile bireysel ya da küçük grup formatında yürütülür.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH243",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel İşleme Hızı Eğitimi Visual Processing Speed Training",
+    "content": "Görsel işleme hızını artırır; okuma akıcılığını destekler. Yavaş görsel işleme hızının disleksinin bağımsız bir bilişsel yordayıcısı olduğu ve eğitimle geliştirilebildiği araştırmalarla ortaya konmuştur.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH244",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel İşleme Hızı Eğitimi Visual Processing Speed Training",
+    "content": "Kail, R., & Hall, L. K. (1994). Processing speed, naming speed, and reading. Developmental Psychology, 30(6), 949-954.",
+    "source": "Kail, R., & Hall, L. K. (1994). Processing speed, naming speed, and reading. Developmental Psychology, 30(6), 949-954."
+  },
+  {
+    "id": "CH245",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Görsel Sıralama ve Dizi Eğitimi Visual Sequential Memory Training",
+    "content": "Görsel uyarıcıların (harf, sembol, şekil) sırasını doğru hatırlama ve yeniden üretme becerisini geliştiren sistematik bir sıralı hafıza eğitimi programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH246",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Görsel Sıralama ve Dizi Eğitimi Visual Sequential Memory Training",
+    "content": "Çocuklara belirli bir sırayla gösterilen sembol veya harf dizilerini aynı sırayla yeniden oluşturma ve hatırlama görevleri verilir. Simon Says oyunu, dizi kopyalama ve görsel örüntü tekrarlama egzersizleri kullanılır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH247",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Görsel Sıralama ve Dizi Eğitimi Visual Sequential Memory Training",
+    "content": "Kelime içindeki harf sırasını doğru işleme becerisini güçlendirir; harf sırası hatalarını (örn. 'slat' yerine 'salt') azaltır. Görsel sıralı hafızanın heceleme ve okuma doğruluğuyla güçlü ilişkisi kontrollü çalışmalarla belgelenmiştir.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH248",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Görsel Sıralama ve Dizi Eğitimi Visual Sequential Memory Training",
+    "content": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): What have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45(1), 2-40.",
+    "source": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): What have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45(1), 2-40."
+  },
+  {
+    "id": "CH249",
+    "label": "GORSEL_ISLEME",
+    "type": "method",
+    "method_name": "Erken Görsel İşleme Müdahale Programı Early Visual Processing Intervention Program",
+    "content": "Okul öncesi ve erken ilkokul döneminde uygulanmak üzere tasarlanmış; risk altındaki çocuklarda görsel işleme güçlüklerinin okuma bozukluğuna dönüşmesini önlemeyi hedefleyen erken müdahale programıdır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH250",
+    "label": "GORSEL_ISLEME",
+    "type": "application",
+    "method_name": "Erken Görsel İşleme Müdahale Programı Early Visual Processing Intervention Program",
+    "content": "Anaokulu ve 1. sınıf düzeyinde standart görsel algı tarama araçlarıyla risk belirlenir. Görsel ayrım, uzamsal ilişkiler, görsel hafıza ve figür-zemin becerilerini içeren aşamalı program küçük grup veya bireysel seanslar halinde yürütülür.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH251",
+    "label": "GORSEL_ISLEME",
+    "type": "benefit",
+    "method_name": "Erken Görsel İşleme Müdahale Programı Early Visual Processing Intervention Program",
+    "content": "Erken yaşta görsel işleme altyapısını güçlendirir; ilerleyen yıllardaki okuma ve yazma başarısını destekler. Erken görsel algı müdahalelerinin uzun vadeli akademik çıktılar üzerinde anlamlı koruyucu etki gösterdiği boylamsal çalışmalarla doğrulanmıştır.",
+    "source": "Görsel İşleme Raporu"
+  },
+  {
+    "id": "CH252",
+    "label": "GORSEL_ISLEME",
+    "type": "source",
+    "method_name": "Erken Görsel İşleme Müdahale Programı Early Visual Processing Intervention Program",
+    "content": "Suggate, S., Pufke, E., & Stoeger, H. (2016). Do children with poor visual- motor integration show poor reading ability? Journal of Learning Disabilities, 49(3), 241-252.",
+    "source": "Suggate, S., Pufke, E., & Stoeger, H. (2016). Do children with poor visual- motor integration show poor reading ability? Journal of Learning Disabilities, 49(3), 241-252."
+  },
+  {
+    "id": "CH253",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Sistematik Fonik Öğretimi Systematic Phonics Instruction",
+    "content": "Harf-ses ilişkilerini belirli bir sıra ve yapı içinde öğreten; kod çözme becerisini doğrudan geliştiren kanıt temelli bir okuma müdahalesidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH254",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Sistematik Fonik Öğretimi Systematic Phonics Instruction",
+    "content": "Çocuklara tek seslerden başlayarak harf-ses eşleştirmeleri öğretilir; ilerleyen aşamalarda hece, kelime ve metin düzeyine geçilir. Orton-Gillingham, Wilson Reading System veya RAVE-O gibi yapılandırılmış programlar kullanılır. Her seans kısa tekrar ve yeni içerik dengesiyle yürütülür.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH255",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Sistematik Fonik Öğretimi Systematic Phonics Instruction",
+    "content": "Kelime okuma doğruluğunu ve kod çözme hızını anlamlı ölçüde artırır. Sistematik fonik öğretiminin disleksili çocuklarda en etkili okuma müdahalelerinden biri olduğu çok sayıda meta-analizle kanıtlanmıştır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH256",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Sistematik Fonik Öğretimi Systematic Phonics Instruction",
+    "content": "Ehri, L. C., Nunes, S. R., Stahl, S. A., & Willows, D. M. (2001). Systematic phonics instruction helps students learn to read. Review of Educational Research, 71(3), 393-447. doi:10.3102/00346543071003393",
+    "source": "Ehri, L. C., Nunes, S. R., Stahl, S. A., & Willows, D. M. (2001). Systematic phonics instruction helps students learn to read. Review of Educational Research, 71(3), 393-447. doi:10.3102/00346543071003393"
+  },
+  {
+    "id": "CH257",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Hatalı Okuma Analizi ve Müdahalesi Miscue Analysis and Error Correction",
+    "content": "Çocuğun sesli okuma sırasında yaptığı hataları (miscue) analiz ederek bireysel hata örüntülerini belirlemeye ve hedefli düzeltme stratejileri geliştirmeye dayanan tanı-müdahale yöntemidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH258",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Hatalı Okuma Analizi ve Müdahalesi Miscue Analysis and Error Correction",
+    "content": "Çocuk bir metni sesli okurken eğitimci hataları kaydeder; hata türleri (ses, anlam, yapı) analiz edilir. Bireysel hata örüntülerine göre hedefli ses-harf, hece veya kelime düzeyinde egzersizler planlanır ve uygulanır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH259",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Hatalı Okuma Analizi ve Müdahalesi Miscue Analysis and Error Correction",
+    "content": "Hatanın niteliğine göre bireyselleştirilmiş müdahale sağlar; okuma doğruluğunu kısa sürede artırır. Miscue analizinin okuma güçlüğü tanısında ve müdahale planlamasında güvenilir ve geçerli bir araç olduğu gösterilmiştir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH260",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Hatalı Okuma Analizi ve Müdahalesi Miscue Analysis and Error Correction",
+    "content": "Goodman, Y. M., Watson, D. J., & Burke, C. L. (2005). Reading Miscue Inventory: From Evaluation to Instruction (2nd ed.). Richard C. Owen. / Buly, M. R., & Valencia, S. W. (2002). Below the bar. Elementary School Journal, 102(3), 219-239.",
+    "source": "Goodman, Y. M., Watson, D. J., & Burke, C. L. (2005). Reading Miscue Inventory: From Evaluation to Instruction (2nd ed.). Richard C. Owen. / Buly, M. R., & Valencia, S. W. (2002). Below the bar. Elementary School Journal, 102(3), 219-239."
+  },
+  {
+    "id": "CH261",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Kelime Çözümleme Stratejileri Eğitimi Word Decoding Strategy Training",
+    "content": "Yeni ve tanıdık olmayan kelimelerin sesli harflere, hecelere ve morfemlere bölünerek çözümlenmesi için sistematik strateji öğretimini içeren yapılandırılmış bir müdahaledir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH262",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Kelime Çözümleme Stratejileri Eğitimi Word Decoding Strategy Training",
+    "content": "Çocuklara 'büyük parçaları ara', 'hecelere böl', 'ön eki ve son eki tanı', 'sesli harfleri bul' gibi adım adım çözümleme stratejileri öğretilir. Strateji kartları ve sesli düşünme teknikleri kullanılır; gerçek metin üzerinde pratik yapılır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH263",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Kelime Çözümleme Stratejileri Eğitimi Word Decoding Strategy Training",
+    "content": "Yeni kelimelerle karşılaşıldığında bağımsız çözümleme kapasitesini artırır; okuma doğruluğunu ve sözcük dağarcığını geliştirir. Strateji öğretiminin okuma doğruluğu üzerindeki etkisi kontrollü çalışmalarla desteklenmektedir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH264",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Kelime Çözümleme Stratejileri Eğitimi Word Decoding Strategy Training",
+    "content": "Gaskins, I. W., Ehri, L. C., Cress, C., O'Hara, C., & Donnelly, K. (1996). Procedures for word learning: Making discoveries about words. The Reading Teacher, 50(4), 312-327. / Cunningham, P. M. (2012). Phonics They Use (6th ed.). Pearson.",
+    "source": "Gaskins, I. W., Ehri, L. C., Cress, C., O'Hara, C., & Donnelly, K. (1996). Procedures for word learning: Making discoveries about words. The Reading Teacher, 50(4), 312-327. / Cunningham, P. M. (2012). Phonics They Use (6th ed.). Pearson."
+  },
+  {
+    "id": "CH265",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Yinelenen Okuma ile Doğruluk ve Akıcılık Eğitimi Repeated Reading for Accuracy and Fluency",
+    "content": "Aynı metnin birden fazla kez sesli okunması yoluyla hem okuma doğruluğunu hem de akıcılığı eş zamanlı geliştiren yapılandırılmış bir müdahaledir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH266",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Yinelenen Okuma ile Doğruluk ve Akıcılık Eğitimi Repeated Reading for Accuracy and Fluency",
+    "content": "Çocuk kısa ve yaşa uygun bir metni önce sesli olarak okur; eğitimci hataları işaretler ve düzeltme geri bildirimi verir. Aynı metin iki-üç kez daha okunur; hız ve doğruluk kayıt altına alınır. İlerleme grafikleriyle görsel geri bildirim sağlanır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH267",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Yinelenen Okuma ile Doğruluk ve Akıcılık Eğitimi Repeated Reading for Accuracy and Fluency",
+    "content": "Okuma hataları ile okuma süresini azaltır; kelime tanıma otomasyonunu güçlendirir. Meta-analizler, yinelenen okumanın okuma doğruluğu ve akıcılığı üzerindeki etkisini güçlü kanıtlarla desteklemektedir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH268",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Yinelenen Okuma ile Doğruluk ve Akıcılık Eğitimi Repeated Reading for Accuracy and Fluency",
+    "content": "Chard, D. J., Vaughn, S., & Tyler, B. J. (2002). A synthesis of research on effective interventions for building reading fluency with elementary students with learning disabilities. Journal of Learning Disabilities, 35(5), 386-406. doi:10.1177/00222194020350050101",
+    "source": "Chard, D. J., Vaughn, S., & Tyler, B. J. (2002). A synthesis of research on effective interventions for building reading fluency with elementary students with learning disabilities. Journal of Learning Disabilities, 35(5), 386-406. doi:10.1177/00222194020350050101"
+  },
+  {
+    "id": "CH269",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Eşli Okuma (Paired Reading) Paired Reading / Partner Reading",
+    "content": "Çocuğun yetişkin ya da akranıyla birlikte sesli okuma yaparak anlık hata düzeltmesi aldığı yapılandırılmış destekli okuma yöntemidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH270",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Eşli Okuma (Paired Reading) Paired Reading / Partner Reading",
+    "content": "Yetişkin ve çocuk aynı metni eş zamanlı sesli okur. Çocuk hata yaptığında yetişkin doğru formu gösterir; çocuk tekrar eder ve devam eder. Çocuk hazır hissettiğinde bir sinyal (parmak kaldırma vb.) ile bağımsız okumaya geçer; hata anında yetişkin yeniden devreye girer.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH271",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Eşli Okuma (Paired Reading) Paired Reading / Partner Reading",
+    "content": "Okuma doğruluğunu ve güvenini artırır; hataları anında düzelterek yanlış kalıpların yerleşmesini önler. Eşli okumanın okuma doğruluğu ve tutumu üzerindeki olumlu etkisi randomize kontrollü çalışmalarla gösterilmiştir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH272",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Eşli Okuma (Paired Reading) Paired Reading / Partner Reading",
+    "content": "Topping, K. J. (1987). Paired reading: A powerful technique for parent use. The Reading Teacher, 40(7), 608-614. / Topping, K. J. (2006). Paired reading: Impact of a tutoring method on reading accuracy, comprehension and fluency. In S. E. Troia (Ed.), Instruction and Assessment for Struggling Writers. Guilford.",
+    "source": "Topping, K. J. (1987). Paired reading: A powerful technique for parent use. The Reading Teacher, 40(7), 608-614. / Topping, K. J. (2006). Paired reading: Impact of a tutoring method on reading accuracy, comprehension and fluency. In S. E. Troia (Ed.), Instruction and Assessment for Struggling Writers. Guilford."
+  },
+  {
+    "id": "CH273",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Hata Düzeltme ve Anlık Geri Bildirim Protokolü Error Correction and Immediate Feedback Protocol",
+    "content": "Sesli okuma sırasında yapılan hataları belirli bir prosedürle anında düzelten ve doğru formun pekiştirilmesini sağlayan yapılandırılmış bir öğretim protokolüdür.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH274",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Hata Düzeltme ve Anlık Geri Bildirim Protokolü Error Correction and Immediate Feedback Protocol",
+    "content": "Hata yapıldığında eğitimci durur, doğru kelimeyi gösterir, çocuk tekrar eder ve cümlenin başından okumaya devam eder (yeniden okuma prosedürü). Hata türüne göre (fonemik, anlam, yapı) geri bildirim çeşitlenir; övgü ile desteklenir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH275",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Hata Düzeltme ve Anlık Geri Bildirim Protokolü Error Correction and Immediate Feedback Protocol",
+    "content": "Hataların kalıcı hale gelmesini engeller; doğru ses-harf eşleştirmelerini pekiştirir. Anlık düzeltici geri bildirimin okuma doğruluğunu artırdığı ve yanlış kalıpların önüne geçtiği deneysel çalışmalarla doğrulanmıştır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH276",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Hata Düzeltme ve Anlık Geri Bildirim Protokolü Error Correction and Immediate Feedback Protocol",
+    "content": "Barbetta, P. M., Heward, W. L., & Bradley, D. M. (1993). Relative effects of whole-word and phonetic-prompt error correction on the acquisition of sight words by students with developmental disabilities. Journal of Applied Behavior Analysis, 26(1), 99-110. doi:10.1901/jaba.1993.26-99",
+    "source": "Barbetta, P. M., Heward, W. L., & Bradley, D. M. (1993). Relative effects of whole-word and phonetic-prompt error correction on the acquisition of sight words by students with developmental disabilities. Journal of Applied Behavior Analysis, 26(1), 99-110. doi:10.1901/jaba.1993.26-99"
+  },
+  {
+    "id": "CH277",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Kelime Bilgisi Önceden Öğretimi Pre-teaching Vocabulary for Reading Accuracy",
+    "content": "Metin okunmadan önce zorlu kelimelerin ses yapısının ve anlamının öğretildiği; okuma sırasında çözümleme yükünü azaltan önleyici bir sözcük dağarcığı müdahalesidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH278",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Kelime Bilgisi Önceden Öğretimi Pre-teaching Vocabulary for Reading Accuracy",
+    "content": "Okuma etkinliğinden önce metindeki güç kelimeler seçilir; fonemik yapısı, hecelere bölünmesi ve anlamı birlikte öğretilir. Kelime kartları, ses analizi ve bağlam cümleleri kullanılır; ardından metin okunur.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH279",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Kelime Bilgisi Önceden Öğretimi Pre-teaching Vocabulary for Reading Accuracy",
+    "content": "Önceden öğretilen kelimelerde okuma doğruluğunu artırır; metinde bu kelimelerle karşılaşıldığında çözümleme güçlüğünü azaltır. Kelime ön öğretiminin okuma doğruluğu ve okuduğunu anlama üzerindeki etkisi birden fazla kontrollü çalışmayla gösterilmiştir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH280",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Kelime Bilgisi Önceden Öğretimi Pre-teaching Vocabulary for Reading Accuracy",
+    "content": "Biemiller, A., & Boote, C. (2006). An effective method for building meaning vocabulary in primary grades. Journal of Educational Psychology, 98(1), 44- 62. doi:10.1037/0022-0663.98.1.44",
+    "source": "Biemiller, A., & Boote, C. (2006). An effective method for building meaning vocabulary in primary grades. Journal of Educational Psychology, 98(1), 44- 62. doi:10.1037/0022-0663.98.1.44"
+  },
+  {
+    "id": "CH281",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Gözetimli Sesli Okuma (Monitored Oral Reading) Monitored Oral Reading with Corrective Feedback",
+    "content": "Eğitimcinin sistematik gözlem ve geri bildirimle yönlendirdiği; okuma doğruluğunu ve stratejik çözümlemeyi birlikte geliştiren yapılandırılmış sesli okuma müdahalesidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH282",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Gözetimli Sesli Okuma (Monitored Oral Reading) Monitored Oral Reading with Corrective Feedback",
+    "content": "Çocuk uygun düzeyde bir metni sesli okurken eğitimci Running Record yöntemiyle hataları ve öz düzeltmeleri kaydeder. Seans sonunda doğruluk oranı hesaplanır; %90-95 hedeflenir. Bireysel hata örüntülerine göre bir sonraki seans planlanır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH283",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Gözetimli Sesli Okuma (Monitored Oral Reading) Monitored Oral Reading with Corrective Feedback",
+    "content": "Okuma doğruluğunu izlemek ve bireyselleştirmek için güvenilir bir çerçeve sunar; okuma düzeyine uygun materyal seçimini kolaylaştırır. Running Record'un okuma doğruluğu değerlendirmesinde geçerli ve güvenilir bir araç olduğu yaygın biçimde doğrulanmıştır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH284",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Gözetimli Sesli Okuma (Monitored Oral Reading) Monitored Oral Reading with Corrective Feedback",
+    "content": "Clay, M. M. (2000). Running Records for Classroom Teachers. Heinemann. / Shinn, M. R. (Ed.). (1989). Curriculum-Based Measurement: Assessing Special Children. Guilford Press.",
+    "source": "Clay, M. M. (2000). Running Records for Classroom Teachers. Heinemann. / Shinn, M. R. (Ed.). (1989). Curriculum-Based Measurement: Assessing Special Children. Guilford Press."
+  },
+  {
+    "id": "CH285",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Morfolojik Farkındalık Eğitimi Morphological Awareness Training",
+    "content": "Kelimelerin anlamlı parçalarını (kök, ön ek, son ek) tanıma ve kullanma becerisini geliştirerek kelime çözümleme doğruluğunu artıran yapılandırılmış bir dil bilgisi müdahalesidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH286",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Morfolojik Farkındalık Eğitimi Morphological Awareness Training",
+    "content": "Çocuklara yaygın ön ekler (un-, re-, pre-), son ekler (-ing, -ed, -tion) ve kök kelimeler sistematik olarak öğretilir. Kelime ayrıştırma, kök bulma ve yeni kelime oluşturma görevleri uygulanır; morfolojik parçaların görsel renk kodlaması kullanılır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH287",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Morfolojik Farkındalık Eğitimi Morphological Awareness Training",
+    "content": "Uzun ve karmaşık kelimelerin doğru okunmasını kolaylaştırır; kelime tanıma hızını artırır. Morfolojik farkındalık eğitiminin okuma doğruluğu ve kelime dağarcığı üzerindeki etkisi büyük örneklemli çalışmalarla desteklenmektedir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH288",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Morfolojik Farkındalık Eğitimi Morphological Awareness Training",
+    "content": "Carlisle, J. F. (2010). Effects of instruction in morphological awareness on literacy achievement. Reading Research Quarterly, 45(4), 464-487. doi:10.1598/RRQ.45.4.5 / Nunes, T., & Bryant, P. (2006). Improving Literacy by Teaching Morphemes. Routledge.",
+    "source": "Carlisle, J. F. (2010). Effects of instruction in morphological awareness on literacy achievement. Reading Research Quarterly, 45(4), 464-487. doi:10.1598/RRQ.45.4.5 / Nunes, T., & Bryant, P. (2006). Improving Literacy by Teaching Morphemes. Routledge."
+  },
+  {
+    "id": "CH289",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Sözsüz Kelime Çözümleme Eğitimi Nonsense Word Decoding Training",
+    "content": "Gerçek anlamı olmayan uyduruk kelimelerin okunması yoluyla fonem-grafem dönüşüm kurallarının otomasyonunu hedefleyen ve saf kod çözme becerisini ölçüp eğiten bir yöntemdir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH290",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Sözsüz Kelime Çözümleme Eğitimi Nonsense Word Decoding Training",
+    "content": "Çocuklara anlamsız hece ve kelime dizileri (örn. 'biv', 'lorpet', 'dake') sunulur ve bunları ses bilgisi kurallarına dayanarak yüksek sesle okumaları istenir. Gerçek kelime hafıza desteğini devre dışı bırakarak doğrudan kod çözme becerisi çalıştırılır; zorluk kademeli artırılır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH291",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Sözsüz Kelime Çözümleme Eğitimi Nonsense Word Decoding Training",
+    "content": "Harf-ses dönüşüm otomasyonunu geliştirir; yeni kelimelerle karşılaşıldığında bağımsız çözümleme kapasitesini artırır. DIBELS NWF ve AIMSWEB gibi standart değerlendirmelerde okuma doğruluğunun temel göstergesi olarak kullanılmakta; müdahale etkisi deneysel çalışmalarla belgelenmiştir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH292",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Sözsüz Kelime Çözümleme Eğitimi Nonsense Word Decoding Training",
+    "content": "Torgesen, J. K., Wagner, R. K., Rashotte, C. A., Rose, E., Lindamood, P., Conway, T., & Garvan, C. (1999). Preventing reading failure in young children with phonological processing disabilities. Journal of Educational Psychology, 91(4), 579-593. doi:10.1037/0022-0663.91.4.579",
+    "source": "Torgesen, J. K., Wagner, R. K., Rashotte, C. A., Rose, E., Lindamood, P., Conway, T., & Garvan, C. (1999). Preventing reading failure in young children with phonological processing disabilities. Journal of Educational Psychology, 91(4), 579-593. doi:10.1037/0022-0663.91.4.579"
+  },
+  {
+    "id": "CH293",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Koro Okuma ve Yankılı Okuma Choral Reading and Echo Reading",
+    "content": "Çocuğun eğitimci veya grup modeliyle birlikte sesli okuma yaparak doğru telaffuz ve çözümleme kalıplarını işitsel olarak içselleştirdiği destekli okuma yöntemidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH294",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Koro Okuma ve Yankılı Okuma Choral Reading and Echo Reading",
+    "content": "Koro okumada tüm grup eğitimciyle eş zamanlı okur. Yankılı okumada eğitimci bir cümle/paragraf okur; çocuk hemen tekrar eder. Her iki yöntem de kısa ve uygun düzeyde metinlerle yürütülür; doğru model sunumu önceliklidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH295",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Koro Okuma ve Yankılı Okuma Choral Reading and Echo Reading",
+    "content": "Doğru okuma kalıplarını işitsel model yoluyla pekiştirir; okuma doğruluğunu ve güvenini artırır. Koro ve yankılı okumanın okuma doğruluğu, akıcılık ve motivasyon üzerindeki olumlu etkileri gözlemsel ve deneysel çalışmalarla desteklenmektedir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH296",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Koro Okuma ve Yankılı Okuma Choral Reading and Echo Reading",
+    "content": "Rasinski, T. V. (2010). The Fluent Reader: Oral and Silent Reading Strategies for Building Fluency, Word Recognition and Comprehension (2nd ed.). Scholastic. / Eldredge, J. L. (1990). Increasing reading performance of poor readers in the third grade by using a group assisted reading strategy. Journal of Educational Research, 84(2), 69-77.",
+    "source": "Rasinski, T. V. (2010). The Fluent Reader: Oral and Silent Reading Strategies for Building Fluency, Word Recognition and Comprehension (2nd ed.). Scholastic. / Eldredge, J. L. (1990). Increasing reading performance of poor readers in the third grade by using a group assisted reading strategy. Journal of Educational Research, 84(2), 69-77."
+  },
+  {
+    "id": "CH297",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Kelime Tanıma Otomasyonu Eğitimi (Sight Word) Sight Word / High-Frequency Word Automaticity Training",
+    "content": "Sık kullanılan yüksek frekanslı kelimelerin (Dolch, Fry listeleri) anlık ve çabasız tanınmasını sağlayan sistematik bir kelime otomasyonu eğitimidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH298",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Kelime Tanıma Otomasyonu Eğitimi (Sight Word) Sight Word / High-Frequency Word Automaticity Training",
+    "content": "Çocuklara yüksek frekanslı kelimeler (örn. 'the', 'said', 'because') kart, oyun ve bağlamlı okuma görevleriyle öğretilir. Flashcard hız denemeleri, kelime duvarı etkinlikleri ve bağlamlı metin içinde tanıma pratiği birlikte yürütülür. Ustalık kriteri belirlenir (örn. 1 saniyede doğru tanıma).",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH299",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Kelime Tanıma Otomasyonu Eğitimi (Sight Word) Sight Word / High-Frequency Word Automaticity Training",
+    "content": "Tanınan yüksek frekanslı kelimeler otomatik hale gelir; çözümleme kapasitesi zorlu kelimeler için serbest kalır. Okuma doğruluğu ve hızı anlamlı ölçüde artar. Sight word otomasyonunun okuma performansının güçlü bir yordayıcısı olduğu geniş çaplı araştırmalarla belgelenmiştir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH300",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Kelime Tanıma Otomasyonu Eğitimi (Sight Word) Sight Word / High-Frequency Word Automaticity Training",
+    "content": "Ehri, L. C. (2005). Learning to read words: Theory, findings, and issues. Scientific Studies of Reading, 9(2), 167-188. doi:10.1207/s1532799xssr0902_4 / Rasinski, T., & Padak, N. (2001). From Phonics to Fluency. Longman.",
+    "source": "Ehri, L. C. (2005). Learning to read words: Theory, findings, and issues. Scientific Studies of Reading, 9(2), 167-188. doi:10.1207/s1532799xssr0902_4 / Rasinski, T., & Padak, N. (2001). From Phonics to Fluency. Longman."
+  },
+  {
+    "id": "CH301",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Müdahaleye Yanıt Modeli Çerçevesinde Yoğun Okuma Desteği Response to Intervention (RTI) Intensive Reading Accuracy Support",
+    "content": "Okuma doğruluğunda ciddi güçlük yaşayan çocuklar için veri temelli, aşamalı yoğunlukta müdahale sunan çok katmanlı destek modelidir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH302",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Müdahaleye Yanıt Modeli Çerçevesinde Yoğun Okuma Desteği Response to Intervention (RTI) Intensive Reading Accuracy Support",
+    "content": "Katman 1'de sınıf içi evrensel okuma desteği sağlanır. Katman 2'de küçük grup yoğun okuma müdahalesi (haftada 3-5 seans) uygulanır. Katman 3'te bireysel yoğun destek (günlük seans) ve uzman müdahalesi devreye girer. Süreçte CBM (Curriculum-Based Measurement) ile ilerleme izlenir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH303",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Müdahaleye Yanıt Modeli Çerçevesinde Yoğun Okuma Desteği Response to Intervention (RTI) Intensive Reading Accuracy Support",
+    "content": "Okuma doğruluğundaki güçlükleri erken tespit eder ve yoğunluk artırarak müdahale eder; okuma başarısızlığını önler. RTI modelinin okuma güçlükleri olan çocuklarda okuma doğruluğunu anlamlı ölçüde iyileştirdiği büyük örneklemli çalışmalarla desteklenmektedir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH304",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Müdahaleye Yanıt Modeli Çerçevesinde Yoğun Okuma Desteği Response to Intervention (RTI) Intensive Reading Accuracy Support",
+    "content": "Fuchs, D., & Fuchs, L. S. (2006). Introduction to response to intervention: What, why, and how valid is it? Reading Research Quarterly, 41(1), 93-99. doi:10.1598/RRQ.41.1.4 / Vaughn, S., & Fuchs, L. S. (2003). Redefining learning disabilities as inadequate response to instruction. Learning Disabilities Research & Practice, 18(3), 137-146.",
+    "source": "Fuchs, D., & Fuchs, L. S. (2006). Introduction to response to intervention: What, why, and how valid is it? Reading Research Quarterly, 41(1), 93-99. doi:10.1598/RRQ.41.1.4 / Vaughn, S., & Fuchs, L. S. (2003). Redefining learning disabilities as inadequate response to instruction. Learning Disabilities Research & Practice, 18(3), 137-146."
+  },
+  {
+    "id": "CH305",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "method",
+    "method_name": "Okuma Doğruluğu Temelli Erken Müdahale Programı Early Reading Accuracy Intervention Program",
+    "content": "Okul öncesi ve erken ilkokul döneminde okuma doğruluğu riskini taşıyan çocuklar için tasarlanmış; kapsamlı fonik, fonolojik ve kelime düzeyinde bütünleşik önleyici müdahale programıdır.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH306",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "application",
+    "method_name": "Okuma Doğruluğu Temelli Erken Müdahale Programı Early Reading Accuracy Intervention Program",
+    "content": "Anaokulu ve 1. sınıfta standart okuma tarama araçlarıyla (DIBELS, PALS) risk belirlenir. Fonik farkındalık, harf-ses eşleştirme, yüksek frekanslı kelime öğretimi ve destekli sesli okuma bileşenlerini kapsayan aşamalı program küçük gruplar halinde yürütülür.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH307",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "benefit",
+    "method_name": "Okuma Doğruluğu Temelli Erken Müdahale Programı Early Reading Accuracy Intervention Program",
+    "content": "Erken dönemde okuma doğruluğu altyapısını güçlendirir; ilerleyen yıllardaki okuma başarısızlığını anlamlı ölçüde azaltır. ABD Ulusal Okuma Paneli ve IDA bu tür bütünleşik erken müdahalelerin yüksek kanıt düzeyine sahip olduğunu belirtmektedir.",
+    "source": "Okuma Doğruluğu Raporu"
+  },
+  {
+    "id": "CH308",
+    "label": "OKUMA_DOGRULUGU",
+    "type": "source",
+    "method_name": "Okuma Doğruluğu Temelli Erken Müdahale Programı Early Reading Accuracy Intervention Program",
+    "content": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): What have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45(1), 2-40. doi:10.1046/j.0021-9630.2003.00305.x / National Reading Panel. (2000). Teaching Children to Read. NIH Publication No. 00-4769.",
+    "source": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): What have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45(1), 2-40. doi:10.1046/j.0021-9630.2003.00305.x / National Reading Panel. (2000). Teaching Children to Read. NIH Publication No. 00-4769."
+  },
+  {
+    "id": "CH309",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Fonem Farkındalığı Eğitimi (Phoneme Awareness Training)",
+    "content": "Seslerin ayrıştırılması, birleştirilmesi ve manipülasyonuna odaklanan yapılandırılmış bir müdahale programıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH310",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Fonem Farkındalığı Eğitimi (Phoneme Awareness Training)",
+    "content": "Çocuklara fonem segmentasyonu (kelimeleri seslerine ayırma), fonem harmanlama (sesleri birleştirerek kelime oluşturma) ve fonem silme/değiştirme görevleri uygulanır. Eğitim bireysel veya küçük gruplar hâlinde ilerleyen zorluk düzeyleriyle sunulur.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH311",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Fonem Farkındalığı Eğitimi (Phoneme Awareness Training)",
+    "content": "Okuma ve yazım doğruluğunu artırır; kelime tanıma ve heceleme becerilerini geliştirir. Meta-analizler, fonem farkındalığı eğitiminin disleksili çocuklarda okuma performansını anlamlı ölçüde iyileştirdiğini göstermektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH312",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Fonem Farkındalığı Eğitimi (Phoneme Awareness Training)",
+    "content": "National Reading Panel (2000). Teaching Children to Read. NIH Publication No. 00- 4769. U.S. Department of Health and Human Services.",
+    "source": "National Reading Panel (2000). Teaching Children to Read. NIH Publication No. 00- 4769. U.S. Department of Health and Human Services."
+  },
+  {
+    "id": "CH313",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Ses-Harf Eşleme Eğitimi (Phonics / Grapheme-Phoneme Correspondence Training)",
+    "content": "Harflerin ve harf gruplarının ses karşılıklarını sistematik biçimde öğreten yapılandırılmış okuma yaklaşımıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH314",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Ses-Harf Eşleme Eğitimi (Phonics / Grapheme-Phoneme Correspondence Training)",
+    "content": "Çocuklara tek tek harflerden başlayarak harf-ses ilişkileri öğretilir; ilerleyen aşamalarda hece ve kelime düzeyine geçilir. Orton-Gillingham gibi çok duyulu teknikler sıklıkla kullanılır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH315",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Ses-Harf Eşleme Eğitimi (Phonics / Grapheme-Phoneme Correspondence Training)",
+    "content": "Fonemik çözümleme ve kodlama becerilerini güçlendirir; kelime okuma hızını ve doğruluğunu artırır. Sistematik fonik öğretiminin dislekside en etkili müdahalelerden biri olduğu meta-analizlerle kanıtlanmıştır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH316",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Ses-Harf Eşleme Eğitimi (Phonics / Grapheme-Phoneme Correspondence Training)",
+    "content": "Ehri, L. C., Nunes, S. R., Stahl, S. A., & Willows, D. M. (2001). Systematic phonics instruction helps students learn to read. Review of Educational Research, 71(3), 393–447.",
+    "source": "Ehri, L. C., Nunes, S. R., Stahl, S. A., & Willows, D. M. (2001). Systematic phonics instruction helps students learn to read. Review of Educational Research, 71(3), 393–447."
+  },
+  {
+    "id": "CH317",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Uyak ve Alliterasyon Eğitimi (Rhyme and Alliteration Training)",
+    "content": "Kelimelerdeki ses benzerliklerini ve ses tekrarlarını fark etme becerisini geliştiren oyun tabanlı müdahaledir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH318",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Uyak ve Alliterasyon Eğitimi (Rhyme and Alliteration Training)",
+    "content": "Çocuklarla uyaklı şiirler, tekerlemeler ve ses oyunları oynanır. Aynı sesle başlayan kelimeleri gruplama ve uyak üretme görevleri uygulanır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH319",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Uyak ve Alliterasyon Eğitimi (Rhyme and Alliteration Training)",
+    "content": "Fonolojik işlemleme kapasitesini artırır; kelime tanıma hızını ve okuma akıcılığını destekler. Uyak duyarlılığının erken okuryazarlık başarısının güçlü bir yordayıcısı olduğu uzun vadeli araştırmalarla gösterilmiştir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH320",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Uyak ve Alliterasyon Eğitimi (Rhyme and Alliteration Training)",
+    "content": "Bradley, L., & Bryant, P. E. (1983). Categorizing sounds and learning to read – a causal connection. Nature, 301, 419–421. doi:10.1038/301419a0",
+    "source": "Bradley, L., & Bryant, P. E. (1983). Categorizing sounds and learning to read – a causal connection. Nature, 301, 419–421. doi:10.1038/301419a0"
+  },
+  {
+    "id": "CH321",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Fonolojik Bağlantı Eğitimi (Phonological Linkage Training)",
+    "content": "Fonem farkındalığı çalışmalarını doğrudan okuma ve heceleme pratiğiyle bütünleştiren yapılandırılmış bir müdahale programıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH322",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Fonolojik Bağlantı Eğitimi (Phonological Linkage Training)",
+    "content": "Çocuklara fonem manipülasyonu egzersizleri yaptırılır; ardından bu beceriler gerçek kitap okuma ve yazma görevleriyle hemen ilişkilendirilir. Fonem farkındalığı tek başına değil, okuma ve yazmayla eş zamanlı olarak çalıştırılır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH323",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Fonolojik Bağlantı Eğitimi (Phonological Linkage Training)",
+    "content": "Dört gruplu kontrollü çalışmada, fonem eğitimini okuma pratiğiyle birleştiren grup; yalnızca okuma ya da yalnızca fonem eğitimi alan gruplara kıyasla anlamlı biçimde daha yüksek okuma kazanımı elde etmiştir. Bulgular, müdahaleden dokuz ay sonra da korunmuştur.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH324",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Fonolojik Bağlantı Eğitimi (Phonological Linkage Training)",
+    "content": "Hatcher, P. J., Hulme, C., & Ellis, A. W. (1994). Ameliorating early reading failure by integrating the teaching of reading and phonological skills: The phonological linkage hypothesis. Child Development, 65(1), 41–57. https://doi.org/10.1111/j.1467-8624.1994.tb00733.x",
+    "source": "Hatcher, P. J., Hulme, C., & Ellis, A. W. (1994). Ameliorating early reading failure by integrating the teaching of reading and phonological skills: The phonological linkage hypothesis. Child Development, 65(1), 41–57. https://doi.org/10.1111/j.1467-8624.1994.tb00733.x"
+  },
+  {
+    "id": "CH325",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (Rapid Automatized Naming – RAN Training)",
+    "content": "Renk, nesne, harf ve rakamların hızla adlandırılması pratiğiyle fonolojik erişim hızını artırmayı hedefleyen eğitim yöntemidir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH326",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (Rapid Automatized Naming – RAN Training)",
+    "content": "Çocuklara standart RAN kartları (renk, nesne, harf, rakam dizileri) yüksek sesle ve mümkün olduğunca hızlı biçimde adlandırma görevleri uygulanır. Hız ve doğruluk birlikte değerlendirilir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH327",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Hızlı Otomatik İsimlendirme Eğitimi (Rapid Automatized Naming – RAN Training)",
+    "content": "Fonolojik erişim hızını artırır; okuma akıcılığını ve kelime tanıma otomatikliğini destekler. Yavaş RAN'ın disleksinin en güçlü bilişsel göstergelerinden biri olduğu ve eğitimle geliştirilebildiği gösterilmiştir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH329",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Fonemik Farkındalık ve Kısa Süreli Bellek Eğitimi (Phonemic Awareness & Verbal Short-Term Memory Training)",
+    "content": "Fonemik farkındalık, uyak farkındalığı ve sözel kısa süreli bellek becerilerini sistematik biçimde geliştirmeyi hedefleyen kapsamlı bir fonolojik eğitim yaklaşımıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH330",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Fonemik Farkındalık ve Kısa Süreli Bellek Eğitimi (Phonemic Awareness & Verbal Short-Term Memory Training)",
+    "content": "Çocuklara fonem ayrıştırma, uyak tanıma ve sözel kısa süreli bellek görevleri (sözsüz kelime tekrarlama, rakam dizisi hatırlama) birlikte uygulanır. Programlar bu üç beceriyi birbirine bağlı olarak çalıştırır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH331",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Fonemik Farkındalık ve Kısa Süreli Bellek Eğitimi (Phonemic Awareness & Verbal Short-Term Memory Training)",
+    "content": "235 çalışmayı kapsayan meta-analizde, fonemik farkındalığın kelime okuma üzerindeki etkisi (d = 1.37) diğer fonolojik becerilerden çok daha güçlü bulunmuştur. Bu nedenle fonemik farkındalık eğitimi disleksi müdahalelerinin temel bileşeni olarak önerilmektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH332",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Fonemik Farkındalık ve Kısa Süreli Bellek Eğitimi (Phonemic Awareness & Verbal Short-Term Memory Training)",
+    "content": "Melby-Lervåg, M., Lyster, S. A. H., & Hulme, C. (2012). Phonological skills and their role in learning to read: A meta-analytic review. Psychological Bulletin, 138(2), 322–352. https://doi.org/10.1037/a0026744 PubMed: 22250824",
+    "source": "Melby-Lervåg, M., Lyster, S. A. H., & Hulme, C. (2012). Phonological skills and their role in learning to read: A meta-analytic review. Psychological Bulletin, 138(2), 322–352. https://doi.org/10.1037/a0026744 PubMed: 22250824"
+  },
+  {
+    "id": "CH333",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Bilgisayar Destekli Fonolojik Eğitim (Computer-Based Phonological Training)",
+    "content": "Fonolojik farkındalık becerilerini geliştirmek amacıyla uyarlanabilir yazılım platformları aracılığıyla uygulanan teknoloji tabanlı müdahaledir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH334",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Bilgisayar Destekli Fonolojik Eğitim (Computer-Based Phonological Training)",
+    "content": "GraphoGame, Lexia Core5 veya Fast ForWord gibi programlar aracılığıyla çocuklar fonem tanıma, harf-ses eşleme ve hece birleştirme görevleri yapar. Yazılım çocuğun performansına göre zorluk seviyesini otomatik olarak ayarlar.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH335",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Bilgisayar Destekli Fonolojik Eğitim (Computer-Based Phonological Training)",
+    "content": "Fonem farkındalığı, okuma doğruluğu ve akıcılığında gelişme sağlar; bireyselleştirilmiş antrenman imkânı sunar. Randomize kontrollü çalışmalar bu programların disleksili çocuklarda anlamlı kazanımlar ürettiğini göstermektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH337",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Okuma Akıcılığı Eğitimi – Yinelenen Okuma (Repeated Reading for Fluency)",
+    "content": "Aynı metnin birden fazla kez okunması yoluyla akıcılık, hız ve otomatik kelime tanıma becerilerini geliştiren yapılandırılmış bir müdahaledir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH338",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Okuma Akıcılığı Eğitimi – Yinelenen Okuma (Repeated Reading for Fluency)",
+    "content": "Çocuk kısa ve yaşa uygun metin parçalarını önce sesli olarak okur, ardından tekrar eder. Okuma hızı ve doğruluk kayıt altına alınır; ilerleme grafikleriyle çocuğa görsel geri bildirim sunulur.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH339",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Okuma Akıcılığı Eğitimi – Yinelenen Okuma (Repeated Reading for Fluency)",
+    "content": "Okuma hızını ve akıcılığını artırır; yavaş ve çaba gerektiren okumayı otomatik hâle getirir. Meta-analizler, yinelenen okumanın disleksili öğrencilerde akıcılık üzerindeki etkisini güçlü kanıtlarla desteklemektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH340",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Okuma Akıcılığı Eğitimi – Yinelenen Okuma (Repeated Reading for Fluency)",
+    "content": "Chard, D. J., Vaughn, S., & Tyler, B. J. (2002). A synthesis of research on effective interventions for building reading fluency with elementary students with learning disabilities. Journal of Learning Disabilities, 35(5), 386–406.",
+    "source": "Chard, D. J., Vaughn, S., & Tyler, B. J. (2002). A synthesis of research on effective interventions for building reading fluency with elementary students with learning disabilities. Journal of Learning Disabilities, 35(5), 386–406."
+  },
+  {
+    "id": "CH341",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Müzik Temelli Ritim ve Fonem Eğitimi (Music-Based Phonological Training)",
+    "content": "Müzikal ritim algısı ile fonolojik farkındalık arasındaki ilişkiden yararlanarak okuma becerilerini destekleyen çok duyulu eğitim yaklaşımıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH342",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Müzik Temelli Ritim ve Fonem Eğitimi (Music-Based Phonological Training)",
+    "content": "Çocuklar ritmik vurma, melodik heceleme ve şarkı eşliğinde fonem bölümleme görevleri yapar. Eğitimde enstrüman çalma ve ritim sayımı da kullanılabilir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH343",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Müzik Temelli Ritim ve Fonem Eğitimi (Music-Based Phonological Training)",
+    "content": "Fonem bölümleme doğruluğunu ve hızını artırır; ritim işleme ile okuma akıcılığı arasındaki bağı güçlendirir. Nöral ritim senkronizasyonu ile okuma başarısı arasındaki ilişkiyi inceleyen araştırmalar bu yöntemin etkinliğini desteklemektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH344",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Müzik Temelli Ritim ve Fonem Eğitimi (Music-Based Phonological Training)",
+    "content": "Flaugnacco, E., Lopez, L., Terribili, C., Montico, M., Zoia, S., & Schön, D. (2015). Music training increases phonological awareness and reading skills in developmental dyslexia. PLOS ONE, 10(9), e0138715. doi:10.1371/journal.pone.0138715",
+    "source": "Flaugnacco, E., Lopez, L., Terribili, C., Montico, M., Zoia, S., & Schön, D. (2015). Music training increases phonological awareness and reading skills in developmental dyslexia. PLOS ONE, 10(9), e0138715. doi:10.1371/journal.pone.0138715"
+  },
+  {
+    "id": "CH345",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "İşitsel Ayrım Eğitimi (Auditory Discrimination Training)",
+    "content": "Benzer sesleri birbirinden ayırt etme kapasitesini artırmayı hedefleyen işitsel algı temelli müdahale yöntemidir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH346",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "İşitsel Ayrım Eğitimi (Auditory Discrimination Training)",
+    "content": "Çocuklara minimal çiftler (örn. /b/ – /p/, /d/ – /t/) arasındaki farkı dinleyerek belirleme ve sesleri doğru eşleme görevleri uygulanır. Görevler giderek artan zorluk seviyeleriyle sunulur.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH347",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "İşitsel Ayrım Eğitimi (Auditory Discrimination Training)",
+    "content": "Fonem sınırlarının algılanmasını güçlendirir; ses-harf eşleme doğruluğunu ve hecelem becerisini artırır. Disleksili çocuklarda işitsel fonemik ayrımın güçlendirilmesinin okuma üzerinde olumlu etkiler oluşturduğu gösterilmiştir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH348",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "İşitsel Ayrım Eğitimi (Auditory Discrimination Training)",
+    "content": "Tallal, P. (2004). Improving language and literacy is a matter of time. Nature Reviews Neuroscience, 5, 721–728. doi:10.1038/nrn1499",
+    "source": "Tallal, P. (2004). Improving language and literacy is a matter of time. Nature Reviews Neuroscience, 5, 721–728. doi:10.1038/nrn1499"
+  },
+  {
+    "id": "CH349",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Sözsüz Kelime Kod Çözme Eğitimi (Nonsense Word Decoding Training)",
+    "content": "Gerçek anlamı olmayan uyduruk kelimelerin okunması yoluyla fonem- grafem dönüşüm kurallarının otomasyonunu hedefleyen eğitim yöntemidir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH350",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Sözsüz Kelime Kod Çözme Eğitimi (Nonsense Word Decoding Training)",
+    "content": "Çocuklara anlamsız hece ve kelime dizileri (örn. 'biv', 'lorpet') sunulur ve bunları ses bilgisi kurallarına dayanarak yüksek sesle okumaları istenir. Bu görev gerçek kelime hafıza desteğini devre dışı bırakarak saf kod çözme becerisini ölçer ve eğitir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH351",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Sözsüz Kelime Kod Çözme Eğitimi (Nonsense Word Decoding Training)",
+    "content": "Harf-ses dönüşüm otomasyonunu geliştirir; yeni kelimelerle karşılaşıldığında bağımsız kod çözme kapasitesini artırır. DIBELS ve AIMSWEB gibi standart değerlendirme araçlarında temel gösterge olarak kullanılmaktadır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH352",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Sözsüz Kelime Kod Çözme Eğitimi (Nonsense Word Decoding Training)",
+    "content": "Torgesen, J. K., Wagner, R. K., Rashotte, C. A., Rose, E., Lindamood, P., Conway, T., & Garvan, C. (1999). Preventing reading failure in young children with phonological processing disabilities. Journal of Educational Psychology, 91(4), 579–593.",
+    "source": "Torgesen, J. K., Wagner, R. K., Rashotte, C. A., Rose, E., Lindamood, P., Conway, T., & Garvan, C. (1999). Preventing reading failure in young children with phonological processing disabilities. Journal of Educational Psychology, 91(4), 579–593."
+  },
+  {
+    "id": "CH353",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Fonik Tabanlı Yazma ve Heceleme Müdahalesi (Phonics-Based Spelling Intervention)",
+    "content": "Sesleri doğru harflere dönüştürme ve kelimeleri morfolojik-fonolojik kurallara göre yazma becerilerini geliştiren yapılandırılmış yazma müdahalesidir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH354",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Fonik Tabanlı Yazma ve Heceleme Müdahalesi (Phonics-Based Spelling Intervention)",
+    "content": "Çocuklara ses analizi yaparak yazma (sesi işiterek harfe dönüştürme), morfolojik kural öğretimi (ön ekler, son ekler) ve yazım kurallarına dayalı sözcük çalışmaları uygulanır. Hataların nedensel analizi yapılarak bireyselleştirilmiş egzersizler verilir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH355",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Fonik Tabanlı Yazma ve Heceleme Müdahalesi (Phonics-Based Spelling Intervention)",
+    "content": "Heceleme doğruluğunu ve yazılı ifadeyi güçlendirir; fonolojik kodlama becerilerini destekler. Yazma müdahalelerini inceleyen meta-analizler bu yaklaşımın disleksili çocuklarda anlamlı kazanımlar ürettiğini göstermektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH356",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Fonik Tabanlı Yazma ve Heceleme Müdahalesi (Phonics-Based Spelling Intervention)",
+    "content": "Graham, S., & Santangelo, T. (2014). Does spelling instruction make students better spellers, readers, and writers? A meta-analytic review. Reading and Writing, 27(9), 1703–1743. doi:10.1007/s11145-014-9517-0",
+    "source": "Graham, S., & Santangelo, T. (2014). Does spelling instruction make students better spellers, readers, and writers? A meta-analytic review. Reading and Writing, 27(9), 1703–1743. doi:10.1007/s11145-014-9517-0"
+  },
+  {
+    "id": "CH357",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "method",
+    "method_name": "Fonolojik Farkındalık Temelli Erken Müdahale Programı (Early Phonological Awareness Intervention – EPAI)",
+    "content": "Okuma öncesi ve erken okul döneminde uygulanmak üzere tasarlanmış, risk altındaki çocukları hedefleyen önleyici fonolojik müdahale programıdır.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH358",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "application",
+    "method_name": "Fonolojik Farkındalık Temelli Erken Müdahale Programı (Early Phonological Awareness Intervention – EPAI)",
+    "content": "Anaokulu ve ilkokul 1. sınıf düzeyinde çocuklara sözcük farkındalığı, hece farkındalığı, başlangıç sesi farkındalığı ve fonem farkındalığı becerilerini kapsayan aşamalı bir program uygulanır. Küçük grup veya bireysel seanslar hâlinde yürütülür.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH359",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "benefit",
+    "method_name": "Fonolojik Farkındalık Temelli Erken Müdahale Programı (Early Phonological Awareness Intervention – EPAI)",
+    "content": "Disleksi riski taşıyan çocuklarda okuma güçlüklerinin erken yaşta önüne geçer; ilerleyen yıllardaki okuma başarısını güçlü biçimde destekler. ABD Önleyici Hizmetler Görev Gücü ve IDA, bu programların yüksek kanıt düzeyine sahip olduğunu belirtmektedir.",
+    "source": "Fonolojik Farkındalık Raporu"
+  },
+  {
+    "id": "CH360",
+    "label": "FONOLOJIK_FARKINDALIK",
+    "type": "source",
+    "method_name": "Fonolojik Farkındalık Temelli Erken Müdahale Programı (Early Phonological Awareness Intervention – EPAI)",
+    "content": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): what have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45(1), 2–40. doi:10.1046/j.0021-9630.2003.00305.x",
+    "source": "Vellutino, F. R., Fletcher, J. M., Snowling, M. J., & Scanlon, D. M. (2004). Specific reading disability (dyslexia): what have we learned in the past four decades? Journal of Child Psychology and Psychiatry, 45(1), 2–40. doi:10.1046/j.0021-9630.2003.00305.x"
+  },
+  {
+    "id": "CH361",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Fonem Birleştirme Müdahalesi (Phonemic Blending Intervention)",
+    "content": "Fonem birleştirme müdahalesi, çocukların ayrı verilen sesleri doğru sırada birleştirerek anlamlı kelimeler oluşturmasını hedefleyen fonolojik farkındalık yaklaşımıdır. Bu yöntem özellikle sıralı işitsel işlemleme ve fonolojik dizileme becerileri açısından önemli kabul edilmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH362",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Fonem Birleştirme Müdahalesi (Phonemic Blending Intervention)",
+    "content": "Çocuklara tek tek verilen sesler doğru sırada birleştirilerek kelime oluşturma çalışmaları yaptırılır. Eğitim sırasında tekrar çalışmaları, sözlü görevler ve fonik etkinlikler kullanılmaktadır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH363",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Fonem Birleştirme Müdahalesi (Phonemic Blending Intervention)",
+    "content": "Çalışmada phonemic blending çalışmalarının phonic beceriler, word reading fluency ve decoding performansı üzerinde olumlu etkiler oluşturduğu belirtilmiştir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH364",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Fonem Birleştirme Müdahalesi (Phonemic Blending Intervention)",
+    "content": "Taruna (2022). The effectiveness of phonemic awareness intervention in student with dyslexia.",
+    "source": "Taruna (2022). The effectiveness of phonemic awareness intervention in student with dyslexia."
+  },
+  {
+    "id": "CH365",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Onset-Rime Sıralama Eğitimi (Onset-Rime Sequencing Training)",
+    "content": "Bu yöntem, çocukların kelimelerin başlangıç seslerini ve rime yapılarını sıralı biçimde işlemlemesini geliştirmeye yönelik fonolojik farkındalık eğitimidir. Özellikle ses örüntülerinin fark edilmesi ve sıralı ses yapılarının analiz edilmesi üzerinde durulmaktadır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH366",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Onset-Rime Sıralama Eğitimi (Onset-Rime Sequencing Training)",
+    "content": "Çocuklara onset-rime düzeyinde ses dizileri verilmekte, benzer ses örüntülerini ayırt etmeleri ve doğru sırada analiz etmeleri istenmektedir. Eğitim sırasında kafiye etkinlikleri ve ses eşleştirme çalışmaları da kullanılmaktadır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH367",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Onset-Rime Sıralama Eğitimi (Onset-Rime Sequencing Training)",
+    "content": "Araştırmada fonolojik farkındalık ve reading-related abilities üzerinde gelişmeler rapor edilmiştir. Özellikle sıralı ses işlemleme becerilerini desteklediği belirtilmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH368",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Onset-Rime Sıralama Eğitimi (Onset-Rime Sequencing Training)",
+    "content": "Wang et al. (2017). Effects of Phonological Training on the Reading and Reading- Related Abilities of Hong Kong Children with Dyslexia.",
+    "source": "Wang et al. (2017). Effects of Phonological Training on the Reading and Reading- Related Abilities of Hong Kong Children with Dyslexia."
+  },
+  {
+    "id": "CH369",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Fonik ve Heceleme Temelli Müdahale (Phonics Through Spelling Intervention)",
+    "content": "Bu yaklaşım, harf-ses sıralamasını yazım çalışmalarıyla güçlendirmeyi amaçlayan yapılandırılmış fonik müdahaledir. Çocukların sesleri yalnızca tanıması değil, doğru sırayla yazıya aktarabilmesi hedeflenmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH370",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Fonik ve Heceleme Temelli Müdahale (Phonics Through Spelling Intervention)",
+    "content": "Eğitim sırasında çocuklara phonics çalışmaları, heceleme görevleri ve pseudoword oluşturma etkinlikleri uygulanır. Çocukların harf-ses ilişkilerini sıralı biçimde kullanmaları teşvik edilmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH371",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Fonik ve Heceleme Temelli Müdahale (Phonics Through Spelling Intervention)",
+    "content": "Çalışmada word reading efficiency, spelling ve pseudoword decoding alanlarında gelişmeler bildirilmiştir. Özellikle ses sıralamasının yazılı dilde doğru kullanılmasını desteklemektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH372",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Fonik ve Heceleme Temelli Müdahale (Phonics Through Spelling Intervention)",
+    "content": "van Rijthoven et al. (2021). Phonics Through Spelling Intervention.",
+    "source": "van Rijthoven et al. (2021). Phonics Through Spelling Intervention."
+  },
+  {
+    "id": "CH373",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Fast ForWord İşitsel Sıralama Eğitimi",
+    "content": "Fast ForWord, çocukların hızlı değişen işitsel uyaranları işlemleme ve ses dizilerini doğru sırayla analiz etme becerilerini geliştirmeye yönelik bilgisayar destekli dil müdahalesidir. Program özellikle işitsel sıralama güçlüğü yaşayan bireyler için geliştirilmiştir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH374",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Fast ForWord İşitsel Sıralama Eğitimi",
+    "content": "Çocuklara hızlı işitsel uyaran dizileri sunulur ve fonolojik işlemleme görevleri uygulanır. Bilgisayar yazılımı performansa göre zorluk seviyesini ayarlayabilmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH375",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Fast ForWord İşitsel Sıralama Eğitimi",
+    "content": "Araştırmalarda phonological awareness, phonematic awareness ve auditory sequencing becerileri üzerinde gelişmeler bildirilmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH376",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Fast ForWord İşitsel Sıralama Eğitimi",
+    "content": "Etchepareborda – Intervention in dyslexic disorders: phonological awareness and Fast ForWord.",
+    "source": "Etchepareborda – Intervention in dyslexic disorders: phonological awareness and Fast ForWord."
+  },
+  {
+    "id": "CH377",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Adaptif Sıralı Rehberlik Sistemi (Adaptive Sequential Guidance System)",
+    "content": "Bu sistem, çocukların fonolojik sıralama becerilerine göre otomatik uyarlama yapan yapay zekâ destekli müdahale yaklaşımıdır. Sistem özellikle pseudoword işleme ve ses dizilerini sıralı biçimde analiz etme süreçlerini desteklemektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH378",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Adaptif Sıralı Rehberlik Sistemi (Adaptive Sequential Guidance System)",
+    "content": "Program çocukların performansına göre ses dizilerini, kelime yapılarını ve görev zorluk seviyelerini otomatik olarak ayarlamaktadır. Müdahale bireysel öğrenme hızına göre şekillenmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH379",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Adaptif Sıralı Rehberlik Sistemi (Adaptive Sequential Guidance System)",
+    "content": "Fonolojik sıralama, pseudoword decoding ve sequential processing becerilerini desteklemeyi hedeflemektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH380",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Adaptif Sıralı Rehberlik Sistemi (Adaptive Sequential Guidance System)",
+    "content": "Trujillo et al. (2025). Adaptive Sequential Guidance System.",
+    "source": "Trujillo et al. (2025). Adaptive Sequential Guidance System."
+  },
+  {
+    "id": "CH381",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Fonolojik Farkındalık Müdahalesi (Phonological Awareness Intervention)",
+    "content": "Bu müdahale, çocukların sesleri tanıma, ayırma, birleştirme ve sıralı biçimde işleme becerilerini geliştirmeyi amaçlayan yapılandırılmış fonolojik farkındalık eğitimidir. Özellikle disleksi ve konuşma-dil bozukluğu yaşayan çocuklarda erken okuma becerilerini desteklemek amacıyla uygulanmaktadır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH382",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Fonolojik Farkındalık Müdahalesi (Phonological Awareness Intervention)",
+    "content": "Çocuklara fonem segmentasyonu, blending, ses manipülasyonu ve harf-ses eşleştirme çalışmaları uygulanmaktadır. Eğitim bireysel veya küçük grup oturumları şeklinde yürütülmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH383",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Fonolojik Farkındalık Müdahalesi (Phonological Awareness Intervention)",
+    "content": "Araştırmada fonolojik farkındalık, decoding ve erken literacy becerileri üzerinde olumlu etkiler bildirilmiştir. Özellikle ses sıralama ve phonological processing alanlarında gelişmeler gözlemlenmiştir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH384",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Fonolojik Farkındalık Müdahalesi (Phonological Awareness Intervention)",
+    "content": "Gillon, G. T. (2000). The Efficacy of Phonological Awareness Intervention for Children With Spoken Language Impairment.",
+    "source": "Gillon, G. T. (2000). The Efficacy of Phonological Awareness Intervention for Children With Spoken Language Impairment."
+  },
+  {
+    "id": "CH385",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Fonem Segmentasyonu Eğitimi (Phoneme Segmentation Training)",
+    "content": "Fonem segmentasyonu eğitimi, çocukların kelimeleri oluşturan sesleri doğru sırayla ayırabilmesini geliştirmeye yönelik yapılandırılmış fonolojik müdahaledir. Sıralama becerisi açısından özellikle önemlidir çünkü çocuk yalnızca sesi tanımayı değil, seslerin diziliş sırasını da işlemeyi öğrenmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH386",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Fonem Segmentasyonu Eğitimi (Phoneme Segmentation Training)",
+    "content": "Çocuklardan bir kelimeyi oluşturan sesleri tek tek ve doğru sırada söylemeleri istenir. Örneğin “bal” kelimesi /b/ - /a/ - /l/ şeklinde ayrılır. Çalışmalar sırasında ses kutuları, kartlar ve ritmik tekrarlar kullanılabilir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH387",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Fonem Segmentasyonu Eğitimi (Phoneme Segmentation Training)",
+    "content": "Fonolojik sıralama, decoding ve erken okuma becerilerini geliştirmektedir. Ses sırasını doğru işlemleme becerisini güçlendirdiği için disleksili çocuklarda önemli görülmektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH388",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Fonem Segmentasyonu Eğitimi (Phoneme Segmentation Training)",
+    "content": "National Reading Panel (2000). Teaching Children to Read.",
+    "source": "National Reading Panel (2000). Teaching Children to Read."
+  },
+  {
+    "id": "CH401",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Lindamood Phoneme Sequencing Program (LiPS)",
+    "content": "LiPS programı, çocukların seslerin sırasını fark etmesini ve fonem dizilerini bilinçli şekilde işlemlemesini geliştiren yapılandırılmış bir fonolojik müdahale programıdır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH402",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Lindamood Phoneme Sequencing Program (LiPS)",
+    "content": "Çocuklara ses segmentasyonu, blending, ses sırası değiştirme ve fonem manipülasyonu çalışmaları uygulanır. Program multisensory yaklaşım kullanmaktadır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH403",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Lindamood Phoneme Sequencing Program (LiPS)",
+    "content": "Fonolojik sıralama, decoding ve spelling becerilerini geliştirmeyi hedeflemektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH404",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Lindamood Phoneme Sequencing Program (LiPS)",
+    "content": "Lindamood & Lindamood. Lindamood Phoneme Sequencing Program for Reading, Spelling, and Speech.",
+    "source": "Lindamood & Lindamood. Lindamood Phoneme Sequencing Program for Reading, Spelling, and Speech."
+  },
+  {
+    "id": "CH409",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "GraphoGame Fonolojik Sıralama Eğitimi",
+    "content": "GraphoGame, çocukların harf-ses eşleşmelerini ve fonolojik sıralama becerilerini geliştirmek amacıyla oluşturulmuş bilgisayar tabanlı eğitim programıdır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH410",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "GraphoGame Fonolojik Sıralama Eğitimi",
+    "content": "Çocuklara ses-harf eşleştirme, sıralı ses tanıma ve kelime oluşturma görevleri uygulanır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH411",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "GraphoGame Fonolojik Sıralama Eğitimi",
+    "content": "Erken okuma ve fonolojik işlemleme becerilerini desteklemektedir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH412",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "GraphoGame Fonolojik Sıralama Eğitimi",
+    "content": "Forné et al. (2022). Improving Reading Skills Using a Computerized Phonological Training Program in Early Readers with Reading Difficulties.",
+    "source": "Forné et al. (2022). Improving Reading Skills Using a Computerized Phonological Training Program in Early Readers with Reading Difficulties."
+  },
+  {
+    "id": "CH413",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "method",
+    "method_name": "Fonolojik Farkındalık + Harf Bilgisi Müdahalesi",
+    "content": "Bu müdahale, fonolojik farkındalık çalışmalarını harf bilgisiyle birleştirerek çocukların ses sıralama ve decoding becerilerini geliştirmeyi amaçlamaktadır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH414",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "application",
+    "method_name": "Fonolojik Farkındalık + Harf Bilgisi Müdahalesi",
+    "content": "Çocuklara fonem segmentasyonu, blending ve harf-ses eşleştirme etkinlikleri birlikte uygulanır.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH415",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "benefit",
+    "method_name": "Fonolojik Farkındalık + Harf Bilgisi Müdahalesi",
+    "content": "Çalışmada nonword decoding ve spelling alanlarında gelişmeler bildirilmiştir.",
+    "source": "Sıralama Becerisi Raporu"
+  },
+  {
+    "id": "CH416",
+    "label": "CALISMA_BELLEGI_SIRALAMA",
+    "type": "source",
+    "method_name": "Fonolojik Farkındalık + Harf Bilgisi Müdahalesi",
+    "content": "Kirk & Gillon (2007). Longitudinal effects of phonological awareness intervention on morphological awareness in children with speech impairment.",
+    "source": "Kirk & Gillon (2007). Longitudinal effects of phonological awareness intervention on morphological awareness in children with speech impairment."
   }
 ]
