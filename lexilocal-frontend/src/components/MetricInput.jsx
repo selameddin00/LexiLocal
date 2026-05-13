@@ -1,11 +1,3 @@
-const INPUT_BASE = {
-  minHeight: '44px',
-  width: '100%',
-  boxSizing: 'border-box',
-};
-
-const ERROR_BORDER = { border: '2px solid #DC2626' };
-
 export default function MetricInput({
   label,
   name,
@@ -15,17 +7,61 @@ export default function MetricInput({
   max,
   error,
   inputType = 'number',
+  description,
+  disabled = false,
 }) {
   const handleChange = (e) => onChange(Number(e.target.value));
 
+  const baseInputStyle = {
+    width: '100%',
+    padding: '12px 16px',
+    border: `2px solid ${error ? '#DC2626' : '#E5E7EB'}`,
+    borderRadius: '10px',
+    fontSize: '16px',
+    fontFamily: "'Nunito', system-ui, sans-serif",
+    outline: 'none',
+    boxSizing: 'border-box',
+    background: disabled ? '#F9FAFB' : '#ffffff',
+    cursor: disabled ? 'not-allowed' : 'auto',
+  };
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', width: '100%' }}>
-      <label htmlFor={name} style={{ fontWeight: 500, fontSize: '14px', color: 'var(--color-text-main)' }}>
+    <div className="card" style={{ marginBottom: 0 }}>
+      <label
+        htmlFor={name}
+        style={{
+          display: 'block',
+          fontSize: '15px',
+          fontWeight: 700,
+          color: '#1E3A5F',
+          marginBottom: '4px',
+        }}
+      >
         {label}
       </label>
 
+      {description && (
+        <p style={{ fontSize: '13px', color: '#6B7280', marginBottom: '12px' }}>
+          {description}
+        </p>
+      )}
+
       {inputType === 'slider' ? (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', width: '100%' }}>
+        <div>
+          {/* Değer göstergesi */}
+          <div style={{ textAlign: 'center', marginBottom: '8px' }}>
+            <span
+              style={{
+                fontSize: '28px',
+                fontWeight: 800,
+                color: error ? '#DC2626' : '#2E86C1',
+              }}
+            >
+              {value}
+            </span>
+          </div>
+
+          {/* Range input */}
           <input
             type="range"
             id={name}
@@ -34,33 +70,28 @@ export default function MetricInput({
             min={min}
             max={max}
             step={1}
+            disabled={disabled}
             onChange={handleChange}
             style={{
-              flex: 1,
-              minHeight: '44px',
-              cursor: 'pointer',
-              accentColor: 'var(--color-accent)',
-              ...(error ? ERROR_BORDER : {}),
+              width: '100%',
+              accentColor: '#2E86C1',
+              height: '6px',
+              cursor: disabled ? 'not-allowed' : 'pointer',
+              display: 'block',
             }}
           />
-          <input
-            type="number"
-            aria-label={`${label} sayısal değer`}
-            value={value}
-            min={min}
-            max={max}
-            step={1}
-            onChange={handleChange}
+
+          {/* Min / Max etiketleri */}
+          <div
             style={{
-              ...INPUT_BASE,
-              width: '72px',
-              flex: 'none',
-              padding: '0 8px',
-              borderRadius: '6px',
-              border: error ? '2px solid #DC2626' : '1px solid var(--color-border)',
-              fontSize: '14px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              marginTop: '6px',
             }}
-          />
+          >
+            <span style={{ fontSize: '12px', color: '#9CA3AF' }}>{min}</span>
+            <span style={{ fontSize: '12px', color: '#9CA3AF' }}>{max}</span>
+          </div>
         </div>
       ) : (
         <input
@@ -71,19 +102,16 @@ export default function MetricInput({
           min={min}
           max={max}
           step={1}
+          disabled={disabled}
           onChange={handleChange}
-          style={{
-            ...INPUT_BASE,
-            padding: '0 12px',
-            borderRadius: '6px',
-            border: error ? '2px solid #DC2626' : '1px solid var(--color-border)',
-            fontSize: '14px',
-          }}
+          style={baseInputStyle}
         />
       )}
 
       {error && (
-        <span style={{ fontSize: '12px', color: '#DC2626' }}>{error}</span>
+        <span style={{ display: 'block', fontSize: '12px', color: '#DC2626', marginTop: '6px' }}>
+          {error}
+        </span>
       )}
     </div>
   );
