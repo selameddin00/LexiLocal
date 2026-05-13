@@ -1,26 +1,16 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import RiskBadge from '../components/RiskBadge';
-import { mockHistory } from '../data/mockHistory';
 
 const STATS = [
-  { icon: '📊', value: '3',          label: 'Toplam Test'  },
-  { icon: '✅', value: '2',          label: 'Tamamlanan'   },
-  { icon: '⚠️', value: '1',          label: 'Orta Risk'    },
-  { icon: '📅', value: '12.05.2025', label: 'Son Test', small: true },
+  { icon: '📊', value: '1200', label: 'Toplam Sentetik Veri' },
+  { icon: '🔴', value: '240',  label: 'Yüksek Risk Verisi' },
+  { icon: '🟡', value: '360',  label: 'Orta Risk Verisi' },
+  { icon: '🟢', value: '600',  label: 'Normal Veri' },
 ];
 
 const FEATURES = [
   { icon: '📖', title: 'Okuma Analizi',  desc: '6 farklı metrik ile kapsamlı değerlendirme'    },
   { icon: '📈', title: 'Anlık Rapor',    desc: 'Test sonrası detaylı analiz ve görselleştirme' },
-  { icon: '👨‍👩‍👧', title: 'Ebeveyn Dostu', desc: 'Anlaşılır sonuçlar ve uygulanabilir öneriler'  },
-];
-
-const INFO_CHIPS = [
-  { icon: '🔬', text: '6 Bilimsel Metrik' },
-  { icon: '🎯', text: '3 Risk Seviyesi'   },
-  { icon: '⚡', text: 'Anlık Raporlama'   },
-  { icon: '🆓', text: 'Ücretsiz Demo'     },
 ];
 
 function NavLogo({ isMobile }) {
@@ -28,9 +18,9 @@ function NavLogo({ isMobile }) {
     <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
       <div
         style={{
-          background: 'linear-gradient(135deg, #1E3A5F, #2E86C1)',
+          background: 'rgba(255,255,255,0.15)',
           borderRadius: '12px',
-          padding: '3px',
+          padding: '4px',
           display: 'inline-flex',
           flexShrink: 0,
         }}
@@ -50,11 +40,11 @@ function NavLogo({ isMobile }) {
       </div>
       <div>
         <div style={{ lineHeight: 1 }}>
-          <span style={{ fontFamily: 'Georgia, serif', fontSize: '21px', fontWeight: 900, color: '#1E3A5F', letterSpacing: '-0.5px' }}>Lexi</span>
-          <span style={{ fontFamily: 'Georgia, serif', fontSize: '21px', fontWeight: 900, color: '#2E86C1', letterSpacing: '-0.5px' }}>Local</span>
+          <span style={{ fontFamily: 'Georgia, serif', fontSize: '21px', fontWeight: 900, color: '#ffffff', letterSpacing: '-0.5px' }}>Lexi</span>
+          <span style={{ fontFamily: 'Georgia, serif', fontSize: '21px', fontWeight: 900, color: '#7DD3FC', letterSpacing: '-0.5px' }}>Local</span>
         </div>
         {!isMobile && (
-          <div style={{ fontSize: '10px', color: '#9CA3AF', letterSpacing: '1.5px', textTransform: 'uppercase', marginTop: '3px' }}>
+          <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.6)', letterSpacing: '1.5px', textTransform: 'uppercase', marginTop: '3px' }}>
             Disleksi Destek Platformu
           </div>
         )}
@@ -63,41 +53,10 @@ function NavLogo({ isMobile }) {
   );
 }
 
-function HistoryItem({ item }) {
-  const navigate = useNavigate();
-  const [hover, setHover] = useState(false);
-
-  return (
-    <div
-      onClick={() => navigate('/report/' + item.id)}
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '14px 16px',
-        borderRadius: '10px',
-        cursor: 'pointer',
-        marginBottom: '4px',
-        background: hover ? '#F0F7FF' : 'transparent',
-        transition: 'background 0.15s',
-      }}
-    >
-      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <span style={{ fontSize: '14px' }}>📅</span>
-        <span style={{ fontSize: '14px', fontWeight: 600, color: '#1F2937' }}>{item.date}</span>
-      </div>
-      <RiskBadge riskLevel={item.riskLevel} label={item.label} />
-    </div>
-  );
-}
-
 export default function DashboardPage() {
   const navigate = useNavigate();
   const [isMobile]                        = useState(() => window.innerWidth < 768);
   const [logoutHover, setLogoutHover]     = useState(false);
-  const [startHover1, setStartHover1]     = useState(false);
   const [startHover2, setStartHover2]     = useState(false);
 
   const handleLogout = () => {
@@ -108,7 +67,9 @@ export default function DashboardPage() {
   return (
     <div
       style={{
-        background: 'linear-gradient(135deg, #F0F7FF 0%, #EFF6FF 100%)',
+        position: 'relative',
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #F5F7FA 0%, #EEF2F7 100%)',
         minHeight: '100vh',
         fontFamily: "'Nunito', system-ui, sans-serif",
       }}
@@ -119,9 +80,9 @@ export default function DashboardPage() {
           position: 'sticky',
           top: 0,
           zIndex: 100,
-          background: '#ffffff',
-          borderBottom: '1px solid #E5E7EB',
-          boxShadow: '0 2px 8px rgba(30,58,95,0.06)',
+          background: 'linear-gradient(135deg, #1E3A5F 0%, #2E86C1 100%)',
+          borderBottom: 'none',
+          boxShadow: '0 2px 12px rgba(30,58,95,0.2)',
           padding: isMobile ? '0 16px' : '0 40px',
           height: '64px',
           display: 'flex',
@@ -136,9 +97,9 @@ export default function DashboardPage() {
           onMouseEnter={() => setLogoutHover(true)}
           onMouseLeave={() => setLogoutHover(false)}
           style={{
-            border: `2px solid ${logoutHover ? '#DC2626' : '#E5E7EB'}`,
-            background: '#ffffff',
-            color: logoutHover ? '#DC2626' : '#6B7280',
+            border: `2px solid ${logoutHover ? '#ffffff' : 'rgba(255,255,255,0.3)'}`,
+            background: logoutHover ? 'rgba(255,255,255,0.1)' : 'transparent',
+            color: '#ffffff',
             borderRadius: '8px',
             padding: '8px 20px',
             fontSize: '14px',
@@ -152,54 +113,31 @@ export default function DashboardPage() {
         </button>
       </nav>
 
-      {/* ── BİLGİ ŞERİDİ ── */}
-      <div
+      <svg
         style={{
-          background: 'linear-gradient(135deg, #1E3A5F 0%, #2E86C1 100%)',
-          padding: isMobile ? '10px 16px' : '10px 40px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '12px',
-          flexWrap: 'wrap',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          pointerEvents: 'none',
+          zIndex: 0,
         }}
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: isMobile ? '12px' : '24px', flexWrap: 'wrap' }}>
-          {INFO_CHIPS.map((c) => (
-            <div
-              key={c.text}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                color: 'rgba(255,255,255,0.85)',
-                fontSize: '12px',
-                fontWeight: 600,
-              }}
-            >
-              <span>{c.icon}</span>
-              <span>{c.text}</span>
-            </div>
-          ))}
-        </div>
-        <div
-          style={{
-            background: 'rgba(255,255,255,0.15)',
-            color: '#ffffff',
-            fontSize: '11px',
-            fontWeight: 700,
-            padding: '4px 12px',
-            borderRadius: '9999px',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          Beta Sürüm
-        </div>
-      </div>
+        <circle cx="88%" cy="8%" r="160" fill="#2E86C1" fillOpacity="0.13"/>
+        <circle cx="88%" cy="8%" r="110" fill="#2E86C1" fillOpacity="0.09"/>
+        <circle cx="88%" cy="8%" r="60" fill="#2E86C1" fillOpacity="0.06"/>
+        <circle cx="12%" cy="92%" r="130" fill="#1E3A5F" fillOpacity="0.10"/>
+        <circle cx="12%" cy="92%" r="80" fill="#1E3A5F" fillOpacity="0.07"/>
+        <circle cx="12%" cy="92%" r="40" fill="#1E3A5F" fillOpacity="0.05"/>
+      </svg>
 
       {/* ── ANA İÇERİK ── */}
       <div
         style={{
+          position: 'relative',
+          zIndex: 1,
           padding: isMobile ? '24px 16px' : '40px',
           maxWidth: '1200px',
           margin: '0 auto',
@@ -242,38 +180,12 @@ export default function DashboardPage() {
                 margin: 0,
               }}
             >
-              Çocuğunuzun Okuma<br />Performansını Takip Edin
+              Disleksi Risk Analizi Demo Sistemi
             </h1>
             <p style={{ color: '#6B7280', fontSize: '16px', marginTop: '8px', marginBottom: 0 }}>
-              Bilimsel temelli analizlerle çocuğunuzun gelişimini destekleyin.
+              Sentetik veri üzerinde çalışan RAG tabanlı karar destek prototipi.
             </p>
           </div>
-
-          <button
-            onClick={() => navigate('/test')}
-            onMouseEnter={() => setStartHover1(true)}
-            onMouseLeave={() => setStartHover1(false)}
-            style={{
-              background: 'linear-gradient(135deg, #1E3A5F, #2E86C1)',
-              color: '#ffffff',
-              border: 'none',
-              borderRadius: '14px',
-              padding: '16px 36px',
-              fontSize: '16px',
-              fontWeight: 800,
-              cursor: 'pointer',
-              boxShadow: startHover1
-                ? '0 12px 32px rgba(30,58,95,0.4)'
-                : '0 8px 24px rgba(30,58,95,0.25)',
-              transform: startHover1 ? 'translateY(-2px)' : 'translateY(0)',
-              transition: 'all 0.2s',
-              whiteSpace: 'nowrap',
-              flexShrink: 0,
-              fontFamily: "'Nunito', system-ui, sans-serif",
-            }}
-          >
-            🚀 Yeni Test Başlat
-          </button>
         </div>
 
         {/* İstatistik kartları */}
@@ -310,7 +222,7 @@ export default function DashboardPage() {
               </div>
               <div
                 style={{
-                  fontSize: s.small ? '16px' : '28px',
+                  fontSize: '28px',
                   fontWeight: 900,
                   color: '#1E3A5F',
                   lineHeight: 1.1,
@@ -448,7 +360,7 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          {/* Sağ panel — Geçmiş Testler */}
+          {/* Sağ panel — Disleksi bilgisi */}
           <div
             style={{
               background: '#ffffff',
@@ -467,87 +379,82 @@ export default function DashboardPage() {
               }}
             >
               <div style={{ color: '#ffffff', fontSize: '16px', fontWeight: 800 }}>
-                📊 Geçmiş Testler
+                📖 Disleksi Nedir?
               </div>
               <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px', marginTop: '2px' }}>
-                Son 3 test gösteriliyor
+                Sistem tarafından değerlendirilen 6 metrik
               </div>
-            </div>
-
-            <div style={{ padding: '8px' }}>
-              {mockHistory.length === 0 ? (
-                <div
-                  style={{
-                    padding: '32px 16px',
-                    textAlign: 'center',
-                    color: '#6B7280',
-                    fontSize: '14px',
-                  }}
-                >
-                  <div style={{ fontSize: '28px', marginBottom: '8px' }}>📋</div>
-                  Henüz test yapılmamış.
-                </div>
-              ) : (
-                mockHistory.map((item) => (
-                  <HistoryItem key={item.id} item={item} />
-                ))
-              )}
-            </div>
-
-            {/* Alt bağlantı */}
-            <div
-              style={{
-                borderTop: '1px solid #E5E7EB',
+              <div style={{
                 padding: '12px 16px',
-                textAlign: 'center',
+                background: 'rgba(255,255,255,0.08)',
+                borderBottom: '1px solid rgba(255,255,255,0.12)',
+                fontSize: '12px',
+                color: 'rgba(255,255,255,0.85)',
+                lineHeight: 1.6,
               }}
-            >
-              <span style={{ fontSize: '12px', color: '#9CA3AF' }}>
-                📖 Raporlara tıklayarak detaylı inceleme yapabilirsiniz
-              </span>
+              >
+                Disleksi; zeka düzeyinden bağımsız olarak okuma, yazma ve
+                heceleme süreçlerinde yaşanan nörolojik temelli bir öğrenme
+                güçlüğüdür. Bu sistem, aşağıdaki 6 temel metriği analiz ederek
+                disleksi risk profilini belirler.
+              </div>
             </div>
-          </div>
-        </div>
 
-        {/* Alt bilgi çubuğu */}
-        <div
-          style={{
-            marginTop: '40px',
-            background: '#ffffff',
-            borderRadius: '16px',
-            padding: '20px 28px',
-            border: '1px solid #E5E7EB',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '16px',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <div
-              style={{
-                background: 'linear-gradient(135deg, #EFF6FF, #DBEAFE)',
-                borderRadius: '10px',
-                padding: '8px',
-                fontSize: '20px',
-              }}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: 0,
+              background: 'linear-gradient(135deg, #1E3A5F 0%, #2E86C1 100%)',
+            }}
             >
-              🏥
-            </div>
-            <div>
-              <div style={{ fontSize: '14px', fontWeight: 700, color: '#1E3A5F' }}>
-                Türkiye'nin Disleksi Destek Platformu
+
+              <div style={{ borderRight: '1px solid rgba(255,255,255,0.12)' }}>
+                {[
+                  { icon: '🏃', name: 'Okuma Hızı', desc: 'Dakikada doğru okunan kelime sayısı. Akıcı okuma gelişiminin temel göstergesidir.' },
+                  { icon: '✅', name: 'Okuma Doğruluğu', desc: 'Okunan metindeki doğru tanınan kelimelerin oranı. Sözcük tanıma becerisini yansıtır.' },
+                  { icon: '🔊', name: 'Fonolojik Farkındalık', desc: 'Sesleri ayırt etme, hece bölme ve kafiye kurma becerisi. Okuma ve yazım için kritiktir.' },
+                ].map((m, i, arr) => (
+                  <div key={m.name} style={{
+                    padding: '10px 12px',
+                    borderBottom: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.12)' : 'none',
+                    display: 'flex',
+                    gap: '10px',
+                    alignItems: 'flex-start',
+                  }}
+                  >
+                    <span style={{ fontSize: '18px', flexShrink: 0 }}>{m.icon}</span>
+                    <div>
+                      <p style={{ fontSize: '12px', fontWeight: 700, color: '#ffffff', margin: 0 }}>{m.name}</p>
+                      <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', margin: 0, lineHeight: 1.4 }}>{m.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div style={{ fontSize: '12px', color: '#9CA3AF', marginTop: '2px' }}>
-                © 2025 LexiLocal — Tüm hakları saklıdır
+
+              <div>
+                {[
+                  { icon: '🔤', name: 'Harf-Sembol Tanıma', desc: 'Harf ve sembolleri doğru tanıma ve ayırt etme kapasitesi. Kelime çözümlemenin temelidir.' },
+                  { icon: '🔁', name: 'Yeniden Okuma Oranı', desc: 'Okuma sırasında aynı bölümü tekrar okuma sıklığı. Yüksek oran akıcılık güçlüğüne işaret eder.' },
+                  { icon: '🧠', name: 'Çalışma Belleği', desc: 'Bilgiyi işlerken geçici olarak bellekte tutma kapasitesi. Okuma anlama ve sıralama için gereklidir.' },
+                ].map((m, i, arr) => (
+                  <div key={m.name} style={{
+                    padding: '10px 12px',
+                    borderBottom: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.12)' : 'none',
+                    display: 'flex',
+                    gap: '10px',
+                    alignItems: 'flex-start',
+                  }}
+                  >
+                    <span style={{ fontSize: '18px', flexShrink: 0 }}>{m.icon}</span>
+                    <div>
+                      <p style={{ fontSize: '12px', fontWeight: 700, color: '#ffffff', margin: 0 }}>{m.name}</p>
+                      <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.7)', margin: 0, lineHeight: 1.4 }}>{m.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
+
             </div>
-          </div>
-          <div style={{ display: 'flex', gap: '16px' }}>
-            {['🔒 SSL Güvenli', '✅ KVKK Uyumlu', '🏥 Uzman Onaylı'].map((b) => (
-              <span key={b} style={{ fontSize: '12px', color: '#6B7280' }}>{b}</span>
-            ))}
           </div>
         </div>
       </div>

@@ -14,8 +14,8 @@ load_dotenv()
 TOP_K_PER_LABEL = 3
 COLLECTION_NAME = "rag_chunks"
 EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
-TOGETHER_BASE_URL: str = "https://api.together.xyz/v1"
-TOGETHER_MODEL_NAME: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+GROQ_BASE_URL: str = "https://api.groq.com/openai/v1"
+GROQ_MODEL_NAME: str = "llama-3.3-70b-versatile"
 GROQ_POST_CALL_SLEEP_SECONDS: float = 2.0
 GROQ_MAX_RETRY_ATTEMPTS: int = 3
 GROQ_INITIAL_BACKOFF_SECONDS: float = 2.0
@@ -165,12 +165,12 @@ def _format_chunks_by_label(labels: List[str], chunks_by_label: Dict[str, List[D
 
 
 def _build_prompt(labels: List[str], student_data: Dict[str, Any], chunks_text: str) -> str:
-    metrikler = f"""- Okuma hızı: {student_data.get('reading_speed', '-')} kelime/dakika
-- Okuma doğruluğu: {student_data.get('accuracy', '-')}%
-- Ses farkındalığı: {student_data.get('phonological_awareness_percent', '-')}%
-- Görsel ayırt etme puanı: {student_data.get('visual_discrimination_score', '-')}
-- Görsel takip süresi: {student_data.get('visual_tracking_seconds', '-')} saniye
-- Sıralama becerisi puanı: {student_data.get('sequencing_score', '-')}"""
+    metrikler = f"""- Okuma hızı: {student_data.get('reading_speed', student_data.get('reading_speed_wpcm', '-'))} kelime/dakika
+- Okuma doğruluğu: {student_data.get('accuracy', student_data.get('reading_accuracy_percent', '-'))}%
+- Fonolojik farkındalık: {student_data.get('phonological_awareness_percent', student_data.get('phonological_awareness_score', '-'))}
+- Harf-sembol tanıma doğruluğu: {student_data.get('letter_symbol_recognition_accuracy', '-')}
+- Yeniden okuma oranı: {student_data.get('rereading_rate', '-')}%
+- Çalışma belleği doğruluğu: {student_data.get('working_memory_accuracy', '-')}"""
 
     return f"""Sen bir eğitim destek uzmanısın. Aşağıdaki öğrenci verilerini ve referans bilgileri kullanarak Türkçe bir destek raporu yaz.
 
@@ -199,9 +199,11 @@ KURALLAR:
 - Teknik terimleri öğretmen ve velinin anlayacağı şekilde sadeleştir.
 - Referans metni birebir kopyalama, içeriği kavrayıp yeniden ifade et.
 - **Etkisi:** bölümünü somut ve hissettiren bir dille yaz.
-- "Zorluk yaşayabilir", "etkileyebilir", "güçlük oluşturabilir" gibi yüzeysel ve belirsiz ifadeler kullanma.
-- **Etkisi:** bölümünde şu anlatım mantığını kullan: "Bu yetersizlik nedeniyle öğrenci [somut güçlük 1], [somut güçlük 2] ve [somut güçlük 3] ile karşılaşır."
-- Okuyucunun öğrencinin yaşadığı güçlüğü somut olarak anlayacağı açık örnekler kullan.
+- **Etkisi:** bölümünde yüzeysel ve belirsiz ifadeler kullanma. "Zorluk yaşayabilir", "etkileyebilir" gibi genel ifadeler yerine somut ve gözlemlenebilir davranışları yaz. Örneğin: "Öğrenci bir sayfayı okurken hangi satırda olduğunu kaybeder", "Kelimeyi harfleyemez", "Aynı satırı defalarca okur" gibi.
+- **Etkisi:** bölümünde mutlaka 3 somut gözlem yaz, her biri farklı bir güçlüğü tanımlasın.
+- **Öneriler:** bölümünde her yöntem için şu yapıyı kullan: önce yöntemin adını bold yaz, sonra yöntemi 2-3 adımda somut olarak açıkla. "Eğitim verilebilir", "uygulanabilir" gibi belirsiz bitişler kullanma; bunun yerine tam olarak ne yapılacağını yaz.
+- Her öneri en az 2 cümle olacak: ilk cümle yöntemi açıklar, ikinci cümle nasıl uygulanacağını somut adımlarla anlatır.
+- Referans bilgilerden çıkarılan yöntemleri spesifik program veya teknik adlarıyla yaz (örn. "GraphoGame Fluency", "Running Record", "Orton-Gillingham").
 - Her label için yalnızca o label ile ilişkili somut etki ve yöntemleri yaz.
 - Yeni bölüm başlığı ekleme. Yalnızca "## Genel Öneriler" ve her label için "## [LABEL TÜRKÇE ADI]" başlıklarını kullan.
 
@@ -215,9 +217,9 @@ LABEL TÜRKÇE KARŞILIKLARI:
 - OKUMA_HIZI → Okuma Hızı
 - OKUMA_DOGRULUGU → Okuma Doğruluğu
 - FONOLOJIK_FARKINDALIK → Fonolojik Farkındalık
-- GORSEL_ISLEME → Görsel İşleme
-- GORSEL_TAKIP → Görsel Takip
-- CALISMA_BELLEGI_SIRALAMA → Çalışma Belleği ve Sıralama
+- HARF_SEMBOL_TANIMA_DOGRULUGU → Harf-Sembol Tanıma Doğruluğu
+- OKUMA_SIRASINDA_YENIDEN_OKUMA_ORANI → Yeniden Okuma Oranı
+- CALISMA_BELLEGI_DOGRULUGU → Çalışma Belleği Doğruluğu
 
 REFERANS BİLGİLER:
 {chunks_text}
@@ -271,9 +273,9 @@ Aşağıdaki yapıyı birebir kullan. Köşeli parantezleri çıktı içinde bı
 
 def _call_groq_once(client: OpenAI, prompt: str) -> str:
     response = client.chat.completions.create(
-        model=TOGETHER_MODEL_NAME,
+        model=GROQ_MODEL_NAME,
         max_tokens=8000,
-        temperature=0,
+        temperature=0.4,
         messages=[
             {
                 "role": "user",
@@ -289,13 +291,13 @@ def _call_groq_once(client: OpenAI, prompt: str) -> str:
 
 
 def _generate_with_gemini(prompt: str) -> str:
-    api_key = os.getenv("TOGETHER_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
         raise ValueError("TOGETHER_API_KEY bulunamadı")
 
     client = OpenAI(
         api_key=api_key,
-        base_url=TOGETHER_BASE_URL,
+        base_url=GROQ_BASE_URL,
         max_retries=0,
     )
 
@@ -350,7 +352,7 @@ def generate_rag_report(
     prompt = _build_prompt(labels, student_data, chunks_text)
 
     try:
-        rag_report = _generate_with_gemini(prompt)
+        rag_report_text = _generate_with_gemini(prompt)
     except Exception as exc:
         return _error_result(f"Gemini API hatası: {exc}", labels=labels)
 
@@ -373,7 +375,7 @@ def generate_rag_report(
         chunks_per_label[label] = label_chunks
 
     return {
-        "rag_report": rag_report,
+        "rag_report": rag_report_text,
         "used_chunks": used_chunks,
         "chunks_per_label": chunks_per_label,
         "labels": labels,

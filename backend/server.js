@@ -1,4 +1,5 @@
 require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') });
+const fs = require("fs");
 const express = require("express");
 const { spawn } = require("child_process");
 const path = require("path");
@@ -10,7 +11,7 @@ const rateLimit = require("express-rate-limit");
 app.use(express.json());
 
 app.use(cors({
-  origin: ["http://localhost:3000"],
+  origin: ["http://localhost:3000", "http://localhost:5173"],
   methods: ["GET", "POST"],
   credentials: true
 }));
@@ -164,6 +165,45 @@ function runPythonRAG(labels, studentData) {
     );
     py.stdin.end();
   });
+}
+
+const CSV_PATH = path.join(__dirname, "..", "analysis", "lexilocal_sentetik_1200_v4.csv");
+
+function loadCsvRowsUtf8Sig(filePath) {
+  const buf = fs.readFileSync(filePath);
+  let text = buf.toString("utf8");
+  if (text.charCodeAt(0) === 0xfeff) {
+    text = text.slice(1);
+  }
+  const lines = text.split(/\r?\n/).filter((l) => l.trim().length > 0);
+  if (lines.length < 2) return [];
+  const header = lines[0].split(",").map((h) => h.trim().replace(/^\ufeff/, ""));
+  const rows = [];
+  for (let li = 1; li < lines.length; li++) {
+    const parts = lines[li].split(",");
+    if (parts.length !== header.length) {
+      console.warn(`CSV satır ${li + 1}: beklenen ${header.length} kolon, gelen ${parts.length}`);
+      continue;
+    }
+    const row = {};
+    for (let i = 0; i < header.length; i++) {
+      row[header[i]] = parts[i].trim();
+    }
+    rows.push(row);
+  }
+  return rows;
+}
+
+let csvRows = [];
+try {
+  csvRows = loadCsvRowsUtf8Sig(CSV_PATH);
+  console.log(`CSV yüklendi (${csvRows.length} satır): ${CSV_PATH}`);
+} catch (e) {
+  console.error("CSV yüklenemedi:", e.message);
+}
+
+function pickRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
 }
 
 // 1. PostgreSQL Bağlantı Ayarları
@@ -460,6 +500,109 @@ app.post("/analyze/:studentId", async (req, res) => {
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+app.get("/api/sample", (req, res) => {
+  const risk = req.query.risk;
+  const allowed = new Set(["yuksek_risk", "orta_risk", "normal"]);
+  if (!risk || !allowed.has(String(risk))) {
+    return res.status(400).json({ message: "Geçersiz veya eksik risk parametresi" });
+  }
+  const candidates = csvRows.filter((r) => r.risk_profili === risk);
+  if (candidates.length === 0) {
+    return res.status(404).json({ message: "Bu risk profili için örnek bulunamadı" });
+  }
+  res.json(pickRandom(candidates));
+});
+
+function validateAnalyzeDirectBody(body) {
+  if (!body || typeof body !== "object") {
+    return { ok: false, message: "Geçersiz istek gövdesi" };
+  }
+  const keys = [
+    "student_id",
+    "reading_speed_wpcm",
+    "reading_accuracy_percent",
+    "phonological_awareness_score",
+    "letter_symbol_recognition_accuracy",
+    "rereading_rate",
+    "working_memory_accuracy",
+  ];
+  for (const k of keys) {
+    if (body[k] === undefined || body[k] === null || String(body[k]).trim() === "") {
+      return { ok: false, message: `Eksik alan: ${k}` };
+    }
+  }
+  const nums = {
+    reading_speed_wpcm: Number(body.reading_speed_wpcm),
+    reading_accuracy_percent: Number(body.reading_accuracy_percent),
+    phonological_awareness_score: Number(body.phonological_awareness_score),
+    letter_symbol_recognition_accuracy: Number(body.letter_symbol_recognition_accuracy),
+    rereading_rate: Number(body.rereading_rate),
+    working_memory_accuracy: Number(body.working_memory_accuracy),
+  };
+  for (const [k, v] of Object.entries(nums)) {
+    if (!Number.isFinite(v)) {
+      return { ok: false, message: `Sayısal olmayan değer: ${k}` };
+    }
+  }
+  return { ok: true, nums };
+}
+
+app.post("/api/analyze-direct", async (req, res) => {
+  const v = validateAnalyzeDirectBody(req.body);
+  if (!v.ok) {
+    return res.status(400).json({ message: v.message });
+  }
+  const body = req.body;
+  const { nums } = v;
+  try {
+    const bridgePayload = {
+      student_id: String(body.student_id),
+      reading_speed: nums.reading_speed_wpcm,
+      accuracy: nums.reading_accuracy_percent,
+      phonological_awareness_percent: nums.phonological_awareness_score,
+      letter_symbol_recognition_accuracy: nums.letter_symbol_recognition_accuracy,
+      rereading_rate: nums.rereading_rate,
+      working_memory_accuracy: nums.working_memory_accuracy,
+      errors: [],
+    };
+
+    const analysis = await runPythonBridge(bridgePayload);
+
+    const studentDataForRag = {
+      ...body,
+      reading_speed: bridgePayload.reading_speed,
+      accuracy: bridgePayload.accuracy,
+      phonological_awareness_percent: bridgePayload.phonological_awareness_percent,
+      errors: [],
+    };
+
+    let ragReport = null;
+    try {
+      const ragResult = await runPythonRAG(analysis.labels || [], studentDataForRag);
+      ragReport = ragResult && typeof ragResult.rag_report === "string" ? ragResult.rag_report : null;
+    } catch (ragErr) {
+      console.error("RAG raporu üretilemedi:", ragErr.message);
+      ragReport = null;
+    }
+
+    res.json({
+      student_id: String(body.student_id),
+      risk_profili: body.risk_profili != null ? String(body.risk_profili) : "",
+      metrics: { ...body },
+      analysis: {
+        labels: analysis.labels || [],
+        explanations: analysis.explanations || [],
+        summary: analysis.summary,
+        level: analysis.level,
+        recommendations: analysis.recommendations || [],
+        rag_report: ragReport,
+      },
+    });
+  } catch (err) {
+    res.status(500).json({ message: err.message || "Analiz başarısız" });
   }
 });
 
