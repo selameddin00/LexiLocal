@@ -1,33 +1,47 @@
-"""Evaluate one generated Turkish report against label-filtered golden chunks."""
+"""Evaluate one generated Turkish report against per-label retrieved chunks."""
 
 from __future__ import annotations
 
-import json
-from pathlib import Path
+import re
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 from rouge_score import rouge_scorer
 
-GOLDEN_CHUNKS_PATH: Path = (
-    Path(__file__).parent / "referans_metrikleri_raporu.json"
-)
 ROUGE_METRICS: Tuple[str, str, str] = ("rouge1", "rouge2", "rougeL")
 BERTSCORE_LANGUAGE: str = "tr"
 BERTSCORE_MODEL_TYPE: str = "dbmdz/bert-base-turkish-cased"
 BERTSCORE_VERBOSE: bool = False
 BERTSCORE_RESCALE_WITH_BASELINE: bool = False
-CHUNK_LABEL_KEY: str = "label"
 CHUNK_CONTENT_KEY: str = "content"
 NEWLINE_SEPARATOR: str = "\n"
 
 ERROR_GENERIC_MESSAGE: str = "Evaluation could not be completed."
 ERROR_INVALID_INPUT_MESSAGE: str = "Invalid input provided."
-ERROR_DATA_LOAD_MESSAGE: str = "Reference data could not be loaded."
 ERROR_INTERNAL_MESSAGE: str = "Evaluation failed due to an internal error."
-WARNING_MISSING_LABELS_TEMPLATE: str = "No reference chunks found for labels: {labels}"
+WARNING_MISSING_REFERENCE_TEMPLATE: str = "No reference chunks found for labels: {labels}"
+WARNING_MISSING_SECTION_TEMPLATE: str = "Report section missing for labels: {labels}"
 
-_golden_chunks_cache: Optional[List[Dict[str, Any]]] = None
-_bertscore_score_fn = None
+LABEL_KEYWORDS: Dict[str, Tuple[str, ...]] = {
+    "OKUMA_HIZI": ("hız",),
+    "OKUMA_DOGRULUGU": ("okuma", "doğru"),
+    "FONOLOJIK_FARKINDALIK": ("fonolojik",),
+    "HARF_SEMBOL_TANIMA_DOGRULUGU": ("harf",),
+    "OKUMA_SIRASINDA_YENIDEN_OKUMA_ORANI": ("yeniden",),
+    "CALISMA_BELLEGI_DOGRULUGU": ("belle",),
+}
+
+SECTION_HEADING_PATTERN: re.Pattern = re.compile(r"^#{2,}\s+(.+?)\s*$", re.MULTILINE)
+
+MACRO_KEYS: Tuple[str, ...] = (
+    "rouge1_f1",
+    "rouge2_f1",
+    "rougeL_f1",
+    "bertscore_precision",
+    "bertscore_recall",
+    "bertscore_f1",
+)
+
+_bertscorer = None
 
 
 class EvaluationError(Exception):
@@ -38,8 +52,23 @@ class InputValidationError(EvaluationError):
     """Raised when request inputs do not satisfy validation rules."""
 
 
-class DataLoadError(EvaluationError):
-    """Raised when golden reference data cannot be loaded safely."""
+def init_bertscorer():
+    """Load the BERTScorer model exactly once and cache the instance.
+
+    Call this explicitly at process startup (e.g. from batch_evaluate.py) so
+    the underlying transformer weights are downloaded/initialized a single
+    time. Subsequent calls return the cached instance.
+    """
+    global _bertscorer
+    if _bertscorer is None:
+        from bert_score import BERTScorer
+
+        _bertscorer = BERTScorer(
+            lang=BERTSCORE_LANGUAGE,
+            model_type=BERTSCORE_MODEL_TYPE,
+            rescale_with_baseline=BERTSCORE_RESCALE_WITH_BASELINE,
+        )
+    return _bertscorer
 
 
 def _validate_generated_report(generated_report: str) -> str:
@@ -64,79 +93,27 @@ def _validate_labels(labels: Sequence[str]) -> List[str]:
     return normalized_labels
 
 
-def _build_missing_labels_warning(
-    requested_labels: Sequence[str], matched_chunks: Sequence[Dict[str, Any]]
-) -> Optional[str]:
-    matched_labels = {
-        str(chunk.get(CHUNK_LABEL_KEY))
-        for chunk in matched_chunks
-        if isinstance(chunk.get(CHUNK_LABEL_KEY), str)
-    }
-    missing_labels = sorted({label for label in requested_labels if label not in matched_labels})
-    if not missing_labels:
-        return None
-    return WARNING_MISSING_LABELS_TEMPLATE.format(labels=", ".join(missing_labels))
+def _validate_chunks_per_label(
+    chunks_per_label: Dict[str, List[Dict[str, Any]]],
+) -> Dict[str, List[Dict[str, Any]]]:
+    if not isinstance(chunks_per_label, dict):
+        raise InputValidationError(ERROR_INVALID_INPUT_MESSAGE)
+    return chunks_per_label
 
 
 def _bertscore_adapter(generated: str, reference: str) -> Dict[str, float]:
-    global _bertscore_score_fn
+    scorer = init_bertscorer()
 
-    if _bertscore_score_fn is None:
-        from bert_score import score as bertscore_score
-
-        _bertscore_score_fn = bertscore_score
-
-    precision_tensor, recall_tensor, f1_tensor = _bertscore_score_fn(
+    precision_tensor, recall_tensor, f1_tensor = scorer.score(
         cands=[generated],
         refs=[reference],
-        lang=BERTSCORE_LANGUAGE,
-        model_type=BERTSCORE_MODEL_TYPE,
         verbose=BERTSCORE_VERBOSE,
-        rescale_with_baseline=BERTSCORE_RESCALE_WITH_BASELINE,
     )
     return {
         "precision": float(precision_tensor.mean().item()),
         "recall": float(recall_tensor.mean().item()),
         "f1": float(f1_tensor.mean().item()),
     }
-
-
-def load_golden_chunks() -> List[Dict[str, Any]]:
-    global _golden_chunks_cache
-
-    if _golden_chunks_cache is not None:
-        return _golden_chunks_cache
-
-    try:
-        with GOLDEN_CHUNKS_PATH.open("r", encoding="utf-8") as file_handle:
-            raw_data = json.load(file_handle)
-    except (OSError, json.JSONDecodeError) as exc:
-        raise DataLoadError(ERROR_DATA_LOAD_MESSAGE) from exc
-
-    if not isinstance(raw_data, list):
-        raise DataLoadError(ERROR_DATA_LOAD_MESSAGE)
-
-    _golden_chunks_cache = raw_data
-    return _golden_chunks_cache
-
-
-def filter_chunks_by_labels(labels: List[str]) -> List[Dict[str, Any]]:
-    golden_chunks = load_golden_chunks()
-    label_set = set(labels)
-    return [
-        chunk
-        for chunk in golden_chunks
-        if isinstance(chunk, dict) and chunk.get(CHUNK_LABEL_KEY) in label_set
-    ]
-
-
-def build_reference_text(chunks: List[Dict[str, Any]]) -> str:
-    contents = [
-        str(chunk.get(CHUNK_CONTENT_KEY))
-        for chunk in chunks
-        if isinstance(chunk.get(CHUNK_CONTENT_KEY), str)
-    ]
-    return NEWLINE_SEPARATOR.join(contents)
 
 
 def compute_rouge(generated: str, reference: str) -> Dict[str, float]:
@@ -158,35 +135,130 @@ def compute_bertscore(generated: str, reference: str) -> Dict[str, float]:
     }
 
 
-def evaluate_report(generated_report: str, labels: List[str]) -> Dict[str, Any]:
+def build_reference_text(chunks: Sequence[Dict[str, Any]]) -> str:
+    if not isinstance(chunks, list):
+        return ""
+    contents = [
+        str(chunk.get(CHUNK_CONTENT_KEY))
+        for chunk in chunks
+        if isinstance(chunk, dict) and isinstance(chunk.get(CHUNK_CONTENT_KEY), str)
+    ]
+    return NEWLINE_SEPARATOR.join(contents)
+
+
+def _parse_report_sections(report: str) -> List[Tuple[str, str]]:
+    sections: List[Tuple[str, str]] = []
+    matches = list(SECTION_HEADING_PATTERN.finditer(report))
+    for index, match in enumerate(matches):
+        heading = match.group(1).strip()
+        body_start = match.end()
+        body_end = matches[index + 1].start() if index + 1 < len(matches) else len(report)
+        body = report[body_start:body_end].strip()
+        sections.append((heading, body))
+    return sections
+
+
+def _section_matches_label(heading: str, label: str) -> bool:
+    keywords = LABEL_KEYWORDS.get(label)
+    if not keywords:
+        normalized_label = label.replace("_", " ").casefold()
+        return normalized_label in heading.casefold()
+
+    normalized_heading = heading.casefold()
+    return all(keyword.casefold() in normalized_heading for keyword in keywords)
+
+
+def _extract_label_section(sections: Sequence[Tuple[str, str]], label: str) -> str:
+    for heading, body in sections:
+        if _section_matches_label(heading, label):
+            return body
+    return ""
+
+
+def _macro_average(per_label_scores: Sequence[Dict[str, float]]) -> Dict[str, float]:
+    if not per_label_scores:
+        return {key: 0.0 for key in MACRO_KEYS}
+    return {
+        key: sum(scores.get(key, 0.0) for scores in per_label_scores) / len(per_label_scores)
+        for key in MACRO_KEYS
+    }
+
+
+def _build_warnings(
+    missing_reference_labels: Sequence[str],
+    missing_section_labels: Sequence[str],
+) -> Optional[List[str]]:
+    warnings: List[str] = []
+    if missing_reference_labels:
+        warnings.append(
+            WARNING_MISSING_REFERENCE_TEMPLATE.format(labels=", ".join(missing_reference_labels))
+        )
+    if missing_section_labels:
+        warnings.append(
+            WARNING_MISSING_SECTION_TEMPLATE.format(labels=", ".join(missing_section_labels))
+        )
+    return warnings or None
+
+
+def evaluate_report(
+    generated_report: str,
+    labels: List[str],
+    chunks_per_label: Dict[str, List[Dict[str, Any]]],
+) -> Dict[str, Any]:
     try:
         normalized_report = _validate_generated_report(generated_report)
         normalized_labels = _validate_labels(labels)
+        normalized_chunks_map = _validate_chunks_per_label(chunks_per_label)
 
-        matched_chunks = filter_chunks_by_labels(normalized_labels)
-        reference_text = build_reference_text(matched_chunks)
-        if not reference_text.strip():
-            return {
-                "error": "No reference content found for the provided labels.",
-                "evaluated_labels": normalized_labels,
-                "reference_chunk_count": 0,
+        sections = _parse_report_sections(normalized_report)
+
+        per_label_results: Dict[str, Dict[str, Any]] = {}
+        evaluated_score_dicts: List[Dict[str, float]] = []
+        missing_reference_labels: List[str] = []
+        missing_section_labels: List[str] = []
+
+        for label in normalized_labels:
+            label_chunks = normalized_chunks_map.get(label, [])
+            reference_text = build_reference_text(label_chunks)
+            section_text = _extract_label_section(sections, label)
+
+            chunk_count = len(label_chunks) if isinstance(label_chunks, list) else 0
+            label_entry: Dict[str, Any] = {
+                "reference_chunk_count": chunk_count,
+                "section_found": bool(section_text.strip()),
             }
 
-        rouge_scores = compute_rouge(normalized_report, reference_text)
-        bertscore_scores = compute_bertscore(normalized_report, reference_text)
+            if not reference_text.strip():
+                missing_reference_labels.append(label)
+                label_entry["error"] = "No reference chunks for label."
+                per_label_results[label] = label_entry
+                continue
 
-        result: Dict[str, Any] = {
-            **rouge_scores,
-            **bertscore_scores,
+            if not section_text.strip():
+                missing_section_labels.append(label)
+                label_entry["error"] = "Label section not found in generated report."
+                per_label_results[label] = label_entry
+                continue
+
+            rouge_scores = compute_rouge(section_text, reference_text)
+            bertscore_scores = compute_bertscore(section_text, reference_text)
+            combined_scores: Dict[str, float] = {**rouge_scores, **bertscore_scores}
+
+            label_entry.update(combined_scores)
+            per_label_results[label] = label_entry
+            evaluated_score_dicts.append(combined_scores)
+
+        macro_average = _macro_average(evaluated_score_dicts)
+
+        return {
+            "per_label": per_label_results,
+            "macro_average": macro_average,
             "evaluated_labels": normalized_labels,
-            "reference_chunk_count": len(matched_chunks),
-            "warning": _build_missing_labels_warning(normalized_labels, matched_chunks),
+            "scored_label_count": len(evaluated_score_dicts),
+            "warning": _build_warnings(missing_reference_labels, missing_section_labels),
         }
-        return result
     except InputValidationError:
         return {"error": ERROR_INVALID_INPUT_MESSAGE}
-    except DataLoadError:
-        return {"error": ERROR_DATA_LOAD_MESSAGE}
     except EvaluationError:
         return {"error": ERROR_GENERIC_MESSAGE}
     except Exception:
